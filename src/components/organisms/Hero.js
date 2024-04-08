@@ -28,10 +28,9 @@ const Hero = () => {
 
             <div className="mt-5 text-sm">
               <p>
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Esse,
-                nam perspiciatis dignissimos consequatur fugiat velit! Numquam
-                quae reprehenderit dolores perspiciatis saepe tenetur similique
-                sit, veritatis, nulla mollitia nam, magnam modi.
+                From corporate gatherings to product launches, trust us to
+                deliver seamless experiences that inspire, engage, and drive
+                success.
               </p>
             </div>
 
