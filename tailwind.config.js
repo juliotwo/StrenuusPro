@@ -1,4 +1,7 @@
 /** @type {import('tailwindcss').Config} */
+const primary = "#252525"; // Green
+// const primary = '#ff7c9d'; // Pink
+
 module.exports = {
   content: [
     "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
@@ -7,12 +10,24 @@ module.exports = {
   ],
   theme: {
     extend: {
+      height: {
+        hero: "calc(100vh - 70px)",
+      },
+      colors: {
+        primary,
+      },
       backgroundImage: {
-        "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
-        "gradient-conic":
-          "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
+        hero: 'url("/images/hero.jpg")',
+        "hero-about": 'url("/images/hero-about.jpg")',
+        "hero-services": 'url("/images/hero-services.jpg")',
+        "hero-missions": 'url("/images/hero-missions.jpg")',
+        "hero-reviews": 'url("/images/hero-reviews.jpg")',
+        "hero-contact": 'url("/images/hero-contact.jpg")',
+        contact: 'url("/images/hero-contact.jpg")',
+      },
+      fontFamily: {
+        montserrat: ["var(--font-montserrat)"],
       },
     },
   },
-  plugins: [],
 };
