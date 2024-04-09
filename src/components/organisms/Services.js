@@ -36,12 +36,12 @@ const Services = () => {
     useContext(CartContext);
   return (
     <>
-      <section className="bg-black min-h-screen py-28">
+      <section className="bg-black min-h-screen py-28 flex items-center justify-center">
         <div className="container mx-auto px-4 w-full h-full flex flex-col justify-center">
-          <div className="grid grid-cols-3 gap-5 mt-20">
+          <div className="grid grid-cols-3 gap-5 h-full">
             {servicesData.map((item, i) => (
               <div
-                className="bg-center bg-cover"
+                className="bg-center bg-cover h-80"
                 style={{ backgroundImage: `url(${item.image})` }}
                 key={i}
               >
