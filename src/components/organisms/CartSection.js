@@ -41,14 +41,15 @@ const CartSection = () => {
   const [nameCardError, setNameCardError] = useState("");
 
   const isDisabledButton =
-    (step === 0 && valueCard === "") ||
-    valueCardError ||
-    valueCardDate === "" ||
-    valueCardDateError ||
-    valueCardCvv === "" ||
-    valueCardCvvError ||
-    nameCard === "" ||
-    nameCardError;
+    step === 0 &&
+    (valueCard === "" ||
+      valueCardError ||
+      valueCardDate === "" ||
+      valueCardDateError ||
+      valueCardCvv === "" ||
+      valueCardCvvError ||
+      nameCard === "" ||
+      nameCardError);
 
   useEffect(() => {
     if (valueCard) {
