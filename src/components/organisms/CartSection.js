@@ -1,5 +1,5 @@
 "use client";
-import { useContext, useState } from "react";
+import { useContext, useEffect, useState } from "react";
 import Image from "next/image";
 import { useRouter } from "next/navigation";
 import { formatNumber, getTotalProduct } from "@/utils/amounts";
@@ -32,16 +32,82 @@ const CartSection = () => {
   } = useContext(CartContext);
 
   const [valueCard, setValueCard] = useState("");
+  const [valueCardError, setValueCardError] = useState("");
   const [valueCardDate, setValueCardDate] = useState("");
+  const [valueCardDateError, setValueCardDateError] = useState("");
   const [valueCardCvv, setValueCardCvv] = useState("");
+  const [valueCardCvvError, setValueCardCvvError] = useState("");
   const [nameCard, setNameCard] = useState("");
+  const [nameCardError, setNameCardError] = useState("");
 
   const isDisabledButton =
-    step === 0 &&
-    (valueCard === "" ||
-      nameCard === "" ||
-      valueCardDate === "" ||
-      valueCardCvv === "");
+    (step === 0 && valueCard === "") ||
+    valueCardError ||
+    valueCardDate === "" ||
+    valueCardDateError ||
+    valueCardCvv === "" ||
+    valueCardCvvError ||
+    nameCard === "" ||
+    nameCardError;
+
+  useEffect(() => {
+    if (valueCard) {
+      if (valueCard.trim().length < 16) {
+        setValueCardError(
+          "El número de tarjeta debe contener al menos 16 dígitos"
+        );
+        return;
+      }
+
+      // Validate zeros
+      if (!/^(?!0+$)\d+$/.test(valueCard)) {
+        setValueCardError("El número de tarjeta no es válido");
+        return;
+      }
+
+      setValueCardError("");
+    }
+
+    if (valueCardDate) {
+      if (valueCardDate.trim().length < 4) {
+        setValueCardDateError("La fecha de expiración debe contener 4 dígitos");
+        return;
+      }
+
+      // Validate zeros
+      if (
+        +valueCardDate.substring(0, 2) > 12 ||
+        +valueCardDate.substring(0, 2) < 1 ||
+        +valueCardDate.slice(-2) > 28
+      ) {
+        setValueCardDateError("Escribe una fecha válida");
+        return;
+      }
+
+      setValueCardDateError("");
+    }
+
+    if (valueCardCvv) {
+      if (valueCardCvv.trim().length < 3) {
+        setValueCardCvvError("El CVV debe contener al menos 3 dígitos");
+        return;
+      }
+
+      // Validate zeros
+      if (!/^(?!0+$)\d+$/.test(valueCardCvv)) {
+        setValueCardCvvError("El CVV no es válido");
+        return;
+      }
+
+      setValueCardCvvError("");
+    }
+
+    setNameCardError(
+      nameCard && nameCard.trim().length < 10
+        ? "El nombre debe contener al menos 10 dígitos"
+        : ""
+    );
+  }, [valueCard, valueCardDate, valueCardCvv, nameCard]);
 
   const handlePay = () => {
     console.log("Paid");
@@ -156,27 +222,78 @@ const CartSection = () => {
           />
 
           <Input
-            onChange={(e) => setValueCard(e.target.value)}
+            value={valueCard}
+            onChange={(e) => {
+              if (
+                new RegExp("^[0-9]+$").test(e.target.value) ||
+                e.target.value === ""
+              ) {
+                setValueCard(e.target.value);
+              }
+            }}
             type="text"
             placeholder="Card number"
+            error={valueCardError}
+            maxLength={16}
           />
 
           <Input
-            onChange={(e) => setNameCard(e.target.value)}
+            value={nameCard}
+            onChange={(e) => {
+              if (
+                /^[a-zA-Z\s]*[a-zA-Z][a-zA-Z\s]*$/.test(e.target.value) ||
+                e.target.value === ""
+              ) {
+                setNameCard(e.target.value);
+              }
+            }}
             type="text"
-            placeholder="Name on card"
+            placeholder="Name of owner"
+            error={nameCardError}
           />
 
           <Input
-            onChange={(e) => setValueCardDate(e.target.value)}
+            value={valueCardDate}
+            onChange={(e) => {
+              if (
+                new RegExp("^[0-9]+$").test(e.target.value) ||
+                e.target.value === ""
+              ) {
+                setValueCardDate(e.target.value);
+              }
+            }}
+            onFocus={(e) => setValueCardDate(e.target.value.replace("/", ""))}
+            onBlur={(e) =>
+              setValueCardDate(
+                e.target.value
+                  ? e.target.value.substring(0, 2) +
+                      "/" +
+                      e.target.value.substring(2)
+                  : ""
+              )
+            }
             type="text"
-            placeholder="Date of expiration"
+            placeholder="Expiration date (MM/YY)"
+            error={valueCardDateError}
+            required
+            maxLength={4}
           />
 
           <Input
-            onChange={(e) => setValueCardCvv(e.target.value)}
+            value={valueCardCvv}
+            onChange={(e) => {
+              if (
+                new RegExp("^[0-9]+$").test(e.target.value) ||
+                e.target.value === ""
+              ) {
+                setValueCardCvv(e.target.value);
+              }
+            }}
             type="text"
-            placeholder="Card's CVV"
+            placeholder="Security code"
+            error={valueCardCvvError}
+            required
+            maxLength={3}
           />
 
           {step !== 1 && (
