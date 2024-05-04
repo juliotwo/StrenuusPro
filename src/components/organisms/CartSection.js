@@ -1,7 +1,7 @@
 "use client";
 import { useContext, useEffect, useState } from "react";
 import Image from "next/image";
-import { useRouter } from "next/navigation";
+import { useRouter } from "@/navigation";
 import { formatNumber, getTotalProduct } from "@/utils/amounts";
 import Button from "@/components/atoms/Button";
 import Input from "@/components/atoms/Input";

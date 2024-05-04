@@ -4,7 +4,7 @@ import Button from "../atoms/Button";
 import { useContext } from "react";
 import { CartContext } from "@/context/cart";
 import { productsData } from "@/data";
-import Link from "next/link";
+import { Link } from "@/navigation";
 import Image from "next/image";
 
 const servicesData = [

@@ -1,4 +1,4 @@
-import Link from "next/link";
+import { Link } from "@/navigation";
 import Button from "../atoms/Button";
 
 const Video = () => {

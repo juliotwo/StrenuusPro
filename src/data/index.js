@@ -21,10 +21,6 @@ export const navbarOptions = [
     href: "/#more",
     name: "More",
   },
-  {
-    href: "/contact",
-    name: "Contact",
-  },
 ];
 
 export const productsData = [

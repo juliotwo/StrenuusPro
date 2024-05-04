@@ -1,7 +1,7 @@
 import { twMerge } from "tailwind-merge";
 
 const BUTTON_VARIANTS = {
-  primary: "bg-primary text-white",
+  primary: "bg-primary hover:bg-[#1b1b1b] text-white",
   secondary: "bg-black text-white",
   text: "bg-white text-black",
   gradient:
@@ -19,12 +19,13 @@ const Button = ({
   className,
   variant = "primary",
   withShadow = true,
+  icon,
   ...rest
 }) => {
   return (
     <button
       className={twMerge(
-        "px-5 py-2.5 text-xs font-bol",
+        "px-5 py-2.5 text-xs flex items-center gap-2 transition-colors",
         withShadow ? "shadow-md shadow-indigo-800" : "",
         BUTTON_VARIANTS[variant],
         className
@@ -32,6 +33,7 @@ const Button = ({
       {...rest}
     >
       {label}
+      {icon && <span>{icon}</span>}
     </button>
   );
 };

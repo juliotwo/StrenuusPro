@@ -1,9 +1,12 @@
-import Link from "next/link";
-import Image from "next/image";
+import { useTranslations } from "next-intl";
+import { Link } from "@/navigation";
+
 import Navbar from "../molecules/Navbar";
 import Button from "../atoms/Button";
 
 const Hero = () => {
+  const t = useTranslations("Hero");
+
   return (
     <section id="hero" className="relative w-full flex flex-col h-screen">
       {/* <video
@@ -21,9 +24,9 @@ const Hero = () => {
         <div className="container flex px-10 items-center h-full">
           <div className="flex flex-col text-black bg-white shadow-lg rounded-none p-10 lg:w-3/6">
             <h1 className="text-xl sm:text-2xl lg:text-3xl xl:text-5xl font-medium">
-              Exclusive events,
+              {t("title")},
               <br />
-              Priceless memories
+              {t("title-2")}
             </h1>
 
             <div className="mt-5 text-sm">
