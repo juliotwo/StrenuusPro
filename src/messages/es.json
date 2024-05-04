@@ -80,5 +80,51 @@
         "rights-reserved": "Todos los derechos reservados",
         "link-privacy": "Privacidad",
         "link-terms": "Términos"
+    },
+    "Policy": {
+        "title": "Política de Privacidad",
+        "text-1": "En {pageName}, nos tomamos muy en serio la protección de tu privacidad y la seguridad de tus datos personales. Esta Política de Privacidad tiene como objetivo proporcionarte información clara y transparente sobre cómo recopilamos, utilizamos, compartimos y protegemos tus datos personales cuando visitas nuestro sitio web o utilizas nuestros servicios. Lee atentamente esta política y revísala periódicamente, ya que podemos actualizarla para reflejar cambios en nuestras prácticas de privacidad.",
+        "subtitle-1": "1. Información que recopilamos",
+        "content-1": "<p>1.1. Información personal: Recopilamos información personal que nos proporcionas directamente, como tu nombre, dirección de correo electrónico, número de teléfono y otra información necesaria para proporcionar nuestros servicios, como la inscripción en cursos o la suscripción a boletines.</p> <p>1.2. Información de uso: Recopilamos información sobre cómo utilizas nuestro sitio web, incluidos datos de navegación, páginas visitadas, tiempo de permanencia en nuestro sitio y información similar.</p><p>1.3. Información del dispositivo: Podemos recopilar información sobre el dispositivo que utilizas para acceder a nuestro sitio web, como la dirección IP, el tipo de navegador, el sistema operativo y la identificación del dispositivo.</p>",
+        "subtitle-2": "2. Uso de la información",
+        "content-2": "<p>Utilizamos la información que recopilamos para los siguientes fines:</p><p>2.1. Prestación del servicio: Utilizamos tus datos personales para proporcionar nuestros servicios, como la inscripción en cursos, el procesamiento de pagos y la entrega de contenido relevante.</p><p>2.2. Comunicación: Podemos utilizar tu información para enviarte comunicaciones relacionadas con nuestros servicios, como confirmaciones de inscripción, actualizaciones y boletines informativos.</p><p>2.3. Mejora de nuestros servicios: Utilizamos la información recopilada para analizar y mejorar nuestros servicios, incluida la personalización de tu experiencia en nuestro sitio web.</p>",
+        "subtitle-3": "3. Compartir información",
+        "content-3": "<p>No vendemos ni alquilamos tu información personal a terceros. Sin embargo, podemos compartir tu información en las siguientes situaciones:</p><p>3.1. Proveedores de servicios: Trabajamos con proveedores de servicios de terceros que nos ayudan a proporcionar nuestros servicios, como procesadores de pagos y servicios de alojamiento web. Estos proveedores tienen acceso limitado a tu información y la utilizan solo para los fines acordados.</p><p>3.2. Cumplimiento legal: Podemos divulgar tu información si estamos legalmente obligados a hacerlo para cumplir con requisitos legales, órdenes judiciales o procesos legales.</p>",
+        "subtitle-4": "4. Seguridad de datos",
+        "content-4": "<p>Tomamos medidas razonables para proteger tus datos personales y mantener su confidencialidad. Utilizamos medidas de seguridad técnicas y organizativas adecuadas para proteger tu información contra pérdidas, uso no autorizado o divulgación.</p>",
+        "subtitle-5": "5. Tus derechos",
+        "content-5": "<p>Tienes derechos con respecto a tus datos personales, incluido el acceso, rectificación, supresión y oposición al procesamiento. Puedes ejercer estos derechos enviando una solicitud por escrito a la dirección proporcionada en la sección de contacto.</p>",
+        "subtitle-6": "6. Cambios en la Política de Privacidad",
+        "content-6": "Nos reservamos el derecho de modificar esta Política de Privacidad en cualquier momento. Los cambios entrarán en vigor tan pronto como se publiquen en nuestro sitio web. Recomendamos revisar esta política regularmente para estar informado sobre cualquier actualización.",
+        "subtitle-7": "7. Contacto",
+        "text-71": "Si tienes alguna pregunta o inquietud acerca de nuestra Política de Privacidad o cómo manejamos tus datos personales, contáctanos en {email}.",
+        "text-72": "Gracias por confiar en {pageName}. Tu privacidad es importante para nosotros y nos comprometemos a protegerlos responsablemente."
+    },
+    "Terms": {
+        "title": "Términos y condiciones",
+        "text-1": "Por favor, lee estos Términos y Condiciones cuidadosamente antes de utilizar el sitio web de {pageName} ('nosotros', 'nuestro' o {pageName}). Al acceder o utilizar nuestro sitio web, aceptas cumplir con estos Términos y Condiciones. Si no estás de acuerdo con alguno de los términos a continuación, por favor, no utilices nuestro sitio web.",
+        "subtitle-1": "1. Uso del sitio web",
+        "text-11": "1.1. Acceso y registro: Para acceder a ciertas funciones de nuestro sitio web, puede ser necesario registrarse y proporcionar información personal. Eres responsable de mantener la confidencialidad de tu información de inicio de sesión y de todas las actividades que ocurran en tu cuenta.",
+        "text-12": "1.2. Contenido del usuario: Al cargar, publicar o enviar contenido a nuestro sitio web, garantizas que tienes los derechos necesarios sobre dicho contenido y otorgas a {pageName} una licencia no exclusiva para utilizar, modificar, mostrar y distribuir dicho contenido en relación con nuestros servicios.",
+        "subtitle-2": "2. Comportamiento del usuario",
+        "content-2": "<p>2.1. Uso adecuado: Aceptas utilizar nuestro sitio web de manera adecuada y cumpliendo con todas las leyes y regulaciones aplicables. No debes utilizar nuestro sitio web para actividades ilegales, fraudulentas o perjudiciales.</p><p>2.2. Prohibiciones: Queda prohibido utilizar nuestro sitio web con cualquier propósito que pueda dañar, sobrecargar o interrumpir su funcionamiento. También se prohíbe el uso de cualquier dispositivo, software o rutina que interfiera o intente interferir con el correcto funcionamiento del sitio.</p>",
+        "subtitle-3": "3. Contenido y propiedad intelectual",
+        "text-31": "3.1. Derechos de propiedad: Todos los derechos de propiedad intelectual de nuestro sitio web y su contenido (incluyendo texto, gráficos, logotipos, imágenes y software) son propiedad de {pageName} o de terceros con licencia. Aceptas no copiar, reproducir, modificar, distribuir o utilizar dicho contenido sin nuestro consentimiento.",
+        "text-32": "3.2. Marcas comerciales: Todas las marcas comerciales, nombres comerciales y logotipos utilizados en nuestro sitio web son propiedad de {pageName} o de terceros. No se te otorgan derechos para utilizar estas marcas sin nuestro consentimiento por escrito.",
+        "subtitle-4": "4. Política de privacidad",
+        "text-40": "El uso de nuestro sitio web está sujeto a nuestra Política de privacidad, que describe cómo recopilamos, utilizamos y protegemos tu información personal. Por favor, lee nuestra Política de privacidad para entender cómo gestionamos tus datos.",
+        "subtitle-5": "5. Cambios en los términos",
+        "text-50": "{pageName} se reserva el derecho de modificar estos Términos y Condiciones en cualquier momento. Cualquier cambio será publicado en nuestro sitio web y entrará en vigencia inmediatamente después de su publicación. Recomendamos revisar estos términos periódicamente.",
+        "subtitle-6": "6. Terminación",
+        "text-60": "{pageName} se reserva el derecho de suspender o terminar tu acceso a nuestro sitio web en cualquier momento y por cualquier motivo, sin previo aviso.",
+        "subtitle-7": "7. Ley aplicable",
+        "text-71": "Estos Términos y Condiciones están regidos por las leyes de México y cualquier disputa que surja de estos términos estará sujeta a la jurisdicción exclusiva de los tribunales de México.",
+        "text-72": "Gracias por confiar en {pageName}. Tu privacidad es importante para nosotros y nos comprometemos a protegerla de manera responsable.",
+        "subtitle-8": "8. Contacto",
+        "text-81": "Si tienes alguna pregunta o inquietud acerca de estos Términos y Condiciones, por favor, contáctanos en {email}.",
+        "text-82": "Gracias por utilizar {pageName}. Estos términos y condiciones están diseñados para garantizarun uso adecuado y justo de nuestro sitio web."
+    },
+    "NotFoundPage": {
+        "text": "404 - Página no encontrada"
     }
 }

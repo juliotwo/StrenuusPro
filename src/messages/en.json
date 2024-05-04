@@ -80,5 +80,51 @@
         "rights-reserved": "All Rights Reserved",
         "link-privacy": "Privacy",
         "link-terms": "Terms"
+    },
+    "Policy": {
+        "title": "Privacy Policy",
+        "text-1": "At {pageName}, we take the protection of your privacy and the security of your personal data very seriously. This Privacy Policy aims to provide you with clear and transparent information about how we collect, use, share, and protect your personal data when you visit our website or use our services. Please read this policy carefully and review it periodically, as we may update it to reflect changes in our privacy practices.",
+        "subtitle-1": "1. Information We Collect",
+        "content-1": "<p>1.1. Personal Information: We collect personal information that you provide to us directly, such as your name, email address, phone number, and other information necessary to provide our services, such as enrolling in courses or subscribing to newsletters.</p> <p>1.2. Usage Information: We collect information about how you use ourwebsite, including browsing data, pages visited, time spent on oursite, and similar information.</p><p>1.3. Device Information: We may collect information about the deviceyou use to access our website, such as IP address, browser type,operating system, and device identification.</p>",
+        "subtitle-2": "2. Use of Information",
+        "content-2": "  <p>We use the information we collect for the following purposes:</p><p>2.1. Service Provision: We use your personal data to provide our  services, such as course enrollment, payment processing, and the  delivery of relevant content.</p><p>2.2. Communication: We may use your information to send you communications related to our services, such as enrollment  confirmations, updates, and newsletters.</p><p>2.3. Improvement of Our Services: We use the collected information to analyze and enhance our services, including personalizing your experience on our website.</p>",
+        "subtitle-3": "3. Sharing Information",
+        "content-3": "<p>We do not sell or rent your personal information to third parties. However, we may share your information in the following situations:</p><p>3.1. Service Providers: We work with third-party service providerswho assist us in providing our services, such as payment processors and web hosting services. These providers have limited access toyour information and use it only for agreed-upon purposes.</p><p>3.2. Legal Compliance: We may disclose your information if we are legally obligated to do so to comply with legal requirements, courtorders, or legal processes.</p>",
+        "subtitle-4": "4. Data Security",
+        "content-4": " <p>We take reasonable measures to protect your personal data and maintain its confidentiality. We use appropriate technical and organizational security measures to safeguard your information against loss, unauthorized use, or disclosure.</p>",
+        "subtitle-5": "5. Your Rights",
+        "content-5": " <p>You have rights regarding your personal data, including access, rectification, deletion, and objection to processing. You can exercise these rights by sending a written request to the address provided in the contact section.</p>",
+        "subtitle-6": "6. Changes to the Privacy Policy",
+        "content-6": "We reserve the right to modify this Privacy Policy at any time. Changes will become effective as soon as they are published on our website. We recommend checking this policy regularly to stay informed about any updates.",
+        "subtitle-7": "7. Contact",
+        "text-71": "If you have any questions or concerns about our Privacy Policy or how we handle your personal data, please contact us at {email}.",
+        "text-72": "Thank you for trusting {pageName}. Your privacy is important to us, and we are committed to protecting it responsibly."
+    },
+    "Terms": {
+        "title": "Terms and Conditions",
+        "text-1": "Please read these Terms and Conditions carefully before using the {pageName} website ('we', 'our', or {pageName}). By accessing or using our website, you agree to comply with these Terms and Conditions. If you do not agree with any of the terms below, please do not use our website.",
+        "subtitle-1": "1. Website Usage",
+        "text-11": "1.1. Access and Registration: To access certain features of our website, registration and providing personal information may be necessary. You are responsible for maintaining the confidentiality of your login information and all activities that occur in your account.",
+        "text-12": "1.2. User Content: By uploading, posting, or submitting content to our website, you warrant that you have the necessary rights to such content and grant {pageName} a non-exclusive license to use, modify, display, and distribute such content in connection with our services.",
+        "subtitle-2": "2. User Behavior",
+        "content-2": "<p>2.1. Proper Use: You agree to use our website properly and in compliance with all applicable laws and regulations. You must not use our website for illegal, fraudulent, or harmful activities.</p><p>2.2. Prohibitions: Using our website for any purpose that could damage, overload, or disrupt its operation is prohibited. The use of any device, software, or routine that interferes with or attempts to interfere with the proper functioning of the site is also prohibited.</p>",
+        "subtitle-3": "3. Content and Intellectual Property",
+        "text-31": "3.1. Property Rights: All intellectual property rights on our website and its content (including text, graphics, logos, images, and software) are owned by {pageName} or licensed third parties. You agree not to copy, reproduce, modify, distribute, or otherwise use such content without our consent.",
+        "text-32": " 3.2. Trademarks: All trademarks, trade names, and logos used on our website are the property of {pageName} or third parties. You are not granted any rights to use these marks without our written consent.",
+        "subtitle-4": "4. Privacy Policy",
+        "text-40": "The use of our website is subject to our Privacy Policy, which describes how we collect, use, and protect your personal information. Please read our Privacy Policy to understand how we handle your data.",
+        "subtitle-5": "5. Changes to the Terms",
+        "text-50": "{pageName} reserves the right to modify these Terms and Conditions at any time. Any changes will be posted on our website and will become effective immediately upon publication. We recommend reviewing these terms periodically.",
+        "subtitle-6": "6. Termination",
+        "text-60": "{pageName} reserves the right to suspend or terminate your access to our website at any time and for any reason, without prior notice.",
+        "subtitle-7": "7. Applicable Law",
+        "text-71": "These Terms and Conditions are governed by the laws of Mexico, and any dispute arising from these terms will be subject to the exclusive jurisdiction of the courts of Mexico.",
+        "text-72": "Thank you for trusting {pageName}. Your privacy is important to us, and we are committed to protecting it responsibly.",
+        "subtitle-8": "8. Contact",
+        "text-81": "If you have any questions or concerns about these Terms and Conditions, please contact us at {email}.",
+        "text-82": "Thank you for using {pageName}. These terms and conditions are designed to ensure proper and fair use of our website."
+    },
+    "NotFoundPage": {
+        "text": "404 - Page not found"
     }
 }

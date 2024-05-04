@@ -1,17 +1,21 @@
-"use client";
-import { useEffect } from "react";
-
 // Next
-import { useRouter } from "@/navigation";
+import Navbar from "@/components/molecules/Navbar";
+import Footer from "@/components/molecules/Footer";
+import { useTranslations } from "next-intl";
 
 const PageNotFound = () => {
-  const navigation = useRouter();
+  const t = useTranslations("NotFoundPage");
 
-  useEffect(() => {
-    navigation.replace("/", { locale: "en" });
-  }, []);
+  return (
+    <main className="min-h-screen flex flex-col">
+      <Navbar textBlack />
 
-  return null;
+      <div className="flex-1 flex flex-col items-center justify-center w-full">
+        <h1>{t("text")}</h1>
+      </div>
+      <Footer />
+    </main>
+  );
 };
 
 export default PageNotFound;
