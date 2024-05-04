@@ -7,8 +7,9 @@ import Button from "@/components/atoms/Button";
 import Input from "@/components/atoms/Input";
 import { CartContext } from "@/context/cart";
 import { FaTrash } from "react-icons/fa";
+import { useTranslations } from "next-intl";
 
-const LABEL_BUTTON = ["Pay Order", "Continue"];
+const LABEL_BUTTON = ["pay-order", "continue"];
 
 const RowText = ({ leftText, rightText }) => (
   <div className="w-full flex justify-between items-center mt-10">
@@ -19,6 +20,7 @@ const RowText = ({ leftText, rightText }) => (
 
 const CartSection = () => {
   const router = useRouter();
+  const t = useTranslations("Cart");
 
   const [step, setStep] = useState(0);
   const {
@@ -54,15 +56,13 @@ const CartSection = () => {
   useEffect(() => {
     if (valueCard) {
       if (valueCard.trim().length < 16) {
-        setValueCardError(
-          "El número de tarjeta debe contener al menos 16 dígitos"
-        );
+        setValueCardError(t("validation-min-card-number"));
         return;
       }
 
       // Validate zeros
       if (!/^(?!0+$)\d+$/.test(valueCard)) {
-        setValueCardError("El número de tarjeta no es válido");
+        setValueCardError(t("validation-card-number-no-valid"));
         return;
       }
 
@@ -71,7 +71,7 @@ const CartSection = () => {
 
     if (valueCardDate) {
       if (valueCardDate.trim().length < 4) {
-        setValueCardDateError("La fecha de expiración debe contener 4 dígitos");
+        setValueCardDateError(t("validation-min-date-card"));
         return;
       }
 
@@ -81,7 +81,7 @@ const CartSection = () => {
         +valueCardDate.substring(0, 2) < 1 ||
         +valueCardDate.slice(-2) > 28
       ) {
-        setValueCardDateError("Escribe una fecha válida");
+        setValueCardDateError(t("validation-date-card"));
         return;
       }
 
@@ -90,13 +90,13 @@ const CartSection = () => {
 
     if (valueCardCvv) {
       if (valueCardCvv.trim().length < 3) {
-        setValueCardCvvError("El CVV debe contener al menos 3 dígitos");
+        setValueCardCvvError(t("validation-min-cvv-card"));
         return;
       }
 
       // Validate zeros
       if (!/^(?!0+$)\d+$/.test(valueCardCvv)) {
-        setValueCardCvvError("El CVV no es válido");
+        setValueCardCvvError(t("validation-cvv-card"));
         return;
       }
 
@@ -105,13 +105,12 @@ const CartSection = () => {
 
     setNameCardError(
       nameCard && nameCard.trim().length < 10
-        ? "El nombre debe contener al menos 10 dígitos"
+        ? t("validation-min-card-name")
         : ""
     );
   }, [valueCard, valueCardDate, valueCardCvv, nameCard]);
 
   const handlePay = () => {
-    console.log("Paid");
     cleanCartItems();
     setStep(1);
   };
@@ -131,16 +130,15 @@ const CartSection = () => {
       <div>
         <div className="flex flex-col gap-5">
           <h1 className="text-xl font-bold">
-            {step === 0 && "Your products"}
-            {step === 1 &&
-              "Purchase successful, we will be shipping your product soon."}
+            {step === 0 && t("your-products")}
+            {step === 1 && t("purchased-success")}
           </h1>
 
           {/* Product List */}
           {step === 0 && (
             <>
               {products.length === 0 ? (
-                <p>There are not products in the cart.</p>
+                <p>{t("no-items-cart")}</p>
               ) : (
                 <>
                   {products.map((item) => (
@@ -200,7 +198,7 @@ const CartSection = () => {
             {(products.length > 0 || step === 1) && (
               <div>
                 <Button
-                  label={LABEL_BUTTON[step]}
+                  label={t(LABEL_BUTTON[step])}
                   onClick={validateActionButton}
                   disabled={isDisabledButton}
                 />
@@ -213,7 +211,7 @@ const CartSection = () => {
       {/* Pay Form */}
       {step === 0 && products.length > 0 && (
         <div className="flex flex-col gap-3">
-          <h1 className="text-xl font-bold">Fill the form</h1>
+          <h1 className="text-xl font-bold">{t("fill-form")}</h1>
 
           <Image
             alt="Visa mastercard"
@@ -233,7 +231,7 @@ const CartSection = () => {
               }
             }}
             type="text"
-            placeholder="Card number"
+            placeholder={t("card-number")}
             error={valueCardError}
             maxLength={16}
           />
@@ -249,7 +247,7 @@ const CartSection = () => {
               }
             }}
             type="text"
-            placeholder="Name of owner"
+            placeholder={t("card-owner")}
             error={nameCardError}
           />
 
@@ -274,7 +272,7 @@ const CartSection = () => {
               )
             }
             type="text"
-            placeholder="Expiration date (MM/YY)"
+            placeholder={t("card-date")}
             error={valueCardDateError}
             required
             maxLength={4}
@@ -291,7 +289,7 @@ const CartSection = () => {
               }
             }}
             type="text"
-            placeholder="Security code"
+            placeholder={t("card-cvv")}
             error={valueCardCvvError}
             required
             maxLength={3}

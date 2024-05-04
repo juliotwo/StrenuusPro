@@ -1,43 +1,41 @@
+import { useTranslations } from "next-intl";
+
 export const referencesData = [
   {
     name: "Carlos Rodríguez",
     company: "Luminova Corporation",
-    description:
-      "I recently organized a corporate event with StrenuusPro, and I was highly impressed with their professionalism and attention to detail. They took care of everything, from venue selection to logistics, and ensured a seamless and successful event. I highly recommend their services.",
+    description: "description-1",
   },
   {
     name: "Sofía López",
     company: "Aurora Enterprises",
-    description:
-      "StrenuusPro organized our company's product launch event, and it was a huge success. Their creative ideas, efficient planning, and flawless execution exceeded our expectations. Our brand received great visibility, and the event generated substantial buzz and positive feedback.",
+    description: "description-2",
   },
   {
     name: "Diego Hernández",
     company: "Serenity Solutions",
-    description:
-      "I attended a corporate retreat organized by StrenuusPro, and it was an incredible experience. The team-building activities, strategic discussions, and serene location created the perfect environment for personal and professional growth. It was a rejuvenating and inspiring retreat.",
+    description: "description-3",
   },
   {
     name: "Valentina Gómez",
     company: "Elevate Innovations",
-    description:
-      "StrenuusPro organized an award ceremony for our organization, and it was a memorable evening. The event was flawlessly executed, with elegant decorations, seamless transitions, and a captivating atmosphere. It truly celebrated the achievements of individuals and created a sense of pride.",
+    description: "description-4",
   },
   {
     name: "Gabriel Silva",
     company: "Pixel Perfect Technologies",
-    description:
-      "I recently attended a photography workshop organized by StrenuusPro, and it was a transformative experience. The instructor's expertise, hands-on practice, and valuable insights helped me refine my skills and broaden my creative horizons. It was a highly enriching and enjoyable workshop.",
+    description: "description-5",
   },
   {
     name: "Isabella Morales",
     company: "Vitality Inc.",
-    description:
-      "StrenuusPro organized a series of corporate training sessions for our team, and it was a game-changer. The sessions were engaging, informative, and tailored to our specific needs. Our team members gained valuable knowledge and skills that have positively impacted our work.",
+    description: "description-6",
   },
 ];
 
 const References = () => {
+  const t = useTranslations("References");
+
   return (
     <section className="w-full relative min-h-screen flex flex-col py-28">
       <video
@@ -68,7 +66,7 @@ const References = () => {
               </h3>
 
               <p className="font-light text-left lg:text-justify text-xs">
-                {item.description}
+                {t(item.description)}
               </p>
             </div>
           ))}

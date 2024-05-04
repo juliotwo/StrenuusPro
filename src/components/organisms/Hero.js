@@ -30,15 +30,11 @@ const Hero = () => {
             </h1>
 
             <div className="mt-5 text-sm">
-              <p>
-                From corporate gatherings to product launches, trust us to
-                deliver seamless experiences that inspire, engage, and drive
-                success.
-              </p>
+              <p>{t("description")}</p>
             </div>
 
             <Link className="mt-10" href="/#shop">
-              <Button label="Make event" />
+              <Button label={t("make-event")} />
             </Link>
           </div>
         </div>

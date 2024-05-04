@@ -1,7 +1,10 @@
 import { Link } from "@/navigation";
 import Button from "../atoms/Button";
+import { useTranslations } from "next-intl";
 
 const Video = () => {
+  const t = useTranslations("Video");
+
   return (
     <div className="relative w-full h-screen flex justify-center items-center">
       <video
@@ -14,15 +17,10 @@ const Video = () => {
       />
 
       <div className="flex flex-col gap-5 container mx-auto absolute items-center">
-        <h1 className="text-3xl text-white">
-          Unleash the power of unforgettable events and elevate your business
-          with StrenuusPro. Let us be your partner in crafting extraordinary
-          moments that define your brand&apos;s story. Together, let&apos;s
-          create events that leave a lasting impression!
-        </h1>
+        <h1 className="text-3xl text-white">{t("description")}</h1>
         <div className="w-full">
           <Link href="/contact">
-            <Button label="Send us a message" />
+            <Button label={t("send-us-message")} />
           </Link>
         </div>
       </div>

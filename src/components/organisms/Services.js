@@ -6,32 +6,29 @@ import { CartContext } from "@/context/cart";
 import { productsData } from "@/data";
 import { Link } from "@/navigation";
 import Image from "next/image";
+import { useTranslations } from "next-intl";
 
 const servicesData = [
   {
-    title: "Choose the date",
+    title: "card-1-title",
     image: "/images/step-1.jpg",
-    description:
-      "Discover the art of photography with our comprehensive courses. Whether you're a beginner or looking to enhance your skills, our experienced instructors will guide you through the technical aspects, composition techniques, and creative approaches to photography. Immerse yourself in a dynamic learning environment and unlock your full potential as a photographer. Join our courses and embark on a journey of visual storytelling.",
-    button: "Step 1",
+    button: "card-1-btn",
   },
   {
-    title: "Personalize your event",
+    title: "card-2-title",
     image: "/images/step-2.jpg",
-    description:
-      "Immerse yourself in the vibrant world of photography through our exciting events and contests. Join us for captivating photography expeditions, workshops, and exhibitions that showcase the beauty of different genres, from landscapes to portraits. Engage with fellow photography enthusiasts, learn from industry experts, and participate in our prestigious photography contests to showcase your talent and win exciting prizes. Ignite your creative passion and be part of our inspiring community.",
-    button: "Step 2",
+    button: "card-2-btn",
   },
   {
-    title: "Enjoy your event",
+    title: "card-3-title",
     image: "/images/step-3.jpg",
-    description:
-      "Immerse yourself in the vibrant world of photography through our exciting events and contests. Join us for captivating photography expeditions, workshops, and exhibitions that showcase the beauty of different genres, from landscapes to portraits. Engage with fellow photography enthusiasts, learn from industry experts, and participate in our prestigious photography contests to showcase your talent and win exciting prizes. Ignite your creative passion and be part of our inspiring community.",
-    button: "Step 3",
+    button: "card-3-btn",
   },
 ];
 
 const Services = () => {
+  const t = useTranslations("Services");
+
   const { handleAddOrRemoveProduct, validateProductInCart } =
     useContext(CartContext);
   return (
@@ -47,12 +44,12 @@ const Services = () => {
               >
                 <div className="flex flex-col bg-black text-white bg-opacity-40 h-full w-full p-10">
                   <h1 className="text-xl sm:text-2xl lg:text-3xl font-medium">
-                    {item.title}
+                    {t(item.title)}
                   </h1>
 
                   <div className="flex-1 mt-10 flex items-end">
                     <Link href="/#shop">
-                      <Button label={item.button} />
+                      <Button label={t(item.button)} />
                     </Link>
                   </div>
                 </div>
@@ -68,7 +65,7 @@ const Services = () => {
         className="flex flex-col container mx-auto px-4 min-h-screen justify-center py-28"
       >
         <h1 className="text-xl sm:text-2xl lg:text-3xl xl:text-4xl font-medium uppercase">
-          What kind of event are you looking for?
+          {t("title-cart")}
         </h1>
 
         <div className="w-full grid grid-cols-4 gap-5 mt-20">
@@ -98,7 +95,7 @@ const Services = () => {
 
                   <Button
                     className="mt-2"
-                    label={isAdded ? "Remove" : "Buy"}
+                    label={isAdded ? t("remove") : t("buy")}
                     onClick={() => handleAddOrRemoveProduct(item.id)}
                   />
                 </div>

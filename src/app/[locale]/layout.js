@@ -1,3 +1,4 @@
+import { NextIntlClientProvider, useMessages } from "next-intl";
 import { fontMontserrat } from "@/fonts";
 import CartProvider from "@/context/cart";
 import { pageName } from "@/data";
@@ -9,10 +10,14 @@ export const metadata = {
 };
 
 export default function RootLayout({ children, params: { locale } }) {
+  const messages = useMessages();
+
   return (
     <html lang={locale} className="scroll-smooth">
       <body className={`${fontMontserrat.variable} font-montserrat`}>
-        <CartProvider>{children}</CartProvider>
+        <NextIntlClientProvider messages={messages}>
+          <CartProvider>{children}</CartProvider>
+        </NextIntlClientProvider>
       </body>
     </html>
   );

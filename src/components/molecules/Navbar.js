@@ -1,5 +1,5 @@
 "use client";
-import { useLocale } from "next-intl";
+import { useLocale, useTranslations } from "next-intl";
 import { twJoin } from "tailwind-merge";
 import { FaCartArrowDown, FaPhone } from "react-icons/fa";
 import { Link, usePathname, useRouter } from "@/navigation";
@@ -7,6 +7,7 @@ import Button from "../atoms/Button";
 import { navbarOptions, pageName } from "@/data";
 
 const Navbar = ({ textBlack = true }) => {
+  const t = useTranslations("Navbar");
   const router = useRouter();
   const pathname = usePathname();
   const locale = useLocale();
@@ -45,7 +46,7 @@ const Navbar = ({ textBlack = true }) => {
                 className="uppercase hover:text-primary"
                 key={item.href}
               >
-                {item.name}
+                {t(item.name)}
               </Link>
             ))}
           </div>
@@ -53,7 +54,7 @@ const Navbar = ({ textBlack = true }) => {
             <Link href="/my-cart">
               <Button
                 className="py-3"
-                label="Cart"
+                label={t("cart")}
                 variant="primary"
                 withShadow={false}
                 icon={<FaCartArrowDown />}
@@ -62,7 +63,7 @@ const Navbar = ({ textBlack = true }) => {
             <Link href="/contact">
               <Button
                 className="py-3"
-                label="Contact"
+                label={t("contact")}
                 variant="primary"
                 withShadow={false}
                 icon={<FaPhone />}

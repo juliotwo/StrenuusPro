@@ -7,19 +7,19 @@ export const phoneNumber = "+5620362040";
 export const navbarOptions = [
   {
     href: "/",
-    name: "Home",
+    name: "home",
   },
   {
     href: "/#know",
-    name: "Know",
+    name: "know",
   },
   {
     href: "/#shop",
-    name: "Events",
+    name: "events",
   },
   {
     href: "/#more",
-    name: "More",
+    name: "more",
   },
 ];
 
@@ -61,10 +61,10 @@ export const productsData = [
 export const footerOptions = [
   {
     href: "/privacy",
-    name: "Privacy",
+    name: "link-privacy",
   },
   {
     href: "/terms",
-    name: "Terms",
+    name: "link-terms",
   },
 ];
