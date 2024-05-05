@@ -25,7 +25,7 @@ const Button = ({
   return (
     <button
       className={twMerge(
-        "px-5 py-2.5 text-xs flex items-center gap-2 transition-colors",
+        "px-5 py-2.5 text-xs flex items-center gap-2 transition-colors disabled:cursor-not-allowed disabled:bg-gray-400",
         withShadow ? "shadow-md shadow-indigo-800" : "",
         BUTTON_VARIANTS[variant],
         className

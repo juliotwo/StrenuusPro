@@ -65,7 +65,14 @@
         "card-number": "Card number",
         "card-owner": "Name of owner",
         "card-date": "Expiration date (MM/YY)",
-        "card-cvv": "Security code"
+        "card-cvv": "Security code",
+        "street": "Street",
+        "street-number": "Street number",
+        "postal-code": "Postal code",
+        "population": "Population",
+        "city": "City",
+        "country": "Country",
+        "address": "Address"
     },
     "Contacts": {
         "name-required": "The full name is required",

@@ -8,11 +8,13 @@ import {
   cleanCart,
 } from "@/utils/cart";
 import { productsDataEN } from "@/data";
+import { useLocale } from "next-intl";
 
 export const CartContext = createContext();
 
 const CartProvider = ({ children }) => {
   const [products, setProducts] = useState([]);
+  const locale = useLocale();
 
   const getProductsCart = () => {
     const productsStorage = getProducts();
@@ -36,7 +38,7 @@ const CartProvider = ({ children }) => {
   };
 
   const handleAddOrRemoveProduct = (id) => {
-    addNewProduct(id);
+    addNewProduct(id, locale);
     getProductsCart();
   };
 

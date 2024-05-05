@@ -65,7 +65,14 @@
         "card-number": "Número de tarjeta",
         "card-owner": "Nombre del titular",
         "card-date": "Fecha de vencimiento (MM/AA)",
-        "card-cvv": "Código de seguridad"
+        "card-cvv": "Código de seguridad",
+        "street": "Calle",
+        "street-number": "Número de la calle",
+        "postal-code": "Código postal",
+        "population": "Colonia",
+        "city": "Ciudad",
+        "country": "País",
+        "address": "Dirección"
     },
     "Contacts": {
         "name-required": "Se requiere el nombre completo",
