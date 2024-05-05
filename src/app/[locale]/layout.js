@@ -15,7 +15,12 @@ export default function RootLayout({ children, params: { locale } }) {
   return (
     <html lang={locale} className="scroll-smooth">
       <body className={`${fontMontserrat.variable} font-montserrat`}>
-        <NextIntlClientProvider messages={messages}>
+        <NextIntlClientProvider
+          messages={messages}
+          timeZone="America/Mexico_City"
+          now={new Date()}
+          locale={locale}
+        >
           <CartProvider>{children}</CartProvider>
         </NextIntlClientProvider>
       </body>
