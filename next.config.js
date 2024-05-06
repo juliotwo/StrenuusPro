@@ -1,9 +1,4 @@
-import createNextIntlPlugin from 'next-intl/plugin';
-
-const withNextIntl = createNextIntlPlugin();
-
-/** @type {import('next').NextConfig} */
-const nextConfig = {
+module.exports = {
   async rewrites() {
     return [
       {
@@ -13,5 +8,3 @@ const nextConfig = {
     ];
   },
 };
-
-export default withNextIntl(nextConfig);
