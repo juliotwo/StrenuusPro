@@ -1,3 +1,4 @@
+'use client'
 import Footer from "@/components/molecules/Footer";
 import Hero from "@/components/organisms/Hero";
 import About from "@/components/organisms/About";
