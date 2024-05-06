@@ -5,6 +5,7 @@ export const address =
 export const phoneNumber = '+5620362040';
 
 export const optionsStates = [
+  { value: '', label: 'Selecciona una opción', disabled: true },
   { value: 'AG', label: 'Aguascalientes' },
   { value: 'BN', label: 'Baja California Norte' },
   { value: 'BS', label: 'Baja California Sur' },

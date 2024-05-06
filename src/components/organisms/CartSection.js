@@ -496,8 +496,9 @@ const CartSection = () => {
             />
             <Select
               options={optionsStates}
-              value={selectedOption ? selectedOption.value : ''}
+              value={selectedOption.value}
               onChange={handleSelectChange}
+              placeholder={t('state')}
             />
             <h1 className='text-xl font-bold'>{t('user-data')}</h1>
             <Input
