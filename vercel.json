@@ -1,8 +1,3 @@
 {
-  "rewrites": [
-    {
-      "source": "/api/:path*",
-      "destination": "https://backend.bstable.bitrus.com/:path*"
-    }
-  ]
+  "routes": [{ "src": "/api/proxy", "dest": "src/api/proxy.js" }]
 }
