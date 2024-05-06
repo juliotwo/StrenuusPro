@@ -1,137 +1,143 @@
 {
-    "Navbar": {
-        "contact": "Contacto",
-        "home": "Inicio",
-        "know": "Conocer",
-        "events": "Eventos",
-        "more": "Más",
-        "cart": "Carrito"
-    },
-    "Hero": {
-        "title": "Eventos exclusivos",
-        "title-2": "Recuerdos invaluables",
-        "description": "Desde reuniones corporativas hasta lanzamientos de productos, confía en nosotros para ofrecer experiencias perfectas que inspiren, involucren y generen éxito.",
-        "make-event": "Crear evento"
-    },
-    "About": {
-        "title": "SOBRE NOSOTROS",
-        "description": "En StrenuusPro, estamos apasionados por transformar tus eventos corporativos en experiencias extraordinarias. Con nuestro compromiso inquebrantable con la excelencia, atención al detalle y visión creativa, nos enorgullece ofrecer servicios de preparación de eventos sin problemas e impactantes. Desde lanzamientos de productos hasta retiros corporativos, nuestro equipo dedicado trabaja estrechamente contigo para comprender tus objetivos y dar vida a tu visión. Con un enfoque en la innovación, profesionalismo y satisfacción del cliente, nos esforzamos por superar las expectativas en cada paso. Confía en StrenuusPro para elevar tus eventos, dejando una impresión duradera en tus asistentes y desbloqueando todo el potencial de tu negocio."
-    },
-    "Services": {
-        "card-1-title": "Elige la fecha",
-        "card-1-btn": "Paso 1",
-        "card-2-title": "Personaliza tu evento",
-        "card-2-btn": "Paso 2",
-        "card-3-title": "Disfruta tu evento",
-        "card-3-btn": "Paso 3",
-        "title-cart": "¿Qué tipo de evento estás buscando?",
-        "remove": "Eliminar",
-        "buy": "Comprar"
-    },
-    "Video": {
-        "description": "Libera el poder de eventos inolvidables y eleva tu negocio con StrenuusPro. Permítenos ser tu socio en la creación de momentos extraordinarios que definan la historia de tu marca. ¡Juntos creemos eventos que dejen una impresión duradera!",
-        "send-us-message": "Envíanos un mensaje"
-    },
-    "Missions": {
-        "mission-title": "Misión",
-        "mission-description": "Nuestra misión en StrenuusPro es proporcionar servicios excepcionales de preparación de eventos para empresas, ofreciendo experiencias sin problemas y memorables que superen las expectativas de nuestros clientes. Nos esforzamos por ser un socio confiable en la creación de eventos corporativos exitosos que inspiren, involucren y dejen un impacto duradero en los asistentes.",
-        "vision-title": "Visión",
-        "vision-description": "Nuestra visión es ser el principal proveedor de servicios de preparación de eventos para empresas, reconocido por nuestra creatividad, atención al detalle y compromiso con la excelencia. Nos esforzamos por elevar los estándares de los eventos corporativos, estableciendo nuevos referentes en innovación, profesionalismo y satisfacción del cliente.",
-        "values-title": "Valores",
-        "values-description": "Centrados en el cliente: Priorizamos las necesidades y objetivos de nuestros clientes, adaptando nuestros servicios para ofrecer soluciones personalizadas que se alineen con su visión y metas. Integridad: Realizamos nuestro negocio con honestidad, transparencia y prácticas éticas, construyendo confianza y relaciones duraderas con nuestros clientes y socios. Creatividad: Fomentamos una cultura de innovación y pensamiento fuera de lo común, buscando constantemente ideas frescas y enfoques únicos para crear eventos impactantes y memorables. Colaboración: Creemos en el poder de la colaboración y el trabajo en equipo, trabajando en estrecha colaboración con nuestros clientes y proveedores para garantizar una coordinación perfecta y una ejecución impecable. Excelencia: Nos comprometemos a ofrecer servicios de alta calidad, prestando atención a cada detalle y mejorando continuamente para superar las expectativas."
-    },
-    "References": {
-        "description-1": "Recientemente organicé un evento corporativo con StrenuusPro y quedé muy impresionado por su profesionalismo y atención al detalle. Se encargaron de todo, desde la selección del lugar hasta la logística, y aseguraron un evento sin problemas y exitoso. Recomiendo encarecidamente sus servicios.",
-        "description-2": "StrenuusPro organizó el evento de lanzamiento de productos de nuestra empresa, y fue un gran éxito. Sus ideas creativas, planificación eficiente y ejecución impecable superaron nuestras expectativas. Nuestra marca recibió una gran visibilidad, y el evento generó un zumbido sustancial y comentarios positivos.",
-        "description-3": "Asistí a un retiro corporativo organizado por StrenuusPro, y fue una experiencia increíble. Las actividades de formación de equipos, las discusiones estratégicas y la ubicación serena crearon el entorno perfecto para el crecimiento personal y profesional. Fue un retiro rejuvenecedor e inspirador.",
-        "description-4": "StrenuusPro organizó una ceremonia de premios para nuestra organización, y fue una velada memorable. El evento se ejecutó sin problemas, con decoraciones elegantes, transiciones perfectas y una atmósfera cautivadora. Realmente celebró los logros de las personas y creó un sentido de orgullo.",
-        "description-5": "Recientemente asistí a un taller de fotografía organizado por StrenuusPro, y fue una experiencia transformadora. La experiencia del instructor, la práctica práctica y las ideas valiosas me ayudaron a perfeccionar mis habilidades y ampliar mis horizontes creativos. Fue un taller muy enriquecedor y agradable.",
-        "description-6": "StrenuusPro organizó una serie de sesiones de capacitación corporativa para nuestro equipo, y fue un cambio de juego. Las sesiones fueron atractivas, informativas y adaptadas a nuestras necesidades específicas. Los miembros de nuestro equipo adquirieron conocimientos y habilidades valiosas que han tenido un impacto positivo en nuestro trabajo."
-    },
-    "Cart": {
-        "validation-min-card-number": "El número de tarjeta debe contener al menos 16 dígitos",
-        "validation-card-number-no-valid": "El número de tarjeta no es válido",
-        "validation-min-date-card": "La fecha de vencimiento debe contener al menos 4 dígitos",
-        "validation-date-card": "Escribe una fecha válida",
-        "validation-min-cvv-card": "El CVV debe contener al menos 3 dígitos",
-        "validation-cvv-card": "El CVV no es válido",
-        "validation-min-card-name": "El nombre debe contener al menos 10 dígitos",
-        "purchased-success": "Compra exitosa, pronto enviaremos tu producto.",
-        "your-products": "Tus productos",
-        "no-items-cart": "No hay productos en el carrito.",
-        "pay-order": "Pagar pedido",
-        "continue": "Continuar",
-        "fill-form": "Completa el formulario",
-        "card-number": "Número de tarjeta",
-        "card-owner": "Nombre del titular",
-        "card-date": "Fecha de vencimiento (MM/AA)",
-        "card-cvv": "Código de seguridad",
-        "street": "Calle",
-        "street-number": "Número de la calle",
-        "postal-code": "Código postal",
-        "population": "Colonia",
-        "city": "Ciudad",
-        "country": "País",
-        "address": "Dirección"
-    },
-    "Contacts": {
-        "name-required": "Se requiere el nombre completo",
-        "message-title": "Contacto desde la web",
-        "message-content": "Hola, me gustaría obtener más información sobre sus servicios.",
-        "title": "Contáctenos",
-        "input-name": "Escribe tu nombre completo",
-        "input-message": "Escribe tu mensaje aquí...",
-        "btn-send": "Enviar un mensaje"
-    },
-    "Footer": {
-        "rights-reserved": "Todos los derechos reservados",
-        "link-privacy": "Privacidad",
-        "link-terms": "Términos"
-    },
-    "Policy": {
-        "title": "Política de Privacidad",
-        "text-1": "En {pageName}, nos tomamos muy en serio la protección de tu privacidad y la seguridad de tus datos personales. Esta Política de Privacidad tiene como objetivo proporcionarte información clara y transparente sobre cómo recopilamos, utilizamos, compartimos y protegemos tus datos personales cuando visitas nuestro sitio web o utilizas nuestros servicios. Lee atentamente esta política y revísala periódicamente, ya que podemos actualizarla para reflejar cambios en nuestras prácticas de privacidad.",
-        "subtitle-1": "1. Información que recopilamos",
-        "content-1": "<p>1.1. Información personal: Recopilamos información personal que nos proporcionas directamente, como tu nombre, dirección de correo electrónico, número de teléfono y otra información necesaria para proporcionar nuestros servicios, como la inscripción en cursos o la suscripción a boletines.</p> <p>1.2. Información de uso: Recopilamos información sobre cómo utilizas nuestro sitio web, incluidos datos de navegación, páginas visitadas, tiempo de permanencia en nuestro sitio y información similar.</p><p>1.3. Información del dispositivo: Podemos recopilar información sobre el dispositivo que utilizas para acceder a nuestro sitio web, como la dirección IP, el tipo de navegador, el sistema operativo y la identificación del dispositivo.</p>",
-        "subtitle-2": "2. Uso de la información",
-        "content-2": "<p>Utilizamos la información que recopilamos para los siguientes fines:</p><p>2.1. Prestación del servicio: Utilizamos tus datos personales para proporcionar nuestros servicios, como la inscripción en cursos, el procesamiento de pagos y la entrega de contenido relevante.</p><p>2.2. Comunicación: Podemos utilizar tu información para enviarte comunicaciones relacionadas con nuestros servicios, como confirmaciones de inscripción, actualizaciones y boletines informativos.</p><p>2.3. Mejora de nuestros servicios: Utilizamos la información recopilada para analizar y mejorar nuestros servicios, incluida la personalización de tu experiencia en nuestro sitio web.</p>",
-        "subtitle-3": "3. Compartir información",
-        "content-3": "<p>No vendemos ni alquilamos tu información personal a terceros. Sin embargo, podemos compartir tu información en las siguientes situaciones:</p><p>3.1. Proveedores de servicios: Trabajamos con proveedores de servicios de terceros que nos ayudan a proporcionar nuestros servicios, como procesadores de pagos y servicios de alojamiento web. Estos proveedores tienen acceso limitado a tu información y la utilizan solo para los fines acordados.</p><p>3.2. Cumplimiento legal: Podemos divulgar tu información si estamos legalmente obligados a hacerlo para cumplir con requisitos legales, órdenes judiciales o procesos legales.</p>",
-        "subtitle-4": "4. Seguridad de datos",
-        "content-4": "<p>Tomamos medidas razonables para proteger tus datos personales y mantener su confidencialidad. Utilizamos medidas de seguridad técnicas y organizativas adecuadas para proteger tu información contra pérdidas, uso no autorizado o divulgación.</p>",
-        "subtitle-5": "5. Tus derechos",
-        "content-5": "<p>Tienes derechos con respecto a tus datos personales, incluido el acceso, rectificación, supresión y oposición al procesamiento. Puedes ejercer estos derechos enviando una solicitud por escrito a la dirección proporcionada en la sección de contacto.</p>",
-        "subtitle-6": "6. Cambios en la Política de Privacidad",
-        "content-6": "Nos reservamos el derecho de modificar esta Política de Privacidad en cualquier momento. Los cambios entrarán en vigor tan pronto como se publiquen en nuestro sitio web. Recomendamos revisar esta política regularmente para estar informado sobre cualquier actualización.",
-        "subtitle-7": "7. Contacto",
-        "text-71": "Si tienes alguna pregunta o inquietud acerca de nuestra Política de Privacidad o cómo manejamos tus datos personales, contáctanos en {email}.",
-        "text-72": "Gracias por confiar en {pageName}. Tu privacidad es importante para nosotros y nos comprometemos a protegerlos responsablemente."
-    },
-    "Terms": {
-        "title": "Términos y condiciones",
-        "text-1": "Por favor, lee estos Términos y Condiciones cuidadosamente antes de utilizar el sitio web de {pageName} ('nosotros', 'nuestro' o {pageName}). Al acceder o utilizar nuestro sitio web, aceptas cumplir con estos Términos y Condiciones. Si no estás de acuerdo con alguno de los términos a continuación, por favor, no utilices nuestro sitio web.",
-        "subtitle-1": "1. Uso del sitio web",
-        "text-11": "1.1. Acceso y registro: Para acceder a ciertas funciones de nuestro sitio web, puede ser necesario registrarse y proporcionar información personal. Eres responsable de mantener la confidencialidad de tu información de inicio de sesión y de todas las actividades que ocurran en tu cuenta.",
-        "text-12": "1.2. Contenido del usuario: Al cargar, publicar o enviar contenido a nuestro sitio web, garantizas que tienes los derechos necesarios sobre dicho contenido y otorgas a {pageName} una licencia no exclusiva para utilizar, modificar, mostrar y distribuir dicho contenido en relación con nuestros servicios.",
-        "subtitle-2": "2. Comportamiento del usuario",
-        "content-2": "<p>2.1. Uso adecuado: Aceptas utilizar nuestro sitio web de manera adecuada y cumpliendo con todas las leyes y regulaciones aplicables. No debes utilizar nuestro sitio web para actividades ilegales, fraudulentas o perjudiciales.</p><p>2.2. Prohibiciones: Queda prohibido utilizar nuestro sitio web con cualquier propósito que pueda dañar, sobrecargar o interrumpir su funcionamiento. También se prohíbe el uso de cualquier dispositivo, software o rutina que interfiera o intente interferir con el correcto funcionamiento del sitio.</p>",
-        "subtitle-3": "3. Contenido y propiedad intelectual",
-        "text-31": "3.1. Derechos de propiedad: Todos los derechos de propiedad intelectual de nuestro sitio web y su contenido (incluyendo texto, gráficos, logotipos, imágenes y software) son propiedad de {pageName} o de terceros con licencia. Aceptas no copiar, reproducir, modificar, distribuir o utilizar dicho contenido sin nuestro consentimiento.",
-        "text-32": "3.2. Marcas comerciales: Todas las marcas comerciales, nombres comerciales y logotipos utilizados en nuestro sitio web son propiedad de {pageName} o de terceros. No se te otorgan derechos para utilizar estas marcas sin nuestro consentimiento por escrito.",
-        "subtitle-4": "4. Política de privacidad",
-        "text-40": "El uso de nuestro sitio web está sujeto a nuestra Política de privacidad, que describe cómo recopilamos, utilizamos y protegemos tu información personal. Por favor, lee nuestra Política de privacidad para entender cómo gestionamos tus datos.",
-        "subtitle-5": "5. Cambios en los términos",
-        "text-50": "{pageName} se reserva el derecho de modificar estos Términos y Condiciones en cualquier momento. Cualquier cambio será publicado en nuestro sitio web y entrará en vigencia inmediatamente después de su publicación. Recomendamos revisar estos términos periódicamente.",
-        "subtitle-6": "6. Terminación",
-        "text-60": "{pageName} se reserva el derecho de suspender o terminar tu acceso a nuestro sitio web en cualquier momento y por cualquier motivo, sin previo aviso.",
-        "subtitle-7": "7. Ley aplicable",
-        "text-71": "Estos Términos y Condiciones están regidos por las leyes de México y cualquier disputa que surja de estos términos estará sujeta a la jurisdicción exclusiva de los tribunales de México.",
-        "text-72": "Gracias por confiar en {pageName}. Tu privacidad es importante para nosotros y nos comprometemos a protegerla de manera responsable.",
-        "subtitle-8": "8. Contacto",
-        "text-81": "Si tienes alguna pregunta o inquietud acerca de estos Términos y Condiciones, por favor, contáctanos en {email}.",
-        "text-82": "Gracias por utilizar {pageName}. Estos términos y condiciones están diseñados para garantizarun uso adecuado y justo de nuestro sitio web."
-    },
-    "NotFoundPage": {
-        "text": "404 - Página no encontrada"
-    }
+  "Navbar": {
+    "contact": "Contacto",
+    "home": "Inicio",
+    "know": "Conocer",
+    "events": "Eventos",
+    "more": "Más",
+    "cart": "Carrito"
+  },
+  "Hero": {
+    "title": "Eventos exclusivos",
+    "title-2": "Recuerdos invaluables",
+    "description": "Desde reuniones corporativas hasta lanzamientos de productos, confía en nosotros para ofrecer experiencias perfectas que inspiren, involucren y generen éxito.",
+    "make-event": "Crear evento"
+  },
+  "About": {
+    "title": "SOBRE NOSOTROS",
+    "description": "En StrenuusPro, estamos apasionados por transformar tus eventos corporativos en experiencias extraordinarias. Con nuestro compromiso inquebrantable con la excelencia, atención al detalle y visión creativa, nos enorgullece ofrecer servicios de preparación de eventos sin problemas e impactantes. Desde lanzamientos de productos hasta retiros corporativos, nuestro equipo dedicado trabaja estrechamente contigo para comprender tus objetivos y dar vida a tu visión. Con un enfoque en la innovación, profesionalismo y satisfacción del cliente, nos esforzamos por superar las expectativas en cada paso. Confía en StrenuusPro para elevar tus eventos, dejando una impresión duradera en tus asistentes y desbloqueando todo el potencial de tu negocio."
+  },
+  "Services": {
+    "card-1-title": "Elige la fecha",
+    "card-1-btn": "Paso 1",
+    "card-2-title": "Personaliza tu evento",
+    "card-2-btn": "Paso 2",
+    "card-3-title": "Disfruta tu evento",
+    "card-3-btn": "Paso 3",
+    "title-cart": "¿Qué tipo de evento estás buscando?",
+    "remove": "Eliminar",
+    "buy": "Comprar"
+  },
+  "Video": {
+    "description": "Libera el poder de eventos inolvidables y eleva tu negocio con StrenuusPro. Permítenos ser tu socio en la creación de momentos extraordinarios que definan la historia de tu marca. ¡Juntos creemos eventos que dejen una impresión duradera!",
+    "send-us-message": "Envíanos un mensaje"
+  },
+  "Missions": {
+    "mission-title": "Misión",
+    "mission-description": "Nuestra misión en StrenuusPro es proporcionar servicios excepcionales de preparación de eventos para empresas, ofreciendo experiencias sin problemas y memorables que superen las expectativas de nuestros clientes. Nos esforzamos por ser un socio confiable en la creación de eventos corporativos exitosos que inspiren, involucren y dejen un impacto duradero en los asistentes.",
+    "vision-title": "Visión",
+    "vision-description": "Nuestra visión es ser el principal proveedor de servicios de preparación de eventos para empresas, reconocido por nuestra creatividad, atención al detalle y compromiso con la excelencia. Nos esforzamos por elevar los estándares de los eventos corporativos, estableciendo nuevos referentes en innovación, profesionalismo y satisfacción del cliente.",
+    "values-title": "Valores",
+    "values-description": "Centrados en el cliente: Priorizamos las necesidades y objetivos de nuestros clientes, adaptando nuestros servicios para ofrecer soluciones personalizadas que se alineen con su visión y metas. Integridad: Realizamos nuestro negocio con honestidad, transparencia y prácticas éticas, construyendo confianza y relaciones duraderas con nuestros clientes y socios. Creatividad: Fomentamos una cultura de innovación y pensamiento fuera de lo común, buscando constantemente ideas frescas y enfoques únicos para crear eventos impactantes y memorables. Colaboración: Creemos en el poder de la colaboración y el trabajo en equipo, trabajando en estrecha colaboración con nuestros clientes y proveedores para garantizar una coordinación perfecta y una ejecución impecable. Excelencia: Nos comprometemos a ofrecer servicios de alta calidad, prestando atención a cada detalle y mejorando continuamente para superar las expectativas."
+  },
+  "References": {
+    "description-1": "Recientemente organicé un evento corporativo con StrenuusPro y quedé muy impresionado por su profesionalismo y atención al detalle. Se encargaron de todo, desde la selección del lugar hasta la logística, y aseguraron un evento sin problemas y exitoso. Recomiendo encarecidamente sus servicios.",
+    "description-2": "StrenuusPro organizó el evento de lanzamiento de productos de nuestra empresa, y fue un gran éxito. Sus ideas creativas, planificación eficiente y ejecución impecable superaron nuestras expectativas. Nuestra marca recibió una gran visibilidad, y el evento generó un zumbido sustancial y comentarios positivos.",
+    "description-3": "Asistí a un retiro corporativo organizado por StrenuusPro, y fue una experiencia increíble. Las actividades de formación de equipos, las discusiones estratégicas y la ubicación serena crearon el entorno perfecto para el crecimiento personal y profesional. Fue un retiro rejuvenecedor e inspirador.",
+    "description-4": "StrenuusPro organizó una ceremonia de premios para nuestra organización, y fue una velada memorable. El evento se ejecutó sin problemas, con decoraciones elegantes, transiciones perfectas y una atmósfera cautivadora. Realmente celebró los logros de las personas y creó un sentido de orgullo.",
+    "description-5": "Recientemente asistí a un taller de fotografía organizado por StrenuusPro, y fue una experiencia transformadora. La experiencia del instructor, la práctica práctica y las ideas valiosas me ayudaron a perfeccionar mis habilidades y ampliar mis horizontes creativos. Fue un taller muy enriquecedor y agradable.",
+    "description-6": "StrenuusPro organizó una serie de sesiones de capacitación corporativa para nuestro equipo, y fue un cambio de juego. Las sesiones fueron atractivas, informativas y adaptadas a nuestras necesidades específicas. Los miembros de nuestro equipo adquirieron conocimientos y habilidades valiosas que han tenido un impacto positivo en nuestro trabajo."
+  },
+  "Cart": {
+    "validation-min-card-number": "El número de tarjeta debe contener al menos 16 dígitos",
+    "validation-card-number-no-valid": "El número de tarjeta no es válido",
+    "validation-min-date-card": "La fecha de vencimiento debe contener al menos 4 dígitos",
+    "validation-date-card": "Escribe una fecha válida",
+    "validation-min-cvv-card": "El CVV debe contener al menos 3 dígitos",
+    "validation-cvv-card": "El CVV no es válido",
+    "validation-min-card-name": "El nombre debe contener al menos 10 dígitos",
+    "purchased-success": "Compra exitosa. Su id de compra es: ",
+    "your-products": "Tus productos",
+    "no-items-cart": "No hay productos en el carrito.",
+    "pay-order": "Pagar pedido",
+    "continue": "Continuar",
+    "fill-form": "Completa el formulario",
+    "card-number": "Número de tarjeta",
+    "card-owner": "Nombre del titular",
+    "first-surname": "Primer apellido",
+    "second-surname": "Segundo apellido",
+    "card-date": "Fecha de vencimiento (MM/AA)",
+    "card-cvv": "Código de seguridad",
+    "street": "Calle",
+    "street-number": "Número de la calle",
+    "postal-code": "Código postal",
+    "population": "Colonia",
+    "city": "Ciudad",
+    "state": "Estado",
+    "country": "País",
+    "address": "Dirección",
+    "user-data": "Datos del usuario",
+    "telephone": "Teléfono",
+    "email": "Correo electrónico"
+  },
+  "Contacts": {
+    "name-required": "Se requiere el nombre completo",
+    "message-title": "Contacto desde la web",
+    "message-content": "Hola, me gustaría obtener más información sobre sus servicios.",
+    "title": "Contáctenos",
+    "input-name": "Escribe tu nombre completo",
+    "input-message": "Escribe tu mensaje aquí...",
+    "btn-send": "Enviar un mensaje"
+  },
+  "Footer": {
+    "rights-reserved": "Todos los derechos reservados",
+    "link-privacy": "Privacidad",
+    "link-terms": "Términos"
+  },
+  "Policy": {
+    "title": "Política de Privacidad",
+    "text-1": "En {pageName}, nos tomamos muy en serio la protección de tu privacidad y la seguridad de tus datos personales. Esta Política de Privacidad tiene como objetivo proporcionarte información clara y transparente sobre cómo recopilamos, utilizamos, compartimos y protegemos tus datos personales cuando visitas nuestro sitio web o utilizas nuestros servicios. Lee atentamente esta política y revísala periódicamente, ya que podemos actualizarla para reflejar cambios en nuestras prácticas de privacidad.",
+    "subtitle-1": "1. Información que recopilamos",
+    "content-1": "<p>1.1. Información personal: Recopilamos información personal que nos proporcionas directamente, como tu nombre, dirección de correo electrónico, número de teléfono y otra información necesaria para proporcionar nuestros servicios, como la inscripción en cursos o la suscripción a boletines.</p> <p>1.2. Información de uso: Recopilamos información sobre cómo utilizas nuestro sitio web, incluidos datos de navegación, páginas visitadas, tiempo de permanencia en nuestro sitio y información similar.</p><p>1.3. Información del dispositivo: Podemos recopilar información sobre el dispositivo que utilizas para acceder a nuestro sitio web, como la dirección IP, el tipo de navegador, el sistema operativo y la identificación del dispositivo.</p>",
+    "subtitle-2": "2. Uso de la información",
+    "content-2": "<p>Utilizamos la información que recopilamos para los siguientes fines:</p><p>2.1. Prestación del servicio: Utilizamos tus datos personales para proporcionar nuestros servicios, como la inscripción en cursos, el procesamiento de pagos y la entrega de contenido relevante.</p><p>2.2. Comunicación: Podemos utilizar tu información para enviarte comunicaciones relacionadas con nuestros servicios, como confirmaciones de inscripción, actualizaciones y boletines informativos.</p><p>2.3. Mejora de nuestros servicios: Utilizamos la información recopilada para analizar y mejorar nuestros servicios, incluida la personalización de tu experiencia en nuestro sitio web.</p>",
+    "subtitle-3": "3. Compartir información",
+    "content-3": "<p>No vendemos ni alquilamos tu información personal a terceros. Sin embargo, podemos compartir tu información en las siguientes situaciones:</p><p>3.1. Proveedores de servicios: Trabajamos con proveedores de servicios de terceros que nos ayudan a proporcionar nuestros servicios, como procesadores de pagos y servicios de alojamiento web. Estos proveedores tienen acceso limitado a tu información y la utilizan solo para los fines acordados.</p><p>3.2. Cumplimiento legal: Podemos divulgar tu información si estamos legalmente obligados a hacerlo para cumplir con requisitos legales, órdenes judiciales o procesos legales.</p>",
+    "subtitle-4": "4. Seguridad de datos",
+    "content-4": "<p>Tomamos medidas razonables para proteger tus datos personales y mantener su confidencialidad. Utilizamos medidas de seguridad técnicas y organizativas adecuadas para proteger tu información contra pérdidas, uso no autorizado o divulgación.</p>",
+    "subtitle-5": "5. Tus derechos",
+    "content-5": "<p>Tienes derechos con respecto a tus datos personales, incluido el acceso, rectificación, supresión y oposición al procesamiento. Puedes ejercer estos derechos enviando una solicitud por escrito a la dirección proporcionada en la sección de contacto.</p>",
+    "subtitle-6": "6. Cambios en la Política de Privacidad",
+    "content-6": "Nos reservamos el derecho de modificar esta Política de Privacidad en cualquier momento. Los cambios entrarán en vigor tan pronto como se publiquen en nuestro sitio web. Recomendamos revisar esta política regularmente para estar informado sobre cualquier actualización.",
+    "subtitle-7": "7. Contacto",
+    "text-71": "Si tienes alguna pregunta o inquietud acerca de nuestra Política de Privacidad o cómo manejamos tus datos personales, contáctanos en {email}.",
+    "text-72": "Gracias por confiar en {pageName}. Tu privacidad es importante para nosotros y nos comprometemos a protegerlos responsablemente."
+  },
+  "Terms": {
+    "title": "Términos y condiciones",
+    "text-1": "Por favor, lee estos Términos y Condiciones cuidadosamente antes de utilizar el sitio web de {pageName} ('nosotros', 'nuestro' o {pageName}). Al acceder o utilizar nuestro sitio web, aceptas cumplir con estos Términos y Condiciones. Si no estás de acuerdo con alguno de los términos a continuación, por favor, no utilices nuestro sitio web.",
+    "subtitle-1": "1. Uso del sitio web",
+    "text-11": "1.1. Acceso y registro: Para acceder a ciertas funciones de nuestro sitio web, puede ser necesario registrarse y proporcionar información personal. Eres responsable de mantener la confidencialidad de tu información de inicio de sesión y de todas las actividades que ocurran en tu cuenta.",
+    "text-12": "1.2. Contenido del usuario: Al cargar, publicar o enviar contenido a nuestro sitio web, garantizas que tienes los derechos necesarios sobre dicho contenido y otorgas a {pageName} una licencia no exclusiva para utilizar, modificar, mostrar y distribuir dicho contenido en relación con nuestros servicios.",
+    "subtitle-2": "2. Comportamiento del usuario",
+    "content-2": "<p>2.1. Uso adecuado: Aceptas utilizar nuestro sitio web de manera adecuada y cumpliendo con todas las leyes y regulaciones aplicables. No debes utilizar nuestro sitio web para actividades ilegales, fraudulentas o perjudiciales.</p><p>2.2. Prohibiciones: Queda prohibido utilizar nuestro sitio web con cualquier propósito que pueda dañar, sobrecargar o interrumpir su funcionamiento. También se prohíbe el uso de cualquier dispositivo, software o rutina que interfiera o intente interferir con el correcto funcionamiento del sitio.</p>",
+    "subtitle-3": "3. Contenido y propiedad intelectual",
+    "text-31": "3.1. Derechos de propiedad: Todos los derechos de propiedad intelectual de nuestro sitio web y su contenido (incluyendo texto, gráficos, logotipos, imágenes y software) son propiedad de {pageName} o de terceros con licencia. Aceptas no copiar, reproducir, modificar, distribuir o utilizar dicho contenido sin nuestro consentimiento.",
+    "text-32": "3.2. Marcas comerciales: Todas las marcas comerciales, nombres comerciales y logotipos utilizados en nuestro sitio web son propiedad de {pageName} o de terceros. No se te otorgan derechos para utilizar estas marcas sin nuestro consentimiento por escrito.",
+    "subtitle-4": "4. Política de privacidad",
+    "text-40": "El uso de nuestro sitio web está sujeto a nuestra Política de privacidad, que describe cómo recopilamos, utilizamos y protegemos tu información personal. Por favor, lee nuestra Política de privacidad para entender cómo gestionamos tus datos.",
+    "subtitle-5": "5. Cambios en los términos",
+    "text-50": "{pageName} se reserva el derecho de modificar estos Términos y Condiciones en cualquier momento. Cualquier cambio será publicado en nuestro sitio web y entrará en vigencia inmediatamente después de su publicación. Recomendamos revisar estos términos periódicamente.",
+    "subtitle-6": "6. Terminación",
+    "text-60": "{pageName} se reserva el derecho de suspender o terminar tu acceso a nuestro sitio web en cualquier momento y por cualquier motivo, sin previo aviso.",
+    "subtitle-7": "7. Ley aplicable",
+    "text-71": "Estos Términos y Condiciones están regidos por las leyes de México y cualquier disputa que surja de estos términos estará sujeta a la jurisdicción exclusiva de los tribunales de México.",
+    "text-72": "Gracias por confiar en {pageName}. Tu privacidad es importante para nosotros y nos comprometemos a protegerla de manera responsable.",
+    "subtitle-8": "8. Contacto",
+    "text-81": "Si tienes alguna pregunta o inquietud acerca de estos Términos y Condiciones, por favor, contáctanos en {email}.",
+    "text-82": "Gracias por utilizar {pageName}. Estos términos y condiciones están diseñados para garantizarun uso adecuado y justo de nuestro sitio web."
+  },
+  "NotFoundPage": {
+    "text": "404 - Página no encontrada"
+  }
 }

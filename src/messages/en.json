@@ -1,137 +1,143 @@
 {
-    "Navbar": {
-        "contact": "Contact",
-        "home": "Home",
-        "know": "Know",
-        "events": "Events",
-        "more": "More",
-        "cart": "Cart"
-    },
-    "Hero": {
-        "title": "Exclusive events",
-        "title-2": "Priceless memories",
-        "description": "From corporate gatherings to product launches, trust us to deliver seamless experiences that inspire, engage, and drive success.",
-        "make-event": "Make event"
-    },
-    "About": {
-        "title": "KNOW ABOUT US",
-        "description": "At StrenuusPro, we are passionate about transforming your corporate events into extraordinary experiences. With our unwavering commitment to excellence, attention to detail, and creative vision, we take pride in delivering seamless and impactful event preparation services. From product launches to corporate retreats, our dedicated team works closely with you to understand your objectives and bring your vision to life. With a focus on innovation, professionalism, and customer satisfaction, we strive to exceed expectations at every step. Trust StrenuusPro to elevate your events, leaving a lasting impression on your attendees and unlocking the full potential of your business."
-    },
-    "Services": {
-        "card-1-title": "Choose the date",
-        "card-1-btn": "Step 1",
-        "card-2-title": "Personalize your event",
-        "card-2-btn": "Step 2",
-        "card-3-title": "Enjoy your event",
-        "card-3-btn": "Step 3",
-        "title-cart": "What kind of event are you looking for?",
-        "remove": "Remove",
-        "buy": "Buy"
-    },
-    "Video": {
-        "description": "Unleash the power of unforgettable events and elevate your business with StrenuusPro. Let us be your partner in crafting extraordinary moments that define your brand's story. Together, let's create events that leave a lasting impression!",
-        "send-us-message": "Send us a message"
-    },
-    "Missions": {
-        "mission-title": "Mission",
-        "mission-description": "Our mission at StrenuusPro is to provide exceptional event preparation services to businesses, delivering seamless and memorable experiences that exceed our clients' expectations. We aim to be a reliable partner in creating successful corporate events that inspire, engage, and leave a lasting impact on attendees.",
-        "vision-title": "Vision",
-        "vision-description": "Our vision is to be the leading provider of event preparation services for businesses, recognized for our creativity, attention to detail, and commitment to excellence. We strive to elevate the standards of corporate events, setting new benchmarks in innovation, professionalism, and customer satisfaction.",
-        "values-title": "Values",
-        "values-description": "Customer-centricity: We prioritize our clients' needs and objectives, tailoring our services to deliver customized solutions that align with their vision and goals. Integrity: We conduct our business with honesty, transparency, and ethical practices, building trust and long-lasting relationships with our clients and partners. Creativity: We foster a culture of innovation and out-of-the-box thinking, constantly seeking fresh ideas and unique approaches to create impactful and memorable events. Collaboration: We believe in the power of collaboration and teamwork, working closely with our clients and vendors to ensure seamless coordination and flawless execution. Excellence: We are committed to delivering high-quality services, paying attention to every detail and continuously striving for perfection in all aspects of event preparation. Continuous Improvement: We embrace a growth mindset, constantly learning and evolving to stay at the forefront of industry trends, technologies, and best practices."
-    },
-    "References": {
-        "description-1": "I recently organized a corporate event with StrenuusPro, and I was highly impressed with their professionalism and attention to detail. They took care of everything, from venue selection to logistics, and ensured a seamless and successful event. I highly recommend their services.",
-        "description-2": "StrenuusPro organized our company's product launch event, and it was a huge success. Their creative ideas, efficient planning, and flawless execution exceeded our expectations. Our brand received great visibility, and the event generated substantial buzz and positive feedback.",
-        "description-3": "I attended a corporate retreat organized by StrenuusPro, and it was an incredible experience. The team-building activities, strategic discussions, and serene location created the perfect environment for personal and professional growth. It was a rejuvenating and inspiring retreat.",
-        "description-4": "StrenuusPro organized an award ceremony for our organization, and it was a memorable evening. The event was flawlessly executed, with elegant decorations, seamless transitions, and a captivating atmosphere. It truly celebrated the achievements of individuals and created a sense of pride.",
-        "description-5": "I recently attended a photography workshop organized by StrenuusPro, and it was a transformative experience. The instructor's expertise, hands-on practice, and valuable insights helped me refine my skills and broaden my creative horizons. It was a highly enriching and enjoyable workshop.",
-        "description-6": "StrenuusPro organized a series of corporate training sessions for our team, and it was a game-changer. The sessions were engaging, informative, and tailored to our specific needs. Our team members gained valuable knowledge and skills that have positively impacted our work."
-    },
-    "Cart": {
-        "validation-min-card-number": "The card number must contain at least 16 digits",
-        "validation-card-number-no-valid": "The card number is not valid",
-        "validation-min-date-card": "The expiration date must contain at least 4 digits",
-        "validation-date-card": "Write a vaid date",
-        "validation-min-cvv-card": "The CVV must contain at least 3 digits",
-        "validation-cvv-card": "The CVV is not valid",
-        "validation-min-card-name": "The name must contain at least 10 digits",
-        "purchased-success": "Purchase successful, we will be shipping your product soon.",
-        "your-products": "Your products",
-        "no-items-cart": "There are not products in the cart.",
-        "pay-order": "Pay Order",
-        "continue": "Continue",
-        "fill-form": "Fill the form",
-        "card-number": "Card number",
-        "card-owner": "Name of owner",
-        "card-date": "Expiration date (MM/YY)",
-        "card-cvv": "Security code",
-        "street": "Street",
-        "street-number": "Street number",
-        "postal-code": "Postal code",
-        "population": "Population",
-        "city": "City",
-        "country": "Country",
-        "address": "Address"
-    },
-    "Contacts": {
-        "name-required": "The full name is required",
-        "message-title": "Contact from web",
-        "message-content": "Hello, I would like to know more information about your services.",
-        "title": "Contact us",
-        "input-name": "Write your full name",
-        "input-message": "Write your message here...",
-        "btn-send": "Send us a message"
-    },
-    "Footer": {
-        "rights-reserved": "All Rights Reserved",
-        "link-privacy": "Privacy",
-        "link-terms": "Terms"
-    },
-    "Policy": {
-        "title": "Privacy Policy",
-        "text-1": "At {pageName}, we take the protection of your privacy and the security of your personal data very seriously. This Privacy Policy aims to provide you with clear and transparent information about how we collect, use, share, and protect your personal data when you visit our website or use our services. Please read this policy carefully and review it periodically, as we may update it to reflect changes in our privacy practices.",
-        "subtitle-1": "1. Information We Collect",
-        "content-1": "<p>1.1. Personal Information: We collect personal information that you provide to us directly, such as your name, email address, phone number, and other information necessary to provide our services, such as enrolling in courses or subscribing to newsletters.</p> <p>1.2. Usage Information: We collect information about how you use ourwebsite, including browsing data, pages visited, time spent on oursite, and similar information.</p><p>1.3. Device Information: We may collect information about the deviceyou use to access our website, such as IP address, browser type,operating system, and device identification.</p>",
-        "subtitle-2": "2. Use of Information",
-        "content-2": "  <p>We use the information we collect for the following purposes:</p><p>2.1. Service Provision: We use your personal data to provide our  services, such as course enrollment, payment processing, and the  delivery of relevant content.</p><p>2.2. Communication: We may use your information to send you communications related to our services, such as enrollment  confirmations, updates, and newsletters.</p><p>2.3. Improvement of Our Services: We use the collected information to analyze and enhance our services, including personalizing your experience on our website.</p>",
-        "subtitle-3": "3. Sharing Information",
-        "content-3": "<p>We do not sell or rent your personal information to third parties. However, we may share your information in the following situations:</p><p>3.1. Service Providers: We work with third-party service providerswho assist us in providing our services, such as payment processors and web hosting services. These providers have limited access toyour information and use it only for agreed-upon purposes.</p><p>3.2. Legal Compliance: We may disclose your information if we are legally obligated to do so to comply with legal requirements, courtorders, or legal processes.</p>",
-        "subtitle-4": "4. Data Security",
-        "content-4": " <p>We take reasonable measures to protect your personal data and maintain its confidentiality. We use appropriate technical and organizational security measures to safeguard your information against loss, unauthorized use, or disclosure.</p>",
-        "subtitle-5": "5. Your Rights",
-        "content-5": " <p>You have rights regarding your personal data, including access, rectification, deletion, and objection to processing. You can exercise these rights by sending a written request to the address provided in the contact section.</p>",
-        "subtitle-6": "6. Changes to the Privacy Policy",
-        "content-6": "We reserve the right to modify this Privacy Policy at any time. Changes will become effective as soon as they are published on our website. We recommend checking this policy regularly to stay informed about any updates.",
-        "subtitle-7": "7. Contact",
-        "text-71": "If you have any questions or concerns about our Privacy Policy or how we handle your personal data, please contact us at {email}.",
-        "text-72": "Thank you for trusting {pageName}. Your privacy is important to us, and we are committed to protecting it responsibly."
-    },
-    "Terms": {
-        "title": "Terms and Conditions",
-        "text-1": "Please read these Terms and Conditions carefully before using the {pageName} website ('we', 'our', or {pageName}). By accessing or using our website, you agree to comply with these Terms and Conditions. If you do not agree with any of the terms below, please do not use our website.",
-        "subtitle-1": "1. Website Usage",
-        "text-11": "1.1. Access and Registration: To access certain features of our website, registration and providing personal information may be necessary. You are responsible for maintaining the confidentiality of your login information and all activities that occur in your account.",
-        "text-12": "1.2. User Content: By uploading, posting, or submitting content to our website, you warrant that you have the necessary rights to such content and grant {pageName} a non-exclusive license to use, modify, display, and distribute such content in connection with our services.",
-        "subtitle-2": "2. User Behavior",
-        "content-2": "<p>2.1. Proper Use: You agree to use our website properly and in compliance with all applicable laws and regulations. You must not use our website for illegal, fraudulent, or harmful activities.</p><p>2.2. Prohibitions: Using our website for any purpose that could damage, overload, or disrupt its operation is prohibited. The use of any device, software, or routine that interferes with or attempts to interfere with the proper functioning of the site is also prohibited.</p>",
-        "subtitle-3": "3. Content and Intellectual Property",
-        "text-31": "3.1. Property Rights: All intellectual property rights on our website and its content (including text, graphics, logos, images, and software) are owned by {pageName} or licensed third parties. You agree not to copy, reproduce, modify, distribute, or otherwise use such content without our consent.",
-        "text-32": " 3.2. Trademarks: All trademarks, trade names, and logos used on our website are the property of {pageName} or third parties. You are not granted any rights to use these marks without our written consent.",
-        "subtitle-4": "4. Privacy Policy",
-        "text-40": "The use of our website is subject to our Privacy Policy, which describes how we collect, use, and protect your personal information. Please read our Privacy Policy to understand how we handle your data.",
-        "subtitle-5": "5. Changes to the Terms",
-        "text-50": "{pageName} reserves the right to modify these Terms and Conditions at any time. Any changes will be posted on our website and will become effective immediately upon publication. We recommend reviewing these terms periodically.",
-        "subtitle-6": "6. Termination",
-        "text-60": "{pageName} reserves the right to suspend or terminate your access to our website at any time and for any reason, without prior notice.",
-        "subtitle-7": "7. Applicable Law",
-        "text-71": "These Terms and Conditions are governed by the laws of Mexico, and any dispute arising from these terms will be subject to the exclusive jurisdiction of the courts of Mexico.",
-        "text-72": "Thank you for trusting {pageName}. Your privacy is important to us, and we are committed to protecting it responsibly.",
-        "subtitle-8": "8. Contact",
-        "text-81": "If you have any questions or concerns about these Terms and Conditions, please contact us at {email}.",
-        "text-82": "Thank you for using {pageName}. These terms and conditions are designed to ensure proper and fair use of our website."
-    },
-    "NotFoundPage": {
-        "text": "404 - Page not found"
-    }
+  "Navbar": {
+    "contact": "Contact",
+    "home": "Home",
+    "know": "Know",
+    "events": "Events",
+    "more": "More",
+    "cart": "Cart"
+  },
+  "Hero": {
+    "title": "Exclusive events",
+    "title-2": "Priceless memories",
+    "description": "From corporate gatherings to product launches, trust us to deliver seamless experiences that inspire, engage, and drive success.",
+    "make-event": "Make event"
+  },
+  "About": {
+    "title": "KNOW ABOUT US",
+    "description": "At StrenuusPro, we are passionate about transforming your corporate events into extraordinary experiences. With our unwavering commitment to excellence, attention to detail, and creative vision, we take pride in delivering seamless and impactful event preparation services. From product launches to corporate retreats, our dedicated team works closely with you to understand your objectives and bring your vision to life. With a focus on innovation, professionalism, and customer satisfaction, we strive to exceed expectations at every step. Trust StrenuusPro to elevate your events, leaving a lasting impression on your attendees and unlocking the full potential of your business."
+  },
+  "Services": {
+    "card-1-title": "Choose the date",
+    "card-1-btn": "Step 1",
+    "card-2-title": "Personalize your event",
+    "card-2-btn": "Step 2",
+    "card-3-title": "Enjoy your event",
+    "card-3-btn": "Step 3",
+    "title-cart": "What kind of event are you looking for?",
+    "remove": "Remove",
+    "buy": "Buy"
+  },
+  "Video": {
+    "description": "Unleash the power of unforgettable events and elevate your business with StrenuusPro. Let us be your partner in crafting extraordinary moments that define your brand's story. Together, let's create events that leave a lasting impression!",
+    "send-us-message": "Send us a message"
+  },
+  "Missions": {
+    "mission-title": "Mission",
+    "mission-description": "Our mission at StrenuusPro is to provide exceptional event preparation services to businesses, delivering seamless and memorable experiences that exceed our clients' expectations. We aim to be a reliable partner in creating successful corporate events that inspire, engage, and leave a lasting impact on attendees.",
+    "vision-title": "Vision",
+    "vision-description": "Our vision is to be the leading provider of event preparation services for businesses, recognized for our creativity, attention to detail, and commitment to excellence. We strive to elevate the standards of corporate events, setting new benchmarks in innovation, professionalism, and customer satisfaction.",
+    "values-title": "Values",
+    "values-description": "Customer-centricity: We prioritize our clients' needs and objectives, tailoring our services to deliver customized solutions that align with their vision and goals. Integrity: We conduct our business with honesty, transparency, and ethical practices, building trust and long-lasting relationships with our clients and partners. Creativity: We foster a culture of innovation and out-of-the-box thinking, constantly seeking fresh ideas and unique approaches to create impactful and memorable events. Collaboration: We believe in the power of collaboration and teamwork, working closely with our clients and vendors to ensure seamless coordination and flawless execution. Excellence: We are committed to delivering high-quality services, paying attention to every detail and continuously striving for perfection in all aspects of event preparation. Continuous Improvement: We embrace a growth mindset, constantly learning and evolving to stay at the forefront of industry trends, technologies, and best practices."
+  },
+  "References": {
+    "description-1": "I recently organized a corporate event with StrenuusPro, and I was highly impressed with their professionalism and attention to detail. They took care of everything, from venue selection to logistics, and ensured a seamless and successful event. I highly recommend their services.",
+    "description-2": "StrenuusPro organized our company's product launch event, and it was a huge success. Their creative ideas, efficient planning, and flawless execution exceeded our expectations. Our brand received great visibility, and the event generated substantial buzz and positive feedback.",
+    "description-3": "I attended a corporate retreat organized by StrenuusPro, and it was an incredible experience. The team-building activities, strategic discussions, and serene location created the perfect environment for personal and professional growth. It was a rejuvenating and inspiring retreat.",
+    "description-4": "StrenuusPro organized an award ceremony for our organization, and it was a memorable evening. The event was flawlessly executed, with elegant decorations, seamless transitions, and a captivating atmosphere. It truly celebrated the achievements of individuals and created a sense of pride.",
+    "description-5": "I recently attended a photography workshop organized by StrenuusPro, and it was a transformative experience. The instructor's expertise, hands-on practice, and valuable insights helped me refine my skills and broaden my creative horizons. It was a highly enriching and enjoyable workshop.",
+    "description-6": "StrenuusPro organized a series of corporate training sessions for our team, and it was a game-changer. The sessions were engaging, informative, and tailored to our specific needs. Our team members gained valuable knowledge and skills that have positively impacted our work."
+  },
+  "Cart": {
+    "validation-min-card-number": "The card number must contain at least 16 digits",
+    "validation-card-number-no-valid": "The card number is not valid",
+    "validation-min-date-card": "The expiration date must contain at least 4 digits",
+    "validation-date-card": "Write a vaid date",
+    "validation-min-cvv-card": "The CVV must contain at least 3 digits",
+    "validation-cvv-card": "The CVV is not valid",
+    "validation-min-card-name": "The name must contain at least 5 digits",
+    "purchased-success": "Purchase successful. Your order number is: ",
+    "your-products": "Your products",
+    "no-items-cart": "There are not products in the cart.",
+    "pay-order": "Pay Order",
+    "continue": "Continue",
+    "fill-form": "Fill the form",
+    "card-number": "Card number",
+    "card-owner": "Name of owner",
+    "first-surname": "First surname",
+    "second-surname": "Second surname",
+    "card-date": "Expiration date (MM/YY)",
+    "card-cvv": "Security code",
+    "street": "Street",
+    "street-number": "Street number",
+    "postal-code": "Postal code",
+    "population": "Population",
+    "city": "City",
+    "state": "State",
+    "country": "Country",
+    "address": "Address",
+    "user-data": "User data",
+    "telephone": "Telephone",
+    "email": "Email"
+  },
+  "Contacts": {
+    "name-required": "The full name is required",
+    "message-title": "Contact from web",
+    "message-content": "Hello, I would like to know more information about your services.",
+    "title": "Contact us",
+    "input-name": "Write your full name",
+    "input-message": "Write your message here...",
+    "btn-send": "Send us a message"
+  },
+  "Footer": {
+    "rights-reserved": "All Rights Reserved",
+    "link-privacy": "Privacy",
+    "link-terms": "Terms"
+  },
+  "Policy": {
+    "title": "Privacy Policy",
+    "text-1": "At {pageName}, we take the protection of your privacy and the security of your personal data very seriously. This Privacy Policy aims to provide you with clear and transparent information about how we collect, use, share, and protect your personal data when you visit our website or use our services. Please read this policy carefully and review it periodically, as we may update it to reflect changes in our privacy practices.",
+    "subtitle-1": "1. Information We Collect",
+    "content-1": "<p>1.1. Personal Information: We collect personal information that you provide to us directly, such as your name, email address, phone number, and other information necessary to provide our services, such as enrolling in courses or subscribing to newsletters.</p> <p>1.2. Usage Information: We collect information about how you use ourwebsite, including browsing data, pages visited, time spent on oursite, and similar information.</p><p>1.3. Device Information: We may collect information about the deviceyou use to access our website, such as IP address, browser type,operating system, and device identification.</p>",
+    "subtitle-2": "2. Use of Information",
+    "content-2": "  <p>We use the information we collect for the following purposes:</p><p>2.1. Service Provision: We use your personal data to provide our  services, such as course enrollment, payment processing, and the  delivery of relevant content.</p><p>2.2. Communication: We may use your information to send you communications related to our services, such as enrollment  confirmations, updates, and newsletters.</p><p>2.3. Improvement of Our Services: We use the collected information to analyze and enhance our services, including personalizing your experience on our website.</p>",
+    "subtitle-3": "3. Sharing Information",
+    "content-3": "<p>We do not sell or rent your personal information to third parties. However, we may share your information in the following situations:</p><p>3.1. Service Providers: We work with third-party service providerswho assist us in providing our services, such as payment processors and web hosting services. These providers have limited access toyour information and use it only for agreed-upon purposes.</p><p>3.2. Legal Compliance: We may disclose your information if we are legally obligated to do so to comply with legal requirements, courtorders, or legal processes.</p>",
+    "subtitle-4": "4. Data Security",
+    "content-4": " <p>We take reasonable measures to protect your personal data and maintain its confidentiality. We use appropriate technical and organizational security measures to safeguard your information against loss, unauthorized use, or disclosure.</p>",
+    "subtitle-5": "5. Your Rights",
+    "content-5": " <p>You have rights regarding your personal data, including access, rectification, deletion, and objection to processing. You can exercise these rights by sending a written request to the address provided in the contact section.</p>",
+    "subtitle-6": "6. Changes to the Privacy Policy",
+    "content-6": "We reserve the right to modify this Privacy Policy at any time. Changes will become effective as soon as they are published on our website. We recommend checking this policy regularly to stay informed about any updates.",
+    "subtitle-7": "7. Contact",
+    "text-71": "If you have any questions or concerns about our Privacy Policy or how we handle your personal data, please contact us at {email}.",
+    "text-72": "Thank you for trusting {pageName}. Your privacy is important to us, and we are committed to protecting it responsibly."
+  },
+  "Terms": {
+    "title": "Terms and Conditions",
+    "text-1": "Please read these Terms and Conditions carefully before using the {pageName} website ('we', 'our', or {pageName}). By accessing or using our website, you agree to comply with these Terms and Conditions. If you do not agree with any of the terms below, please do not use our website.",
+    "subtitle-1": "1. Website Usage",
+    "text-11": "1.1. Access and Registration: To access certain features of our website, registration and providing personal information may be necessary. You are responsible for maintaining the confidentiality of your login information and all activities that occur in your account.",
+    "text-12": "1.2. User Content: By uploading, posting, or submitting content to our website, you warrant that you have the necessary rights to such content and grant {pageName} a non-exclusive license to use, modify, display, and distribute such content in connection with our services.",
+    "subtitle-2": "2. User Behavior",
+    "content-2": "<p>2.1. Proper Use: You agree to use our website properly and in compliance with all applicable laws and regulations. You must not use our website for illegal, fraudulent, or harmful activities.</p><p>2.2. Prohibitions: Using our website for any purpose that could damage, overload, or disrupt its operation is prohibited. The use of any device, software, or routine that interferes with or attempts to interfere with the proper functioning of the site is also prohibited.</p>",
+    "subtitle-3": "3. Content and Intellectual Property",
+    "text-31": "3.1. Property Rights: All intellectual property rights on our website and its content (including text, graphics, logos, images, and software) are owned by {pageName} or licensed third parties. You agree not to copy, reproduce, modify, distribute, or otherwise use such content without our consent.",
+    "text-32": " 3.2. Trademarks: All trademarks, trade names, and logos used on our website are the property of {pageName} or third parties. You are not granted any rights to use these marks without our written consent.",
+    "subtitle-4": "4. Privacy Policy",
+    "text-40": "The use of our website is subject to our Privacy Policy, which describes how we collect, use, and protect your personal information. Please read our Privacy Policy to understand how we handle your data.",
+    "subtitle-5": "5. Changes to the Terms",
+    "text-50": "{pageName} reserves the right to modify these Terms and Conditions at any time. Any changes will be posted on our website and will become effective immediately upon publication. We recommend reviewing these terms periodically.",
+    "subtitle-6": "6. Termination",
+    "text-60": "{pageName} reserves the right to suspend or terminate your access to our website at any time and for any reason, without prior notice.",
+    "subtitle-7": "7. Applicable Law",
+    "text-71": "These Terms and Conditions are governed by the laws of Mexico, and any dispute arising from these terms will be subject to the exclusive jurisdiction of the courts of Mexico.",
+    "text-72": "Thank you for trusting {pageName}. Your privacy is important to us, and we are committed to protecting it responsibly.",
+    "subtitle-8": "8. Contact",
+    "text-81": "If you have any questions or concerns about these Terms and Conditions, please contact us at {email}.",
+    "text-82": "Thank you for using {pageName}. These terms and conditions are designed to ensure proper and fair use of our website."
+  },
+  "NotFoundPage": {
+    "text": "404 - Page not found"
+  }
 }
