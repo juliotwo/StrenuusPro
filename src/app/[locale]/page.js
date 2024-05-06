@@ -7,6 +7,8 @@ import References from "@/components/molecules/References";
 import Video from "@/components/organisms/Video";
 
 export default function Home() {
+  console.info("_hola")
+  console.info(process.env.API_KEY)
   console.log("hey")
   console.log(process.env.API_KEY)
   return (
