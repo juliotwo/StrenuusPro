@@ -1,3 +1,4 @@
+'use client';
 import axios from 'axios';
 import { TRANSACTION } from './urls';
 
@@ -7,7 +8,7 @@ export const ApiTransaction = {
       const response = await axios.post(TRANSACTION, data, {
         headers: {
           'Content-Type': 'application/json',
-          'MERCHANT-API-KEY': process.env.API_KEY,
+          'MERCHANT-API-KEY': `6N3EO55S1n7IYCZuAoNRphyTm6Pzn0OoKrcMn4FneRYaYBO0WeaV3Co2bzYXKSwx`,
         },
       });
       console.log(response);
