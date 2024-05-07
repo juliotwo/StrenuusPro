@@ -1,70 +1,76 @@
-"use client";
-import { useLocale, useTranslations } from "next-intl";
-import { twJoin } from "tailwind-merge";
-import { FaCartArrowDown, FaPhone } from "react-icons/fa";
-import { Link, usePathname, useRouter } from "@/navigation";
-import Button from "../atoms/Button";
-import { navbarOptions, pageName } from "@/data";
+'use client';
+import { useLocale, useTranslations } from 'next-intl';
+import { twJoin } from 'tailwind-merge';
+import { FaCartArrowDown, FaPhone } from 'react-icons/fa';
+import { Link, usePathname, useRouter } from '@/navigation';
+import Button from '../atoms/Button';
+import { navbarOptions, pageName } from '@/data';
 
 const Navbar = ({ textBlack = true }) => {
-  const t = useTranslations("Navbar");
+  const t = useTranslations('Navbar');
   const router = useRouter();
   const pathname = usePathname();
   const locale = useLocale();
 
+  console.log(locale);
   return (
-    <nav className="w-full py-4 text-sm">
+    <nav className='w-full py-4 text-sm'>
       <div
         className={twJoin(
-          "container px-4 mx-auto flex justify-between items-center h-full",
-          textBlack ? "text-black" : "text-white"
+          'container px-4 mx-auto flex justify-between items-center h-full',
+          textBlack ? 'text-black' : 'text-white'
         )}
       >
-        <div className="flex gap-10 items-center">
+        <div className='flex gap-10 items-center'>
           <Button
-            className="py-3"
-            label={locale.toUpperCase()}
+            className='py-3'
+            label={locale === 'en' ? 'ES' : 'EN'}
             onClick={() =>
               router.replace(pathname, {
-                locale: locale === "es" ? "en" : "es",
+                locale: locale === 'en' ? 'es' : 'en',
               })
             }
-            variant="primary"
+            variant='primary'
             withShadow={false}
+            image={
+              locale === 'en'
+                ? '/images/mexico.png'
+                : '/images/united-states.png'
+            }
           />
 
-          <Link href="/" className="text-xs sm:text-sm uppercase">
+          <Link href='/' className='text-xs sm:text-sm uppercase'>
             {pageName}
           </Link>
         </div>
 
-        <div className="flex items-center gap-10">
-          <div className="bg-white py-3 text-xs px-10 flex text-primary gap-10">
+        <div className='flex items-center gap-10'>
+          <div className='bg-white py-3 text-xs px-10 flex text-primary gap-10'>
             {navbarOptions.map((item) => (
               <Link
                 href={item.href}
-                className="uppercase hover:text-primary"
+                className='uppercase hover:text-primary'
                 key={item.href}
               >
                 {t(item.name)}
               </Link>
             ))}
           </div>
-          <div className="flex gap-3 items-center">
-            <Link href="/my-cart">
+          <div className='flex gap-3 items-center'>
+            <Link href='/my-cart'>
               <Button
-                className="py-3"
-                label={t("cart")}
-                variant="primary"
+                className='py-3'
+                label={t('cart')}
+                variant='primary'
                 withShadow={false}
                 icon={<FaCartArrowDown />}
               />
             </Link>
-            <Link href="/contact">
+            <Link href='/contact'>
               <Button
-                className="py-3"
-                label={t("contact")}
-                variant="primary"
+                className='py-3'
+                label={t('contact')}
+                variant='primary'
                 withShadow={false}
                 icon={<FaPhone />}
               />

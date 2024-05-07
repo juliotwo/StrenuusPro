@@ -62,6 +62,7 @@ const CartSection = () => {
   const [transactioId, setTransactionId] = useState(''); // Estado para almacen
   const [telephone, setTelephone] = useState('');
   const [email, setEmail] = useState('');
+  const [errorResponse, setErrorResponse] = useState('');
 
   const formCardDisabled =
     valueCard === '' ||
@@ -91,6 +92,15 @@ const CartSection = () => {
 
   const createRandomNumberTransaction = () => {
     return Math.floor(Math.random() * 1000000000);
+  };
+
+  const extractMessage = (str) => {
+    const match = str.match(/message:\s*(.+)/);
+    if (match) {
+      return match[1];
+    } else {
+      return 'No se encontró un mensaje.';
+    }
   };
 
   useEffect(() => {
@@ -160,7 +170,14 @@ const CartSection = () => {
         ? t('validation-min-card-name')
         : ''
     );
-  }, [valueCard, valueCardDate, valueCardCvv, nameCard]);
+  }, [
+    valueCard,
+    valueCardDate,
+    valueCardCvv,
+    nameCard,
+    firstSurname,
+    secondSurname,
+  ]);
 
   const [loading, setLoading] = useState(false);
   const handlePay = async () => {
@@ -221,6 +238,10 @@ const CartSection = () => {
       setTransactionId(dataRes.content?.merchant_transaction_id);
       cleanCartItems();
       setStep(1);
+    } else {
+      let message = extractMessage(dataRes?.content?.message?.detail);
+
+      setErrorResponse(message);
     }
   };
 
@@ -524,6 +545,7 @@ const CartSection = () => {
               type='text'
               placeholder={t('email')}
               required
+              error={errorResponse}
             />
 
             <div className='flex flex-col gap-2'>

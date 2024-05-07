@@ -1,8 +1,8 @@
-import { NextIntlClientProvider, useMessages } from "next-intl";
-import { fontMontserrat } from "@/fonts";
-import CartProvider from "@/context/cart";
-import { pageName } from "@/data";
-import "@/globals.css";
+import { NextIntlClientProvider, useMessages } from 'next-intl';
+import { fontMontserrat } from '@/fonts';
+import CartProvider from '@/context/cart';
+import { pageName } from '@/data';
+import '@/globals.css';
 
 export const metadata = {
   title: pageName,
@@ -13,11 +13,11 @@ export default function RootLayout({ children, params: { locale } }) {
   const messages = useMessages();
 
   return (
-    <html lang={locale} className="scroll-smooth">
+    <html lang={locale} className='scroll-smooth'>
       <body className={`${fontMontserrat.variable} font-montserrat`}>
         <NextIntlClientProvider
           messages={messages}
-          timeZone="America/Mexico_City"
+          timeZone='America/Mexico_City'
           now={new Date()}
           locale={locale}
         >
