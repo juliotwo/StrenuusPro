@@ -12,7 +12,6 @@ const Navbar = ({ textBlack = true }) => {
   const pathname = usePathname();
   const locale = useLocale();
 
-  console.log(locale);
   return (
     <nav className='w-full py-4 text-sm'>
       <div
@@ -39,7 +38,7 @@ const Navbar = ({ textBlack = true }) => {
             }
           />
 
-          <Link href='/' className='text-xs sm:text-sm uppercase'>
+          <Link href='/' className='text-xl  uppercase'>
             {pageName}
           </Link>
         </div>

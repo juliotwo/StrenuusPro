@@ -2,7 +2,7 @@ export const pageName = 'StrenuusPro';
 export const email = 'info@strenuuspro.com';
 export const address =
   'MONTE ELBRUZ, 132 PISO 6, INTERIOR 604, COLONIA LOMAS DE CHAPULTEPEC I SECCION, MIGUEL HIDALGO, CIUDAD DE MEXICO, CP 11000';
-export const phoneNumber = '+5620362040';
+export const phoneNumber = '+525620362040';
 
 export const optionsStates = [
   { value: '', label: 'Selecciona una opción', disabled: true },
