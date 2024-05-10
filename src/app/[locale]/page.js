@@ -1,4 +1,3 @@
-'use client';
 import Footer from '@/components/molecules/Footer';
 import Hero from '@/components/organisms/Hero';
 import About from '@/components/organisms/About';
@@ -8,10 +7,6 @@ import References from '@/components/molecules/References';
 import Video from '@/components/organisms/Video';
 
 export default function Home() {
-  console.info('_hola');
-  console.info(process.env.API_KEY);
-  console.log('hey');
-  console.log(process.env.API_KEY);
   return (
     <main>
       <Hero />

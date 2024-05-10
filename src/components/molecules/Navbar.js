@@ -38,8 +38,10 @@ const Navbar = ({ textBlack = true }) => {
             }
           />
 
-          <Link href='/' className='text-xl  uppercase'>
-            {pageName}
+          <Link href='/'>
+            <h3 className='text-xl sm:text-2xl lg:text-3xl font-medium'>
+              STRENUUS PRO
+            </h3>
           </Link>
         </div>
 

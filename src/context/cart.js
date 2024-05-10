@@ -1,14 +1,14 @@
-"use client";
-import { createContext, useEffect, useState } from "react";
+'use client';
+import { createContext, useEffect, useState } from 'react';
 import {
   addNewProduct,
   getProducts,
   substProductItem,
   sumProductItem,
   cleanCart,
-} from "@/utils/cart";
-import { productsDataEN } from "@/data";
-import { useLocale } from "next-intl";
+} from '@/utils/cart';
+import { productsDataEN } from '@/data';
+import { useLocale } from 'next-intl';
 
 export const CartContext = createContext();
 
