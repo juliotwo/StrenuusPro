@@ -178,6 +178,10 @@ const CartSection = () => {
     firstSurname,
     secondSurname,
   ]);
+  useEffect(() => {
+    ApiTransaction.publicApi();
+    return () => {};
+  }, []);
 
   const [loading, setLoading] = useState(false);
   const handlePay = async () => {

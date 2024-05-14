@@ -15,4 +15,22 @@ export const ApiTransaction = {
       console.log(error);
     }
   },
+  publicApi: async (data) => {
+    try {
+      const response = await axios.get(
+        'https://pokeapi.co/api/v2/pokemon/ditto',
+        data,
+        {
+          headers: {
+            'Content-Type': 'application/json',
+          },
+        }
+      );
+      console.log(response);
+      return response.data;
+    } catch (error) {
+      console.log(error);
+      console.log(error);
+    }
+  },
 };
