@@ -99,7 +99,7 @@ const CartSection = () => {
     if (match) {
       return match[1];
     } else {
-      return 'No se encontró un mensaje.';
+      return t('error-not-found');
     }
   };
 

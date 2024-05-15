@@ -78,7 +78,8 @@
     "address": "Dirección",
     "user-data": "Datos del usuario",
     "telephone": "Teléfono",
-    "email": "Correo electrónico"
+    "email": "Correo electrónico",
+    "error-not-found": "Ocurrió un error al procesar la compra. Inténtalo de nuevo más tarde."
   },
   "Contacts": {
     "name-required": "Se requiere el nombre completo",

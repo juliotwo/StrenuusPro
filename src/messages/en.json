@@ -78,7 +78,8 @@
     "address": "Address",
     "user-data": "User data",
     "telephone": "Telephone",
-    "email": "Email"
+    "email": "Email",
+    "error-not-found": "Unexpected error. Try again later."
   },
   "Contacts": {
     "name-required": "The full name is required",
