@@ -7,10 +7,13 @@ import Button from '@/components/atoms/Button';
 import Input from '@/components/atoms/Input';
 import { CartContext } from '@/context/cart';
 import { FaTrash } from 'react-icons/fa';
+``;
 import { useTranslations } from 'next-intl';
 import { ApiTransaction } from '@/api/api';
 import Select from '../atoms/Select';
 import { optionsStates } from '@/data';
+import { ProgressSpinner } from 'primereact/progressspinner';
+import { Card } from 'primereact/card';
 
 const LABEL_BUTTON = ['pay-order', 'continue'];
 const MIN_NAME_LENGTH = 5;
@@ -54,6 +57,7 @@ const CartSection = () => {
   const [streetNumber, setStreetNumber] = useState('');
   const [postalCode, setPostalCode] = useState('');
   const [population, setPopulation] = useState('');
+  const [stateName, setStateName] = useState('');
   const [city, setCity] = useState('');
   const [selectedOption, setSelectedOption] = useState({
     value: '',
@@ -86,7 +90,9 @@ const CartSection = () => {
     city === '' ||
     selectedOption.value === '' ||
     telephone === '' ||
-    email === '';
+    email === '' ||
+    stateName === '';
+
   const isDisabledButton =
     step === 0 && (formCardDisabled || formContactDisabled);
 
@@ -95,6 +101,10 @@ const CartSection = () => {
   };
 
   const extractMessage = (str) => {
+    console.log(str);
+    if (!str) {
+      return t('error-not-found');
+    }
     const match = str.match(/message:\s*(.+)/);
     if (match) {
       return match[1];
@@ -178,14 +188,15 @@ const CartSection = () => {
     firstSurname,
     secondSurname,
   ]);
-  useEffect(() => {
-    ApiTransaction.publicApi();
-    return () => {};
-  }, []);
+
+  const sleep = (ms) => {
+    return new Promise((resolve) => setTimeout(resolve, ms));
+  };
 
   const [loading, setLoading] = useState(false);
   const handlePay = async () => {
     setLoading(true);
+    setStep(4);
     const merchantTransaction = 'Strenuss' + createRandomNumberTransaction();
     let data = {
       merchant_transaction_id: merchantTransaction,
@@ -221,9 +232,9 @@ const CartSection = () => {
           postal_code: postalCode,
           colony: population,
           city: city,
-          state_code: selectedOption.value,
+          state_code: '',
           state_name: selectedOption.label,
-          country_code: 'MX',
+          country_code: '',
           country_name: 'Mexico',
         },
         nationality: 'MX',
@@ -234,28 +245,30 @@ const CartSection = () => {
       description: 'Pago de evento',
     };
     console.log(data);
+    await sleep(2000);
     const dataRes = await ApiTransaction.makeTransaction(data);
     setLoading(false);
-
-    console.log(dataRes.content);
-    if (dataRes.content?.status === 'success') {
+    console.log(dataRes?.content);
+    if (dataRes?.content?.status === 'success') {
       setTransactionId(dataRes.content?.merchant_transaction_id);
-      cleanCartItems();
+
       setStep(1);
     } else {
+      setStep(0);
       let message = extractMessage(dataRes?.content?.message?.detail);
-
       setErrorResponse(message);
     }
+  };
+
+  const continueShopping = () => {
+    cleanCartItems();
+    router.push('/');
   };
 
   const validateActionButton = () => {
     if (step === 0) {
       handlePay();
       return;
-    }
-    if (step === 1) {
-      router.push('/');
     }
   };
   const handleSelectChange = (event) => {
@@ -271,8 +284,35 @@ const CartSection = () => {
         <div className='flex flex-col gap-5'>
           <h1 className='text-xl font-bold'>
             {step === 0 && t('your-products')}
-            {step === 1 && t('purchased-success') + transactioId}
+            {step === 1 && (
+              <Card title={t('purchased-success') + transactioId}>
+                <p>{t('your-products')}</p>
+                {products.map((item) => (
+                  <div
+                    className='flex w-full items-center gap-5 p-4 bg-white shadow-md shadow-indigo-200 rounded-none'
+                    key={item.id}
+                  >
+                    <p className='text-xl'>{item.name}</p>
+                    <p className='text-xl'>{getTotalProduct(item)} MXN</p>
+                  </div>
+                ))}
+                <p>{t('total') + formatNumber(getTotalCart())}</p>
+                <Button
+                  label={'Continue'}
+                  onClick={continueShopping}
+                  disabled={isDisabledButton || loading}
+                />
+              </Card>
+            )}
           </h1>
+          {loading && (
+            <ProgressSpinner
+              style={{ width: '50px', height: '50px' }}
+              strokeWidth='8'
+              animationDuration='.5s'
+              className='mx-auto'
+            />
+          )}
 
           {/* Product List */}
           {step === 0 && (
@@ -289,15 +329,16 @@ const CartSection = () => {
                       <Image
                         src={item.image}
                         alt='Product image'
-                        width={300}
-                        height={300}
-                        className='rounded-t-none object-cover h-20 w-20 border rounded-none'
+                        width={130}
+                        height={130}
+                        className='rounded-t-none object-cover h-22 w-22 border rounded-none'
                       />
 
                       <div className='flex flex-1 flex-col text-xs'>
-                        <h1>{item.name}</h1>
+                        <h1 className='text-xl'>{item.name}</h1>
+
                         <div className='flex items-center gap-1'>
-                          <p className='font-bold'>
+                          <p className='font-bold text-lg mt-2 '>
                             {getTotalProduct(item)} MXN
                           </p>
                         </div>
@@ -519,12 +560,22 @@ const CartSection = () => {
               placeholder={t('city')}
               required
             />
-            <Select
+
+            <Input
+              value={stateName}
+              onChange={(e) => {
+                setStateName(e.target.value);
+              }}
+              type='text'
+              placeholder={t('state')}
+              required
+            />
+            {/* <Select
               options={optionsStates}
               value={selectedOption.value}
               onChange={handleSelectChange}
               placeholder={t('state')}
-            />
+            /> */}
             <h1 className='text-xl font-bold'>{t('user-data')}</h1>
             <Input
               value={telephone}
