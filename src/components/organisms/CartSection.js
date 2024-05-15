@@ -10,7 +10,6 @@ import { FaTrash } from 'react-icons/fa';
 ``;
 import { useTranslations } from 'next-intl';
 import { ApiTransaction } from '@/api/api';
-import Select from '../atoms/Select';
 import { optionsStates } from '@/data';
 import { ProgressSpinner } from 'primereact/progressspinner';
 import { Card } from 'primereact/card';
@@ -284,27 +283,38 @@ const CartSection = () => {
         <div className='flex flex-col gap-5'>
           <h1 className='text-xl font-bold'>
             {step === 0 && t('your-products')}
-            {step === 1 && (
-              <Card title={t('purchased-success') + transactioId}>
-                <p>{t('your-products')}</p>
-                {products.map((item) => (
-                  <div
-                    className='flex w-full items-center gap-5 p-4 bg-white shadow-md shadow-indigo-200 rounded-none'
-                    key={item.id}
-                  >
-                    <p className='text-xl'>{item.name}</p>
-                    <p className='text-xl'>{getTotalProduct(item)} MXN</p>
-                  </div>
-                ))}
-                <p>{t('total') + formatNumber(getTotalCart())}</p>
-                <Button
-                  label={'Continue'}
-                  onClick={continueShopping}
-                  disabled={isDisabledButton || loading}
-                />
-              </Card>
-            )}
           </h1>
+          {step === 1 && (
+            <div
+              title={t('purchased-success')}
+              className='w-full h-130 bg-white shadow-md rounded-lg overflow-hidden px-8 py-8'
+            >
+              <p className='mb-10 text-xl font-bold'>OrderId: {transactioId}</p>
+              <p className='mb-2 text-xl font-bold'>{t('your-products')}</p>
+              <ul>
+                {products.map((item, index) => (
+                  <li className='flex items-center py-2' key={index}>
+                    <span className='text-gray-700 mr-2'>{item.name}</span>
+
+                    <div className='flex-1 h-0.5 bg-gray-200'></div>
+
+                    <span className='text-gray-700 mr-2'>{item.price}</span>
+                  </li>
+                ))}
+              </ul>
+              <div className='flex items-center py-2'>
+                <span className='text-gray-700 mr-2'>Total</span>
+                <div className='flex-1 h-0.5 bg-gray-200'></div>
+
+                <p>{formatNumber(getTotalCart())}</p>
+              </div>
+              <Button
+                className='mt-10 '
+                label={'Continue'}
+                onClick={continueShopping}
+              />
+            </div>
+          )}
           {loading && (
             <ProgressSpinner
               style={{ width: '50px', height: '50px' }}
