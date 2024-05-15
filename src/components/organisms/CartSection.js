@@ -88,7 +88,7 @@ const CartSection = () => {
     postalCode === '' ||
     population === '' ||
     city === '' ||
-    selectedOption.value === '' ||
+    // selectedOption.value === '' ||
     telephone === '' ||
     email === '' ||
     stateName === '';
