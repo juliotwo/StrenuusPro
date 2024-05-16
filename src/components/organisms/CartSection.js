@@ -201,6 +201,7 @@ const CartSection = () => {
         amount: getTotalCart(),
         phone_number: '+52' + phoneNumber,
         service: services,
+        order_number: transactioId,
       },
       email_for_client_data: {
         email: email,

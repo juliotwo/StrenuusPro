@@ -28,6 +28,7 @@ export const ApiTransaction = {
           'MERCHANT-API-KEY': API_KEY,
         },
       });
+      console.log(response);
       return response.data;
     } catch (error) {
       console.log(error);
