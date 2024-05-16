@@ -199,7 +199,7 @@ const CartSection = () => {
         email: email,
         name: nameCard,
         amount: getTotalCart(),
-        phone_number: phoneNumber,
+        phone_number: '+52' + phoneNumber,
         service: services,
       },
       email_for_client_data: {
