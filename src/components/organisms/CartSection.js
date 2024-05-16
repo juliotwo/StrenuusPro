@@ -407,12 +407,7 @@ const CartSection = () => {
 
             <h1 className='text-xl font-bold'>{t('fill-form')}</h1>
 
-            <Image
-              alt='Visa mastercard'
-              width={90}
-              height={90}
-              src={'/images/visaMaster.png'}
-            />
+            <h1 className='text-m font-bold'>{t('require-fields')} *</h1>
 
             <Input
               value={valueCard}
@@ -631,6 +626,12 @@ const CartSection = () => {
                 </div>
               )}
             </div>
+            <Image
+              alt='Visa mastercard'
+              width={90}
+              height={90}
+              src={'/images/visaMaster.png'}
+            />
           </div>
         </div>
       )}
