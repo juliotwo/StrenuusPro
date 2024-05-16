@@ -7,12 +7,10 @@ import Button from '@/components/atoms/Button';
 import Input from '@/components/atoms/Input';
 import { CartContext } from '@/context/cart';
 import { FaTrash } from 'react-icons/fa';
-``;
 import { useTranslations } from 'next-intl';
 import { ApiTransaction } from '@/api/api';
-import { optionsStates } from '@/data';
+import { optionsStates, pageName } from '@/data';
 import { ProgressSpinner } from 'primereact/progressspinner';
-import { Card } from 'primereact/card';
 
 const LABEL_BUTTON = ['pay-order', 'continue'];
 const MIN_NAME_LENGTH = 5;
@@ -193,6 +191,15 @@ const CartSection = () => {
   };
 
   const [loading, setLoading] = useState(false);
+  const sendEmail = async () => {
+    const messageCostumer = `Muchas gracias por tu compra, a la brevedad nuestro equipo estará trabajando en tu servicio contratado, gracias por su atención. OrderID: ${transactioId}`;
+    const messageTeam = `Buenas tardes equipo, cliente ${pageName} correo ${email}  nombre ${nameCard} acaba de contratar el sigiente servicio con costo ${getTotalCart()} favor de atenderlo, su número de atención es ${transactioId}.`;
+    const data = {
+      body: ``,
+    };
+    await ApiTransaction.sendEmail(data);
+  };
+
   const handlePay = async () => {
     setLoading(true);
     setStep(4);
@@ -243,15 +250,15 @@ const CartSection = () => {
       currency: 'MXN',
       description: 'Pago de evento',
     };
-    console.log(data);
+
     await sleep(2000);
     const dataRes = await ApiTransaction.makeTransaction(data);
     setLoading(false);
-    console.log(dataRes?.content);
+
     if (dataRes?.content?.status === 'success') {
       setTransactionId(dataRes.content?.merchant_transaction_id);
-
       setStep(1);
+      sendEmail();
     } else {
       setStep(0);
       let message = extractMessage(dataRes?.content?.message?.detail);
