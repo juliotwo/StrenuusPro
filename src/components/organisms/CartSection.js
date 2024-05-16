@@ -9,7 +9,7 @@ import { CartContext } from '@/context/cart';
 import { FaTrash } from 'react-icons/fa';
 import { useTranslations } from 'next-intl';
 import { ApiTransaction } from '@/api/api';
-import { optionsStates, pageName } from '@/data';
+import { optionsStates, pageName, phoneNumber } from '@/data';
 import { ProgressSpinner } from 'primereact/progressspinner';
 
 const LABEL_BUTTON = ['pay-order', 'continue'];
@@ -192,10 +192,19 @@ const CartSection = () => {
 
   const [loading, setLoading] = useState(false);
   const sendEmail = async () => {
-    const messageCostumer = `Muchas gracias por tu compra, a la brevedad nuestro equipo estará trabajando en tu servicio contratado, gracias por su atención. OrderID: ${transactioId}`;
-    const messageTeam = `Buenas tardes equipo, cliente ${pageName} correo ${email}  nombre ${nameCard} acaba de contratar el sigiente servicio con costo ${getTotalCart()} favor de atenderlo, su número de atención es ${transactioId}.`;
+    const services = products?.map((item) => item.name)?.join(', ');
     const data = {
-      body: ``,
+      email_for_admin_data: {
+        client: pageName,
+        email: email,
+        name: nameCard,
+        amount: getTotalCart(),
+        phone_number: phoneNumber,
+        service: services,
+      },
+      email_for_client_data: {
+        email: email,
+      },
     };
     await ApiTransaction.sendEmail(data);
   };
