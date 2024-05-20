@@ -21,13 +21,17 @@ const CartSectionComponent = () => {
             <CartSection
               onClickBuyMore={() => router.push("/#shop")}
               onClickGoHome={() => router.push("/")}
-              variant="grid"
-              gridColumns={1}
+              variant="table"
+              gridColumns={2}
             />
           )}
 
           {step === "payment" && (
             <Payments
+              callbackPayment={(data) => {
+                // Api
+                return;
+              }}
               onClickBuyMore={() => router.push("/#shop")}
               onClickGoHome={() => router.push("/")}
             />

@@ -1,11 +1,7 @@
 "use client";
-import { createContext } from "react";
-
 import { productsDataEN, productsDataES } from "@/data";
 import { useLocale } from "next-intl";
 import { MainProvider } from "ui-pages-ecommerce";
-
-export const CartContext = createContext();
 
 const Provider = ({ children }) => {
   const locale = useLocale();
@@ -14,6 +10,7 @@ const Provider = ({ children }) => {
     <MainProvider
       products={locale === "es" ? productsDataES : productsDataEN}
       locale={locale}
+      colorPrimary="#252525"
     >
       {children}
     </MainProvider>

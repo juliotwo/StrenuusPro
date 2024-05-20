@@ -3584,10 +3584,10 @@ typed-array-length@^1.0.6:
     is-typed-array "^1.1.13"
     possible-typed-array-names "^1.0.0"
 
-ui-pages-ecommerce@^0.0.1:
-  version "0.0.1"
-  resolved "https://registry.yarnpkg.com/ui-pages-ecommerce/-/ui-pages-ecommerce-0.0.1.tgz#26e330506352d4334d88c3cab69f96d86e13f734"
-  integrity sha512-UOfi0A9tjSmKuLlwW/Bc+YhQ9xJb8lDGmiKvCHLEd59R3PH1RNZl5ogUbdrbc0BGo0QY3nm4FOqKefLD4OBwlg==
+ui-pages-ecommerce@0.0.38:
+  version "0.0.38"
+  resolved "https://registry.yarnpkg.com/ui-pages-ecommerce/-/ui-pages-ecommerce-0.0.38.tgz#698469ac40b01a5312979fc21b5190e9147f204c"
+  integrity sha512-1T0cJl1ERYauzecr6jmEw4SSUSIpkFhy2dbuuNDsfG717RQnJMe1D+1TBIP7lYsdejIleh9yiQ5nwJSSc8s5Kg==
   dependencies:
     "@hookform/resolvers" "3.4.0"
     antd "5.17.2"
