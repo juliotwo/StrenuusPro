@@ -177,6 +177,7 @@ const CartSectionComponent = () => {
               onClickBuyMore={() => router.push('/#shop')}
               onClickGoHome={() => router.push('/')}
               isLoading={isLoading}
+              totalDiscount={isValidDiscount ? 10 : 0}
             />
           )}
 
