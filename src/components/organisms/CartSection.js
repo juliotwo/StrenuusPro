@@ -43,7 +43,8 @@ const CartSectionComponent = () => {
     email = '',
     phone = '',
     interProducts = [],
-    idTransaction = ''
+    idTransaction = '',
+    nameCard = ''
   ) => {
     const services = interProducts?.map((item) => item.name)?.join(', ');
     const data = {
@@ -126,7 +127,7 @@ const CartSectionComponent = () => {
     if (dataRes?.content?.status === 'success') {
       let idTransaction = dataRes?.content?.merchant_transaction_id;
 
-      sendEmail(data.email, data.phone, products, idTransaction);
+      sendEmail(data.email, data.phone, products, idTransaction, data.cardName);
       setIsLoading(false);
       return {
         success: true,
