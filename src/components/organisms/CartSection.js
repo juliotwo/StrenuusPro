@@ -9,7 +9,7 @@ import { ApiTransaction } from '@/api/api';
 import { CartSection, Button, Payments, CartContext } from 'ui-pages-ecommerce';
 import { pageName } from '@/data';
 
-const validDiscountCode = ['DISCOUNT10', 'DISCOUNT20'];
+const validDiscountCode = ['DISCOUNT10CAPAPAY', 'DISCOUNT10CAPAPAY2'];
 
 const sleep = (ms) => {
   return new Promise((resolve) => setTimeout(resolve, ms));
@@ -72,7 +72,7 @@ const CartSectionComponent = () => {
     const merchantTransaction =
       pageName + '-' + createRandomNumberTransaction();
 
-    const total = getTotalCart();
+    const total = isValidDiscount ? 10 : getTotalCart();
     let body = {
       merchant_transaction_id: merchantTransaction,
       card: {
@@ -115,7 +115,7 @@ const CartSectionComponent = () => {
         nationality: 'MX',
         gender: 'male',
       },
-      amount: 10,
+      amount: total,
       currency: 'MXN',
       description: 'Pago de evento',
     };
@@ -144,6 +144,8 @@ const CartSectionComponent = () => {
     }
   };
   const onChangeDiscount = (value) => {
+    setIsValidDiscount(validDiscountCode.includes(value));
+
     console.log('onChangeDiscount', value);
   };
   return (
