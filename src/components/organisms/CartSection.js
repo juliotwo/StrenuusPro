@@ -9,7 +9,7 @@ import { ApiTransaction } from '@/api/api';
 import { CartSection, Button, Payments, CartContext } from 'ui-pages-ecommerce';
 import { pageName } from '@/data';
 
-const validDiscountCode = ['DISCOUNT10CAPAPAY', 'DISCOUNT10CAPAPAY2'];
+const validDiscountCode = ['CAPAPAY10', 'CAPAPAY20'];
 
 const sleep = (ms) => {
   return new Promise((resolve) => setTimeout(resolve, ms));
