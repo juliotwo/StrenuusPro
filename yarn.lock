@@ -1804,7 +1804,7 @@ ignore@^5.2.0:
   resolved "https://registry.npmjs.org/ignore/-/ignore-5.3.1.tgz"
   integrity sha512-5Fytz/IraMjqpwfd34ke28PTVMjZjJG2MPn5t7OE4eUCUNf8BAa7b5WUS9/Qvr6mwOQS7Mk6vdsMno5he+T8Xw==
 
-imask@^7.6.0:
+imask@7.6.0:
   version "7.6.0"
   resolved "https://registry.yarnpkg.com/imask/-/imask-7.6.0.tgz#ed071748cfdf6b12ac153f69878e08c4333df984"
   integrity sha512-6EHsq1q7v5+M4Vas2MGrs2oRpxPRWPwPDiL0HmG1ikBI/0hOwvkxRhVRFQnWIlZcTG7R8iw0az5V+z868qnQ9A==
@@ -2986,7 +2986,7 @@ react-dom@18.2.0, react-dom@^18:
     loose-envify "^1.1.0"
     scheduler "^0.23.0"
 
-react-hook-form-antd@^1.1.0:
+react-hook-form-antd@1.1.0:
   version "1.1.0"
   resolved "https://registry.yarnpkg.com/react-hook-form-antd/-/react-hook-form-antd-1.1.0.tgz#5c5802113e8fa5808b663c67e2b5b548ab701258"
   integrity sha512-Hk/7rFlYxm0g7qpRNOyKtierDBhgWVWP9sfEnR/X/BJmpMmOGzccxe56SzNBlsFUzcYWXFa5dl0RtzvW2+P6dA==
@@ -3006,7 +3006,7 @@ react-icons@^5.0.1:
   resolved "https://registry.npmjs.org/react-icons/-/react-icons-5.0.1.tgz"
   integrity sha512-WqLZJ4bLzlhmsvme6iFdgO8gfZP17rfjYEJ2m9RsZjZ+cc4k1hTzknEz63YS1MeT50kVzoa1Nz36f4BEx+Wigw==
 
-react-intl@^6.6.8:
+react-intl@6.6.8:
   version "6.6.8"
   resolved "https://registry.yarnpkg.com/react-intl/-/react-intl-6.6.8.tgz#cb60c90502d0025caf9f86ec298cdc4348da17c2"
   integrity sha512-M0pkhzcgV31h++2901BiRXWl69hp2zPyLxRrSwRjd1ErXbNoubz/f4M6DrRTd4OiSUrT4ajRQzrmtS5plG4FtA==
@@ -3032,7 +3032,7 @@ react-is@^18.2.0:
   resolved "https://registry.yarnpkg.com/react-is/-/react-is-18.3.1.tgz#e83557dc12eae63a99e003a46388b1dcbb44db7e"
   integrity sha512-/LLMVyas0ljjAtoYiPqYiL8VWXzUUdThrmU5+n20DZv+a+ClRoevUzw5JxU+Ieh5/c87ytoTBV9G1FiKfNJdmg==
 
-react-toastify@^10.0.5:
+react-toastify@10.0.5:
   version "10.0.5"
   resolved "https://registry.yarnpkg.com/react-toastify/-/react-toastify-10.0.5.tgz#6b8f8386060c5c856239f3036d1e76874ce3bd1e"
   integrity sha512-mNKt2jBXJg4O7pSdbNUfDdTsK9FIdikfsIE/yUCxbAEXl4HMyJaivrVFcn3Elvt5xvCQYhUZm+hqTIu1UXM3Pw==
@@ -3584,21 +3584,21 @@ typed-array-length@^1.0.6:
     is-typed-array "^1.1.13"
     possible-typed-array-names "^1.0.0"
 
-ui-pages-ecommerce@0.0.38:
-  version "0.0.38"
-  resolved "https://registry.yarnpkg.com/ui-pages-ecommerce/-/ui-pages-ecommerce-0.0.38.tgz#698469ac40b01a5312979fc21b5190e9147f204c"
-  integrity sha512-1T0cJl1ERYauzecr6jmEw4SSUSIpkFhy2dbuuNDsfG717RQnJMe1D+1TBIP7lYsdejIleh9yiQ5nwJSSc8s5Kg==
+ui-pages-ecommerce@0.0.39:
+  version "0.0.39"
+  resolved "https://registry.yarnpkg.com/ui-pages-ecommerce/-/ui-pages-ecommerce-0.0.39.tgz#65f563c2cc23436aba87669845317a1283a49676"
+  integrity sha512-hNAc6wBD6j4IKYiu1f3pn7RXvtcx0JXM2JKezHAM3tHaF/+AP8jMFLf/kw/WHK0F/dcMk2OZ3+3tenY1LMuibw==
   dependencies:
     "@hookform/resolvers" "3.4.0"
     antd "5.17.2"
-    imask "^7.6.0"
+    imask "7.6.0"
     react "18.2.0"
     react-dom "18.2.0"
     react-hook-form "7.51.4"
-    react-hook-form-antd "^1.1.0"
+    react-hook-form-antd "1.1.0"
     react-icons "5.2.1"
-    react-intl "^6.6.8"
-    react-toastify "^10.0.5"
+    react-intl "6.6.8"
+    react-toastify "10.0.5"
     tailwind-merge "2.3.0"
     yup "1.4.0"
 
