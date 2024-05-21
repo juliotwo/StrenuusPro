@@ -69,8 +69,6 @@ const CartSectionComponent = () => {
   const onPaymentResult = async (data) => {
     console.log('data', data);
     setIsLoading(true);
-    await sleep(2000);
-    setIsLoading(false);
 
     const merchantTransaction =
       pageName + '-' + createRandomNumberTransaction();
@@ -189,6 +187,13 @@ const CartSectionComponent = () => {
             >
               {step === 'cart' ? 'Go to Pay' : 'Back to Cart'}
             </Button>
+            {/* <Button
+              onClick={() => {
+                ApiTransaction.sendEmailTest();
+              }}
+            >
+              Prueba
+            </Button> */}
           </div>
         </div>
       </div>
