@@ -3513,10 +3513,10 @@ typed-array-length@^1.0.6:
   resolved "https://registry.npmjs.org/typescript/-/typescript-5.4.5.tgz"
   integrity sha512-vcI4UpRgg81oIRUFwR0WSIHKt11nJ7SAVlYNIu+QpqeyXP+gpQJy/Z4+F0aGxSE4MqwjyXvW/TzgkLAx2AGHwQ==
 
-ui-pages-ecommerce@^0.0.44:
-  version "0.0.44"
-  resolved "https://registry.npmjs.org/ui-pages-ecommerce/-/ui-pages-ecommerce-0.0.44.tgz"
-  integrity sha512-gaSzjqoT64K+SwHc42Rm9kel7zz9ZDE2/qkyC/37RUbRZmnCzEbv21PlZ4x51nK/AbUMqe4Cstb6UllpdWVkqQ==
+ui-pages-ecommerce@^0.0.45:
+  version "0.0.45"
+  resolved "https://registry.npmjs.org/ui-pages-ecommerce/-/ui-pages-ecommerce-0.0.45.tgz"
+  integrity sha512-f1W4LXOKd7FoMHEe/S1b4B+eBkK75K1kWgl3t7a9Pi6nYIDn1MGwcXUhqqdsTsDKlgl4Sd+9gByII/Z5qaXCMg==
   dependencies:
     "@hookform/resolvers" "3.4.0"
     antd "5.17.2"
