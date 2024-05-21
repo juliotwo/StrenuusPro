@@ -123,6 +123,7 @@ const CartSectionComponent = () => {
     const dataRes = await ApiTransaction.makeTransaction(body);
     setIsLoading(false);
 
+    console.log('dataRes', dataRes);
     if (dataRes?.content?.status === 'success') {
       let idTransaction = dataRes?.content?.merchant_transaction_id;
 
