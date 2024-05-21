@@ -35,7 +35,7 @@ const CartSectionComponent = () => {
     if (match) {
       return match[1];
     } else {
-      return t('error-not-found');
+      return str;
     }
   };
 
@@ -140,7 +140,7 @@ const CartSectionComponent = () => {
       let message = extractMessage(dataRes?.content?.message?.detail);
       return {
         success: false,
-        data: message,
+        message: message,
       };
     }
   };
