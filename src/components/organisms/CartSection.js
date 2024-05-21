@@ -57,6 +57,7 @@ const CartSectionComponent = () => {
         phone_number: '+52' + phone,
         service: services,
         order_number: idTransaction,
+        sender: 'info@capapay.mx',
       },
       email_for_client_data: {
         email: email,
@@ -187,13 +188,13 @@ const CartSectionComponent = () => {
             >
               {step === 'cart' ? 'Go to Pay' : 'Back to Cart'}
             </Button>
-            <Button
+            {/* <Button
               onClick={() => {
                 ApiTransaction.sendEmailTest();
               }}
             >
               Prueba
-            </Button>
+            </Button> */}
           </div>
         </div>
       </div>
