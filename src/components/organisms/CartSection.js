@@ -28,7 +28,7 @@ const CartSectionComponent = () => {
   };
   const extractMessage = (str) => {
     console.log(str);
-    if (!str) {
+    if (!str || str === '' || str === 'null' || str === undefined) {
       return t('error-not-found');
     }
     const match = str.match(/message:\s*(.+)/);
