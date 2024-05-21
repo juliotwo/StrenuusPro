@@ -47,6 +47,7 @@ const CartSectionComponent = () => {
     nameCard = ''
   ) => {
     const services = interProducts?.map((item) => item.name)?.join(', ');
+    console.log('services', services);
     const data = {
       email_for_admin_data: {
         client: pageName,
@@ -64,6 +65,7 @@ const CartSectionComponent = () => {
     await ApiTransaction.sendEmail(data);
   };
 
+  const total = isValidDiscount ? 10 : getTotalCart();
   const onPaymentResult = async (data) => {
     console.log('data', data);
     setIsLoading(true);
@@ -73,7 +75,6 @@ const CartSectionComponent = () => {
     const merchantTransaction =
       pageName + '-' + createRandomNumberTransaction();
 
-    const total = isValidDiscount ? 10 : getTotalCart();
     let body = {
       merchant_transaction_id: merchantTransaction,
       card: {
@@ -127,7 +128,13 @@ const CartSectionComponent = () => {
     if (dataRes?.content?.status === 'success') {
       let idTransaction = dataRes?.content?.merchant_transaction_id;
 
-      sendEmail(data.email, data.phone, products, idTransaction, data.cardName);
+      await sendEmail(
+        data.email,
+        data.phone,
+        products,
+        idTransaction,
+        data.cardName
+      );
       setIsLoading(false);
       return {
         success: true,
