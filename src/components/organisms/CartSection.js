@@ -76,7 +76,7 @@ const CartSectionComponent = () => {
     let body = {
       merchant_transaction_id: merchantTransaction,
       card: {
-        number: valueCard,
+        number: data.cardNumber,
         holder_name: data.cardName,
         expiration_year: cardDate.slice(-2),
         expiration_month: cardDate.substring(0, 2),
