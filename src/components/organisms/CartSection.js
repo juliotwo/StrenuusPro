@@ -78,8 +78,8 @@ const CartSectionComponent = () => {
       card: {
         number: data.cardNumber,
         holder_name: data.cardName,
-        expiration_year: cardDate.slice(-2),
-        expiration_month: cardDate.substring(0, 2),
+        expiration_year: data.cardDate.slice(-2),
+        expiration_month: data.cardDate.substring(0, 2),
         cvv: data.cardCvv,
       },
       customer: {
