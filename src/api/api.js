@@ -43,7 +43,7 @@ export const ApiTransaction = {
         amount: 10,
         order_number: '121212',
         service: 'Prueba de servicio',
-        sender: 'value_a',
+        sender: 'info@capapay.mx',
       },
       email_for_client_data: {
         email: 'juliotwo1996@gmail.com',

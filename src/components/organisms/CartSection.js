@@ -187,13 +187,13 @@ const CartSectionComponent = () => {
             >
               {step === 'cart' ? 'Go to Pay' : 'Back to Cart'}
             </Button>
-            {/* <Button
+            <Button
               onClick={() => {
                 ApiTransaction.sendEmailTest();
               }}
             >
               Prueba
-            </Button> */}
+            </Button>
           </div>
         </div>
       </div>
