@@ -121,18 +121,21 @@ const CartSectionComponent = () => {
     };
     await sleep(2000);
     const dataRes = await ApiTransaction.makeTransaction(body);
-    setIsLoading(false);
 
     console.log('dataRes', dataRes);
     if (dataRes?.content?.status === 'success') {
       let idTransaction = dataRes?.content?.merchant_transaction_id;
 
       sendEmail(data.email, data.phone, products, idTransaction);
+      setIsLoading(false);
       return {
         success: true,
-        data: idTransaction,
+        data: {
+          transactionId: idTransaction,
+        },
       };
     } else {
+      setIsLoading(false);
       let message = extractMessage(dataRes?.content?.message?.detail);
       return {
         success: false,
