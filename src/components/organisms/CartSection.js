@@ -168,6 +168,7 @@ const CartSectionComponent = () => {
 
           <div>
             <Button
+              disabled={products.length === 0}
               type='primary'
               onClick={() => setStep(step === 'cart' ? 'payment' : 'cart')}
             >
