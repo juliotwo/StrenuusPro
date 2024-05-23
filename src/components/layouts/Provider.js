@@ -1,5 +1,6 @@
 'use client';
 import { productsDataEN, productsDataES } from '@/data';
+import { useLocale } from 'next-intl';
 import { MainProvider } from 'ui-pages-ecommerce';
 
 const Provider = ({ children }) => {
