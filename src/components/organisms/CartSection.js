@@ -4,8 +4,7 @@ import { useRouter } from '@/navigation';
 
 import { useTranslations } from 'next-intl';
 import { ApiTransaction } from '@/api/api';
-// import { optionsStates, pageName, phoneNumber } from "@/data";
-// import { ProgressSpinner } from "primereact/progressspinner";
+
 import { CartSection, Button, Payments, CartContext } from 'ui-pages-ecommerce';
 import { pageName } from '@/data';
 import { FaChevronLeft } from 'react-icons/fa';
@@ -176,6 +175,11 @@ const CartSectionComponent = () => {
                 onClickGoHome={() => router.push('/')}
                 variant='table'
                 gridColumns={2}
+                buttonProps={{
+                  onClick: () => setStep(step === 'cart' ? 'payment' : 'cart'),
+                  label: 'Go to pay',
+                  className: 'bg-red-500 text-white',
+                }}
               />
             )}
 
@@ -188,18 +192,23 @@ const CartSectionComponent = () => {
                 onClickGoHome={() => router.push('/')}
                 isLoading={isLoading}
                 totalDiscount={isValidDiscount ? 10 : 0}
+                buttonBackProps={{
+                  className: 'text-black',
+                  label: 'Back',
+                }}
               />
             )}
-
-            <div>
-              <Button
-                disabled={products.length === 0}
-                type='primary'
-                onClick={() => setStep(step === 'cart' ? 'payment' : 'cart')}
-              >
-                {step === 'cart' ? 'Go to Pay' : 'Back to Cart'}
-              </Button>
-            </div>
+            {step == 'payment' && (
+              <div>
+                <Button
+                  disabled={products.length === 0}
+                  type='primary'
+                  onClick={() => setStep(step === 'cart' ? 'payment' : 'cart')}
+                >
+                  {step === 'cart' ? 'Go to Pay' : 'Back to Cart'}
+                </Button>
+              </div>
+            )}
           </div>
         </div>
       </div>
