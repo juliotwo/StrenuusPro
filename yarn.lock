@@ -3513,10 +3513,10 @@ typed-array-length@^1.0.6:
     is-typed-array "^1.1.13"
     possible-typed-array-names "^1.0.0"
 
-ui-pages-ecommerce@^0.0.54:
-  version "0.0.54"
-  resolved "https://registry.npmjs.org/ui-pages-ecommerce/-/ui-pages-ecommerce-0.0.54.tgz"
-  integrity sha512-uPFkyc3buwDejRKBNf0djGm1KMebH/xyDKRK7pS+n9KpYR6A4KiaKinSZDkbNCW8Psmqhhk/hcvhQAd9cTgvVg==
+ui-pages-ecommerce@^0.0.55:
+  version "0.0.55"
+  resolved "https://registry.npmjs.org/ui-pages-ecommerce/-/ui-pages-ecommerce-0.0.55.tgz"
+  integrity sha512-4DJpE+pQxZsEySy1QSv3IDXCdAaOu5Jhm9Y5/1g7ymd+E1ge5AyqiMl3zFWAvMFL/do7Ad5s9nkd7inFoSFcfQ==
   dependencies:
     "@ant-design/cssinjs" "^1.20.0"
     "@hookform/resolvers" "3.4.0"

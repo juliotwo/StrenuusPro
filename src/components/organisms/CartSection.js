@@ -160,7 +160,6 @@ const CartSectionComponent = () => {
       <div className='container px-4'>
         <Button
           value='back'
-          href='/#shop'
           onClick={() => {
             if (step === 'payment') {
               setStep('cart');
