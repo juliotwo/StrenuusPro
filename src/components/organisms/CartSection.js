@@ -156,63 +156,57 @@ const CartSectionComponent = () => {
     console.log('onChangeDiscount', value);
   };
   return (
-    <>
-      <div className='w-full flex justify-center mt-10 mb-20'>
-        <div className='container px-4'>
-          <Button
-            value='back'
-            href='/#shop'
-            icon={<FaChevronLeft />}
-            iconPosition='start'
-            className='flex items-center mb-5 w-28'
-          >
-            Back
-          </Button>
-          <div className='flex flex-col gap-5'>
-            {step === 'cart' && (
-              <CartSection
-                onClickBuyMore={() => router.push('/#shop')}
-                onClickGoHome={() => router.push('/')}
-                variant='table'
-                gridColumns={2}
-                buttonProps={{
-                  onClick: () => setStep(step === 'cart' ? 'payment' : 'cart'),
-                  label: 'Go to pay',
-                  className: 'bg-red-500 text-white',
-                }}
-              />
-            )}
+    <div className='w-full flex justify-center mt-10 mb-20'>
+      <div className='container px-4'>
+        <Button
+          value='back'
+          href='/#shop'
+          onClick={() => {
+            if (step === 'payment') {
+              setStep('cart');
+              return;
+            }
+            router.push('/#shop');
+          }}
+          icon={<FaChevronLeft />}
+          iconPosition='start'
+          className='flex items-center mb-5 w-28'
+        >
+          Back
+        </Button>
+        <div className='flex flex-col gap-5'>
+          {step === 'cart' && (
+            <CartSection
+              onClickBuyMore={() => router.push('/#shop')}
+              onClickGoHome={() => router.push('/')}
+              variant='table'
+              gridColumns={2}
+              buttonProps={{
+                onClick: () => setStep(step === 'cart' ? 'payment' : 'cart'),
+                label: 'Go to pay',
+                className: 'bg-red-500 text-white',
+              }}
+            />
+          )}
 
-            {step === 'payment' && (
-              <Payments
-                isValidDiscountCode={isValidDiscount}
-                handleChangeDiscountCode={onChangeDiscount}
-                onPaymentResult={onPaymentResult}
-                onClickBuyMore={() => router.push('/#shop')}
-                onClickGoHome={() => router.push('/')}
-                isLoading={isLoading}
-                totalDiscount={isValidDiscount ? 10 : 0}
-                buttonBackProps={{
-                  className: 'text-black',
-                  label: 'Back',
-                }}
-              />
-            )}
-            {step == 'payment' && (
-              <div>
-                <Button
-                  disabled={products.length === 0}
-                  type='primary'
-                  onClick={() => setStep(step === 'cart' ? 'payment' : 'cart')}
-                >
-                  {step === 'cart' ? 'Go to Pay' : 'Back to Cart'}
-                </Button>
-              </div>
-            )}
-          </div>
+          {step === 'payment' && (
+            <Payments
+              isValidDiscountCode={isValidDiscount}
+              handleChangeDiscountCode={onChangeDiscount}
+              onPaymentResult={onPaymentResult}
+              onClickBuyMore={() => router.push('/#shop')}
+              onClickGoHome={() => router.push('/')}
+              isLoading={isLoading}
+              totalDiscount={isValidDiscount ? 10 : 0}
+              buttonBackProps={{
+                className: 'text-black',
+                label: 'Back',
+              }}
+            />
+          )}
         </div>
       </div>
-    </>
+    </div>
   );
 };
 
