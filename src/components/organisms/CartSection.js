@@ -8,6 +8,7 @@ import { ApiTransaction } from '@/api/api';
 // import { ProgressSpinner } from "primereact/progressspinner";
 import { CartSection, Button, Payments, CartContext } from 'ui-pages-ecommerce';
 import { pageName } from '@/data';
+import { FaChevronLeft } from 'react-icons/fa';
 
 const validDiscountCode = ['CAPAPAY10', 'CAPAPAY20'];
 
@@ -156,42 +157,53 @@ const CartSectionComponent = () => {
     console.log('onChangeDiscount', value);
   };
   return (
-    <div className='w-full flex justify-center mt-10 mb-20'>
-      <div className='container px-4'>
-        <div className='flex flex-col gap-5'>
-          {step === 'cart' && (
-            <CartSection
-              onClickBuyMore={() => router.push('/#shop')}
-              onClickGoHome={() => router.push('/')}
-              variant='table'
-              gridColumns={2}
-            />
-          )}
+    <>
+      <div className='w-full flex justify-center mt-10 mb-20'>
+        <div className='container px-4'>
+          <Button
+            value='back'
+            href='/#shop'
+            icon={<FaChevronLeft />}
+            iconPosition='start'
+            className='flex items-center mb-5 w-28'
+          >
+            Back
+          </Button>
+          <div className='flex flex-col gap-5'>
+            {step === 'cart' && (
+              <CartSection
+                onClickBuyMore={() => router.push('/#shop')}
+                onClickGoHome={() => router.push('/')}
+                variant='table'
+                gridColumns={2}
+              />
+            )}
 
-          {step === 'payment' && (
-            <Payments
-              isValidDiscountCode={isValidDiscount}
-              handleChangeDiscountCode={onChangeDiscount}
-              onPaymentResult={onPaymentResult}
-              onClickBuyMore={() => router.push('/#shop')}
-              onClickGoHome={() => router.push('/')}
-              isLoading={isLoading}
-              totalDiscount={isValidDiscount ? 10 : 0}
-            />
-          )}
+            {step === 'payment' && (
+              <Payments
+                isValidDiscountCode={isValidDiscount}
+                handleChangeDiscountCode={onChangeDiscount}
+                onPaymentResult={onPaymentResult}
+                onClickBuyMore={() => router.push('/#shop')}
+                onClickGoHome={() => router.push('/')}
+                isLoading={isLoading}
+                totalDiscount={isValidDiscount ? 10 : 0}
+              />
+            )}
 
-          <div>
-            <Button
-              disabled={products.length === 0}
-              type='primary'
-              onClick={() => setStep(step === 'cart' ? 'payment' : 'cart')}
-            >
-              {step === 'cart' ? 'Go to Pay' : 'Back to Cart'}
-            </Button>
+            <div>
+              <Button
+                disabled={products.length === 0}
+                type='primary'
+                onClick={() => setStep(step === 'cart' ? 'payment' : 'cart')}
+              >
+                {step === 'cart' ? 'Go to Pay' : 'Back to Cart'}
+              </Button>
+            </div>
           </div>
         </div>
       </div>
-    </div>
+    </>
   );
 };
 

@@ -44,7 +44,7 @@ const Footer = () => {
 
         <p>{address}</p>
         <div className='flex items-center justify-between w-full mt-4'>
-          <div className='flex gap-5 items-center'>
+          {/* <div className='flex gap-5 items-center'>
             <Image
               alt='Whatsapp'
               onClick={() => window.open(`https://wa.me/${phoneNumber}`)}
@@ -60,7 +60,7 @@ const Footer = () => {
               className='cursor-pointer'
               src={'/images/instagram.png'}
             />
-          </div>
+          </div> */}
         </div>
       </div>
     </footer>
