@@ -23,6 +23,7 @@ const Button = ({
   withShadow = true,
   icon,
   image,
+  iconLeft,
   ...rest
 }) => {
   return (
@@ -35,6 +36,7 @@ const Button = ({
       )}
       {...rest}
     >
+      {iconLeft && <span>{iconLeft}</span>}
       {label}
       {icon && <span>{icon}</span>}
       {image && <Image alt='imageButton' width={25} height={25} src={image} />}

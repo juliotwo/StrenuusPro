@@ -65,7 +65,7 @@ const References = () => {
                 </span>
               </h3>
 
-              <p className='font-light text-left lg:text-justify text-xs'>
+              <p className='font-light italic text-left lg:text-justify text-xs'>
                 &quot;{t(item.description)}&quot;
               </p>
             </div>

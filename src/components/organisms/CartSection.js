@@ -169,7 +169,7 @@ const CartSectionComponent = () => {
           }}
           icon={<FaChevronLeft />}
           iconPosition='start'
-          className='flex items-center mb-5 w-28'
+          className='flex items-center mb-5 w-28 bg-primary text-white'
         >
           Back
         </Button>
@@ -201,6 +201,7 @@ const CartSectionComponent = () => {
                 className: 'text-black',
                 label: 'Back',
               }}
+              voucherVariant='table'
             />
           )}
         </div>

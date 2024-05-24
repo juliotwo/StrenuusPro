@@ -9,6 +9,7 @@ import Footer from '@/components/molecules/Footer';
 import Navbar from '@/components/molecules/Navbar';
 
 import { productsDataEN, productsDataES } from '@/data';
+import { FaChevronLeft } from 'react-icons/fa';
 
 export default function Product({ params }) {
   const { handleAddOrRemoveProduct, validateProductInCart } =
@@ -26,8 +27,19 @@ export default function Product({ params }) {
     <main>
       <Navbar />
       {product && (
-        <div className='flex flex-wrap justify-center container mx-auto mt-20 mb-10'>
+        <div className='flex flex-wrap container mx-auto mt-20 mb-10'>
           {/* <div className='w-96 h-130'> */}
+          <Button
+            value='back'
+            onClick={() => {
+              router.push('/#shop');
+            }}
+            iconLeft={<FaChevronLeft />}
+            label={'Back'}
+            iconPosition='start'
+            className='flex items-center text-white bg-black mb-5 w-28'
+          />
+
           <div className='w-full md:w-1/2 h-130 bg-white shadow-md rounded-lg overflow-hidden px-8 py-8'>
             <Image
               src={product.image}
