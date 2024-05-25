@@ -51,12 +51,12 @@ const Services = () => {
                   <h1 className='text-xl sm:text-2xl lg:text-3xl font-medium'>
                     {t(item.title)}
                   </h1>
-
+                  {/* 
                   <div className='flex-1 mt-10 flex items-end'>
                     <Link href='/#shop'>
                       <Button label={t(item.button)} />
                     </Link>
-                  </div>
+                  </div> */}
                 </div>
               </div>
             ))}

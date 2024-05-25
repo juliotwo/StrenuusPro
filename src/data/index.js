@@ -322,11 +322,11 @@ export const productsDataES = [
 
 export const footerOptions = [
   {
-    href: '/privacy',
+    href: '/pdf/AP-STRENNUS-MANUS-MAYO-2024.pdf',
     name: 'link-privacy',
   },
   {
-    href: '/terms',
+    href: '/pdf/TYC-STRENNUS-MANUS-MAYO-2024.pdf',
     name: 'link-terms',
   },
 ];

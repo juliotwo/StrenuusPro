@@ -31,13 +31,14 @@ const Footer = () => {
 
           <div className='flex gap-5 items-center justify-end'>
             {footerOptions.map((item, i) => (
-              <Link
+              <a
+                target='_blank'
                 href={item.href}
                 className='font-medium hover:underline'
                 key={i}
               >
                 {t(item.name)}
-              </Link>
+              </a>
             ))}
           </div>
         </div>

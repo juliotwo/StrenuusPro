@@ -202,6 +202,13 @@ const CartSectionComponent = () => {
                 label: 'Back',
               }}
               voucherVariant='table'
+              buttonNextProps={{
+                className: 'bg-red-500 text-white',
+                style: {
+                  color: 'white',
+                  // backgroundColor: colorRed,
+                },
+              }}
             />
           )}
         </div>
