@@ -57,7 +57,7 @@ const CartSectionComponent = () => {
         phone_number: '+52' + phone,
         service: services,
         order_number: idTransaction,
-        sender: 'info@capapay.mx',
+        sender: 'capapay',
       },
       email_for_client_data: {
         email: email,
@@ -75,7 +75,7 @@ const CartSectionComponent = () => {
       pageName + '-' + createRandomNumberTransaction();
 
     let body = {
-      merchant_transaction_id: merchantTransaction,
+      merchant_transaction_id: 'STRENUS-' + merchantTransaction,
       card: {
         number: data.cardNumber,
         holder_name: data.cardName,
@@ -194,7 +194,10 @@ const CartSectionComponent = () => {
               handleChangeDiscountCode={onChangeDiscount}
               onPaymentResult={onPaymentResult}
               onClickBuyMore={() => router.push('/#shop')}
-              onClickGoHome={() => router.push('/')}
+              buttonGoHomeProps={{
+                label: 'Go to home',
+                onClick: () => router.push('/'),
+              }}
               isLoading={isLoading}
               totalDiscount={isValidDiscount ? 10 : 0}
               buttonBackProps={{

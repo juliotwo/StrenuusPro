@@ -1,18 +1,17 @@
 import axios from 'axios';
 import { TRANSACTION, SEND_EMAIL, SEND_EMAIL_TEST } from './urls';
 
-const API_KEY =
-  '6N3EO55S1n7IYCZuAoNRphyTm6Pzn0OoKrcMn4FneRYaYBO0WeaV3Co2bzYXKSwx';
+// const API_KEY =
+//   '6N3EO55S1n7IYCZuAoNRphyTm6Pzn0OoKrcMn4FneRYaYBO0WeaV3Co2bzYXKSwx';
 const API_KEY_DEV =
-  'zwgqaebUA0pr2q0iEcpu20gySPqD40x8ssMLGyPwtecfjq7w5RYyyvmlrlIhFGRO'; // dev
+  'bRwAiyX3HCcWfgcHUQnxJiQbzPTrwBxcTSC9IxxQHvlejguZVi2i52ag4hfeWdk3'; // dev
 export const ApiTransaction = {
   makeTransaction: async (data) => {
     try {
       const response = await axios.post(TRANSACTION, data, {
         headers: {
           'Content-Type': 'application/json',
-          'MERCHANT-API-KEY':
-            '6N3EO55S1n7IYCZuAoNRphyTm6Pzn0OoKrcMn4FneRYaYBO0WeaV3Co2bzYXKSwx',
+          'MERCHANT-API-KEY': API_KEY_DEV,
         },
       });
       return response.data;
@@ -25,7 +24,7 @@ export const ApiTransaction = {
       const response = await axios.post(SEND_EMAIL, data, {
         headers: {
           'Content-Type': 'application/json',
-          'MERCHANT-API-KEY': API_KEY,
+          'MERCHANT-API-KEY': API_KEY_DEV,
         },
       });
       console.log(response);
