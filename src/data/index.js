@@ -329,4 +329,8 @@ export const footerOptions = [
     href: '/pdf/TYC-STRENNUS-MANUS-MAYO-2024.pdf',
     name: 'link-terms',
   },
+  {
+    href: '/pdf/devolucion.pdf',
+    name: "link-returns",
+  }
 ];
