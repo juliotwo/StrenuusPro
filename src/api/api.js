@@ -1,16 +1,17 @@
 import axios from 'axios';
 import { TRANSACTION, SEND_EMAIL, SEND_EMAIL_TEST } from './urls';
 
- const API_KEY = '6N3EO55S1n7IYCZuAoNRphyTm6Pzn0OoKrcMn4FneRYaYBO0WeaV3Co2bzYXKSwx';
+const API_KEY =
+  '6N3EO55S1n7IYCZuAoNRphyTm6Pzn0OoKrcMn4FneRYaYBO0WeaV3Co2bzYXKSwx';
 //const API_KEY_DEV =
- // 'bbvCp0Uo04cux3MONopMsX2LQdn03fC9aAWpuB9StKUqAdbjXj7Hqa4uaApwNc5b';
+// 'bbvCp0Uo04cux3MONopMsX2LQdn03fC9aAWpuB9StKUqAdbjXj7Hqa4uaApwNc5b';
 export const ApiTransaction = {
   makeTransaction: async (data) => {
     try {
       const response = await axios.post(TRANSACTION, data, {
         headers: {
           'Content-Type': 'application/json',
-          'MERCHANT-API-KEY': API_KEY_DEV,
+          'MERCHANT-API-KEY': API_KEY,
         },
       });
       return response.data;
@@ -23,7 +24,7 @@ export const ApiTransaction = {
       const response = await axios.post(SEND_EMAIL, data, {
         headers: {
           'Content-Type': 'application/json',
-          'MERCHANT-API-KEY': API_KEY_DEV,
+          'MERCHANT-API-KEY': API_KEY,
         },
       });
       console.log(response);
