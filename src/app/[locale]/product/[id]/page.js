@@ -28,20 +28,21 @@ export default function Product({ params }) {
   return (
     <main>
       <Navbar />
-
+      <div className='container mx-auto mt-10'>
+        <Button
+          value='back'
+          onClick={() => {
+            router.push('/#shop');
+          }}
+          iconLeft={<FaChevronLeft />}
+          label={'Back'}
+          iconPosition='start'
+          className='flex items-center text-white bg-black mb-10 w-28'
+        />
+      </div>
       {product && (
         <div className='flex flex-wrap container mx-auto mt-5 mb-10'>
           {/* <div className='w-96 h-130'> */}
-          <Button
-            value='back'
-            onClick={() => {
-              router.push('/#shop');
-            }}
-            iconLeft={<FaChevronLeft />}
-            label={'Back'}
-            iconPosition='start'
-            className='flex items-center text-white bg-black mb-10 w-28'
-          />
 
           <div className='w-full md:w-1/2 h-130 bg-white shadow-md rounded-lg overflow-hidden px-8 py-8'>
             <Image
