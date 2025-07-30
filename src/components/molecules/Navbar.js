@@ -59,7 +59,7 @@ const Navbar = ({ textBlack = true }) => {
             ))}
           </div>
           <div className='flex gap-3 items-center'>
-            <Link href='/my-cart'>
+            <Link href='https://access.strenuus.pro/en'>
               <Button
                 className='py-3'
                 label={t('cart')}
