@@ -77,14 +77,14 @@ const Navbar = ({ textBlack = true }) => {
               />
             </Link>
             {/* ingresar */}
-            <Link href='/auth'>
+            {/* <Link href='/auth'>
               <Button
                 className='py-3'
                 label={t('login')}
                 variant='primary'
                 withShadow={false}
               />
-            </Link>
+            </Link> */}
           </div>
         </div>
       </div>

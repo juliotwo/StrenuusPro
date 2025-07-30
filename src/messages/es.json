@@ -151,7 +151,7 @@
     "subtitle": "Inicia sesión para acceder a tu cuenta",
     "email": "Correo electrónico",
     "password": "Contraseña",
-    "btn-login": "Iniciar sesión",
+    "login-btn": "Iniciar sesión",
     "btn-forgot-password": "¿Olvidaste tu contraseña?",
     "btn-signup": "Crear cuenta",
     "usernameLabel": "Nombre de usuario",
