@@ -50,13 +50,11 @@ const LoginPage = () => {
       console.log('Login exitoso, redirigiendo...');
       if (foundUser.withAdditionals) {
         // Si el usuario tiene adicionales, redirige a la página de carrito con adicionales
-        router.push(locale + '/my-cart?additionals=true');
+        router.push(locale + 'my-cart?additionals=true');
       }
       if (foundUser.products) {
         // Si el usuario tiene productos específicos, redirige a la página de carrito con esos productos
-        router.push(
-          `${locale}/my-cart?ids=${foundUser.products}&additionals=false`
-        );
+        router.push(`my-cart?ids=${foundUser.products}&additionals=false`);
       }
       // Si no hay productos ni adicionales, redirige a la página de carrito vacía
       if (!foundUser.products && !foundUser.withAdditionals) {
@@ -126,7 +124,7 @@ const LoginPage = () => {
             type='submit'
             className='w-full bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-md transition duration-300'
           >
-            {t('btn-login')}
+            {t('login-btn')}
           </button>
         </form>
       </div>
