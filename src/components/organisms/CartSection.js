@@ -2,7 +2,7 @@
 import { useContext, useState } from 'react';
 import { useRouter } from '@/navigation';
 
-import { useTranslations } from 'next-intl';
+import { useLocale, useTranslations } from 'next-intl';
 import { ApiTransaction } from '@/api/api';
 
 import { CartSection, Button, Payments, CartContext } from 'ui-pages-ecommerce';
@@ -22,6 +22,8 @@ const CartSectionComponent = ({ withBack }) => {
   const [isValidDiscount, setIsValidDiscount] = useState(false);
   const [isLoading, setIsLoading] = useState(false);
   // state terms and conditions
+  const locale = useLocale();
+
   const [termsAccepted, setTermsAccepted] = useState(false);
   const router = useRouter();
   const t = useTranslations('Cart');
@@ -120,7 +122,7 @@ const CartSectionComponent = ({ withBack }) => {
         gender: 'male',
       },
       amount: total,
-      currency: 'MXN',
+      currency: locale === 'en' ? 'USD' : 'MXN',
       description: 'Pago de evento',
     };
     await sleep(2000);

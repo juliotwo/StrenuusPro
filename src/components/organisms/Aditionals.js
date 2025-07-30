@@ -71,7 +71,8 @@ const Additionals = () => {
                         <p className='text-[10px]'>{item.description}</p>
                       </div>
                       <h2 className='font-bold text-sm my-2'>
-                        {formatNumber(item.price)} MXN
+                        {formatNumber(item.price)}{' '}
+                        {locale === 'en' ? 'USD' : 'MXN'}
                       </h2>
                       <Button
                         className={`mt-2 ${isAdded ? 'bg-red-500' : ''}`}

@@ -66,7 +66,7 @@ export const productsDataEN = [
     description:
       'We specialize in planning and organizing corporate events for up to 20 attendees tailored to your company’s needs. From conferences and seminars to team-building activities, we ensure a smooth and unforgettable experience for all participants.',
     image: '/images/event-4.jpg',
-    price: '3999.99',
+    price: '216.79', // Original: 3999.99 MXN
     features: [
       'For up to 20 attendees',
       'Personalized corporate event planning',
@@ -85,7 +85,7 @@ export const productsDataEN = [
     description:
       'Stand out in the market with our expertly executed product launch events for up to 25 attendees. We handle everything from venue selection and logistics to marketing and promotion, ensuring a successful launch that generates excitement and drives sales.',
     image: '/images/event-3.jpg',
-    price: '9999.99',
+    price: '541.99', // Original: 9999.99 MXN
     features: [
       'For up to 25 attendees',
       'Expert execution of product launch events',
@@ -105,7 +105,7 @@ export const productsDataEN = [
     description:
       'Boost the productivity and cohesion of your executive team with our meticulously planned executive retreats for up to 15 attendees. We create an environment conducive to strategic discussions, team-building, and relaxation, allowing your top leaders to recharge and refocus.',
     image: '/images/event-2.jpg',
-    price: '4999.99',
+    price: '270.99', // Original: 4999.99 MXN
     features: [
       'For up to 15 attendees',
       'Enhancement of productivity and cohesion for executive teams',
@@ -125,7 +125,7 @@ export const productsDataEN = [
     description:
       'Recognize and celebrate excellence with our professionally organized award ceremonies for up to 10 attendees. From venue decoration and audiovisual production to nomination and award presentation services, we ensure a memorable event that honors achievements.',
     image: '/images/event-1.jpg',
-    price: '2999.99',
+    price: '162.59', // Original: 2999.99 MXN
     features: [
       'For up to 10 attendees',
       'Professional organization of award ceremonies',
@@ -144,7 +144,7 @@ export const productsDataEN = [
     description:
       'We organize conferences and seminars for up to 20 attendees that inspire and educate. From agenda planning to expert speaker engagements and attendee management, we handle all the details to ensure a successful and enriching event.',
     image: '/images/event-5.jpg',
-    price: '3999.99',
+    price: '216.79', // Original: 3999.99 MXN
     features: [
       'For up to 20 attendees',
       'Comprehensive agenda planning',
@@ -163,7 +163,7 @@ export const productsDataEN = [
     description:
       'We offer trade show and expo organization services for up to 25 attendees to help your company stand out. We manage logistics, booth design, and event promotion, ensuring successful participation and high market visibility.',
     image: '/images/event-6.jpg',
-    price: '7999.99',
+    price: '433.59', // Original: 7999.99 MXN
     features: [
       'For up to 25 attendees',
       'Comprehensive trade show and expo management',
@@ -182,7 +182,7 @@ export const productsDataEN = [
     description:
       'Our corporate training workshops for up to 20 attendees are designed to enhance your employees’ skills and knowledge. We offer interactive and personalized workshops covering a variety of topics relevant to the growth and professional development of your team.',
     image: '/images/event-7.jpg',
-    price: '5499.99',
+    price: '298.09', // Original: 5499.99 MXN
     features: [
       'For up to 20 attendees',
       'Interactive and personalized workshops',
@@ -201,7 +201,7 @@ export const productsDataEN = [
     description:
       'Foster valuable connections with our business networking events for up to 15 attendees. We organize strategic gatherings for professionals from various industries, facilitating the exchange of ideas, creation of alliances, and development of business opportunities.',
     image: '/images/event-8.jpg',
-    price: '3999.99',
+    price: '216.79', // Original: 3999.99 MXN
     features: [
       'For up to 15 attendees',
       'Organization of business networking events',
@@ -376,16 +376,16 @@ export const lowCostAddonsDataEN = [
   {
     stock: 100,
     id: 205,
-    name: 'Playlist de Música Ambiental Curada',
+    name: 'Curated Ambient Music Playlist',
     description:
-      'Crea el ambiente perfecto sin el costo de un DJ. Proporcionamos una playlist curada de 4 horas, sin anuncios y con música licenciada, adaptada al ambiente de tu evento (ej. corporativo, relajado, animado).',
+      'Set the perfect mood without the cost of a DJ. We provide a 4-hour, ad-free, licensed music playlist curated to your event’s atmosphere (e.g., corporate, relaxed, upbeat).',
     image: '/images/playlist.jpg',
-    price: '199.99',
+    price: '10.84', // Original: 199.99 MXN
     features: [
-      'Playlist personalizada de 4 horas',
-      'Música con licencia, libre de regalías',
-      'Entregada como un enlace simple para cualquier dispositivo',
-      'Sin anuncios ni interrupciones',
+      '4-hour custom playlist',
+      'Royalty-free, licensed music',
+      'Delivered as a simple link for any device',
+      'No ads or interruptions',
     ],
   },
   {
@@ -395,7 +395,7 @@ export const lowCostAddonsDataEN = [
     description:
       'An upgrade from the standard break. Includes premium roast coffee, a selection of herbal teas, fresh juice, and a platter of freshly baked pastries to keep your attendees energized.',
     image: '/images/coffee.jpg',
-    price: '999.99',
+    price: '54.20', // Original: 999.99 MXN
     features: [
       'Premium coffee and selection of teas',
       'Freshly squeezed orange juice',
@@ -410,7 +410,7 @@ export const lowCostAddonsDataEN = [
     description:
       'Add a highly professional touch with custom-printed name badges in a plastic holder with a clip. Helps attendees connect and network more easily.',
     image: '/images/gafetes.jpg',
-    price: '849.99',
+    price: '46.07', // Original: 849.99 MXN
     features: [
       'Full-color printed name badges',
       'Includes name, title, and company logo',
@@ -425,7 +425,7 @@ export const lowCostAddonsDataEN = [
     description:
       'Greet your attendees with a personalized welcome sign. We provide a professionally printed easel-back sign (A2 size) with the event name, date, and your company logo for placement at the entrance.',
     image: '/images/welcome.jpg',
-    price: '1399.99',
+    price: '75.88', // Original: 1399.99 MXN
     features: [
       'One A2 size (42x60 cm) printed sign',
       'Full-color custom design',
@@ -440,7 +440,7 @@ export const lowCostAddonsDataEN = [
     description:
       'A simple but elegant detail. We provide one 500ml water bottle for each attendee, featuring a custom label with your event name and logo. A great way to reinforce your brand.',
     image: '/images/bottles.jpg',
-    price: '799.99',
+    price: '43.36', // Original: 799.99 MXN
     features: [
       'One 500ml water bottle per attendee',
       'Custom-designed and printed labels',
@@ -455,7 +455,7 @@ export const lowCostAddonsDataEN = [
     description:
       'A simple but highly appreciated service. We set up a designated table with power strips and multi-port USB hubs so your guests can charge their phones and laptops.',
     image: '/images/charge.jpg',
-    price: '599.99',
+    price: '32.52', // Original: 599.99 MXN
     features: [
       'Designated table with clear signage',
       'Includes 2 power strips (12 outlets total)',
@@ -470,7 +470,7 @@ export const lowCostAddonsDataEN = [
     description:
       'Go paperless with a simple, mobile-friendly webpage for your event. It will include the agenda, speaker info, and links to any digital resources. We send you a QR code to share with attendees.',
     image: '/images/digital.jpg',
-    price: '1199.99',
+    price: '65.04', // Original: 1199.99 MXN
     features: [
       'Single-page mobile-friendly website',
       'Custom header with your event logo',
@@ -485,7 +485,7 @@ export const lowCostAddonsDataEN = [
     description:
       'A delicious upgrade to the standard cookies. A platter of assorted artisanal cookies from a local bakery, offering a gourmet touch to your coffee break.',
     image: '/images/galletas.jpg',
-    price: '649.99',
+    price: '35.23', // Original: 649.99 MXN
     features: [
       'Assortment of 3-4 types of artisanal cookies',
       'Beautifully arranged on a platter',
