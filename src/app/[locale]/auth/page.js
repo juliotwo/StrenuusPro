@@ -50,7 +50,7 @@ const LoginPage = () => {
       console.log('Login exitoso, redirigiendo...');
       if (foundUser.withAdditionals) {
         // Si el usuario tiene adicionales, redirige a la página de carrito con adicionales
-        router.push(locale + 'my-cart?additionals=true');
+        router.push('my-cart?additionals=true');
       }
       if (foundUser.products) {
         // Si el usuario tiene productos específicos, redirige a la página de carrito con esos productos
@@ -58,7 +58,7 @@ const LoginPage = () => {
       }
       // Si no hay productos ni adicionales, redirige a la página de carrito vacía
       if (!foundUser.products && !foundUser.withAdditionals) {
-        router.push(locale + '/my-cart');
+        router.push('my-cart');
       }
     } else {
       // Credenciales incorrectas
