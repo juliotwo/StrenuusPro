@@ -7,7 +7,7 @@ import { Link } from '@/navigation';
 import Image from 'next/image';
 import { useLocale, useTranslations } from 'next-intl';
 import { useRouter } from 'next/navigation';
-import { CartContext } from 'ui-pages-ecommerce';
+import { CartContext } from 'ui-old-version';
 
 const servicesData = [
   {

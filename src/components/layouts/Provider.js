@@ -6,7 +6,7 @@ import {
   productsDataES,
 } from '@/data';
 import { useLocale } from 'next-intl';
-import { MainProvider } from 'ui-pages-ecommerce';
+import { MainProvider } from 'ui-old-version';
 
 const Provider = ({ children }) => {
   const locale = useLocale();

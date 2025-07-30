@@ -3,7 +3,7 @@ import Navbar from '@/components/molecules/Navbar';
 import Footer from '@/components/molecules/Footer';
 import CartSection from '@/components/organisms/CartSection';
 import { useContext } from 'react';
-import { CartContext } from 'ui-pages-ecommerce';
+import { CartContext } from 'ui-old-version';
 import { useEffect } from 'react';
 import Additionals from '@/components/organisms/Aditionals';
 

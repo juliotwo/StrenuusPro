@@ -1,5 +1,5 @@
 'use client';
-import { CartContext } from 'ui-pages-ecommerce';
+import { CartContext } from 'ui-old-version';
 import { useLocale } from 'next-intl';
 import Image from 'next/image';
 import { useContext } from 'react';

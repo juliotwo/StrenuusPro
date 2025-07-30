@@ -5,7 +5,7 @@ import { useRouter } from '@/navigation';
 import { useLocale, useTranslations } from 'next-intl';
 import { ApiTransaction } from '@/api/api';
 
-import { CartSection, Button, Payments, CartContext } from 'ui-pages-ecommerce';
+import { CartSection, Button, Payments, CartContext } from 'ui-old-version';
 import { pageName } from '@/data';
 import { FaChevronLeft } from 'react-icons/fa';
 import Link from 'next/link';
@@ -197,6 +197,7 @@ const CartSectionComponent = ({ withBack }) => {
           {step === 'cart' && (
             <>
               <CartSection
+                currency={locale === 'en' ? 'USD' : 'MXN'}
                 onClickBuyMore={() => router.push('/#shop')}
                 onClickGoHome={() => router.push('/')}
                 variant='table'
@@ -236,6 +237,7 @@ const CartSectionComponent = ({ withBack }) => {
 
           {step === 'payment' && (
             <Payments
+              currency={locale === 'en' ? 'USD' : 'MXN'}
               isValidDiscountCode={isValidDiscount}
               handleChangeDiscountCode={onChangeDiscount}
               onPaymentResult={onPaymentResult}
