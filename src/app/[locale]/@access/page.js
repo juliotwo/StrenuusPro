@@ -4,6 +4,9 @@ import { useState } from 'react';
 import { useRouter } from '@/navigation';
 // Para consistencia con tu proyecto, usamos useTranslations para los textos.
 import { useLocale, useTranslations } from 'next-intl';
+import Link from 'next/link';
+import Button from '@/components/atoms/Button';
+import { twJoin } from 'tailwind-merge';
 
 // Array de usuarios como lo solicitaste.
 const allowedUsers = [
@@ -69,68 +72,104 @@ const LoginPage = () => {
   };
 
   return (
-    <section className='bg-black min-h-screen flex items-center justify-center p-4'>
-      <div className='w-full max-w-sm mx-auto bg-gray-900 rounded-lg shadow-xl p-8'>
-        <form onSubmit={handleLogin}>
-          <h1 className='text-white text-2xl font-bold mb-6 text-center'>
-            {t('title')}
-          </h1>
-
-          {/* Campo de Usuario */}
-          <div className='mb-4'>
-            <label
-              htmlFor='username'
-              className='block text-gray-400 text-sm font-medium mb-2'
-            >
-              {t('usernameLabel')}
-            </label>
-            <input
-              type='text'
-              id='username'
-              value={username}
-              onChange={(e) => setUsername(e.target.value)}
-              className='w-full px-3 py-2 bg-gray-800 border border-gray-700 rounded-md text-white focus:outline-none focus:ring-2 focus:ring-blue-500'
-              placeholder={t('usernamePlaceholder')}
-              required
-            />
-          </div>
-
-          {/* Campo de Contraseña */}
-          <div className='mb-6'>
-            <label
-              htmlFor='password'
-              className='block text-gray-400 text-sm font-medium mb-2'
-            >
-              {t('password')}
-            </label>
-            <input
-              type='password'
-              id='password'
-              value={password}
-              onChange={(e) => setPassword(e.target.value)}
-              className='w-full px-3 py-2 bg-gray-800 border border-gray-700 rounded-md text-white focus:outline-none focus:ring-2 focus:ring-blue-500'
-              placeholder='••••••••'
-              required
-            />
-          </div>
-
-          {/* Mensaje de Error */}
-          {error && (
-            <p className='text-red-500 text-xs italic mb-4 text-center'>
-              {error}
-            </p>
+    <>
+      <nav className='w-full py-4 text-sm bg-black text-white'>
+        <div
+          className={twJoin(
+            'container px-4 mx-auto flex justify-between items-center h-full'
           )}
+        >
+          <div className='flex gap-10 items-center'>
+            <Button
+              className='py-3'
+              label={locale === 'en' ? 'ES' : 'EN'}
+              onClick={() =>
+                router.replace(pathname, {
+                  locale: locale === 'en' ? 'es' : 'en',
+                })
+              }
+              variant='primary'
+              withShadow={false}
+              image={
+                locale === 'en'
+                  ? '/images/mexico.png'
+                  : '/images/united-states.png'
+              }
+            />
+            {/* logo image */}
+            <Link href='/'>
+              <img
+                src='/images/StrenuusPro.png'
+                alt='StreNuus Pro Logo'
+                className='h-10'
+              />
+            </Link>
+          </div>
+        </div>
+      </nav>
+      <section className='bg-black min-h-screen flex items-center justify-center p-4'>
+        <div className='w-full max-w-sm mx-auto bg-gray-900 rounded-lg shadow-xl p-8'>
+          <form onSubmit={handleLogin}>
+            <h1 className='text-white text-2xl font-bold mb-6 text-center'>
+              {t('title')}
+            </h1>
 
-          {/* Botón de Login */}
-          <button
-            type='submit'
-            className='w-full bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-md transition duration-300'
-          >
-            {t('login-btn')}
-          </button>
-        </form>
-      </div>
-    </section>
+            {/* Campo de Usuario */}
+            <div className='mb-4'>
+              <label
+                htmlFor='username'
+                className='block text-gray-400 text-sm font-medium mb-2'
+              >
+                {t('usernameLabel')}
+              </label>
+              <input
+                type='text'
+                id='username'
+                value={username}
+                onChange={(e) => setUsername(e.target.value)}
+                className='w-full px-3 py-2 bg-gray-800 border border-gray-700 rounded-md text-white focus:outline-none focus:ring-2 focus:ring-blue-500'
+                placeholder={t('usernamePlaceholder')}
+                required
+              />
+            </div>
+
+            {/* Campo de Contraseña */}
+            <div className='mb-6'>
+              <label
+                htmlFor='password'
+                className='block text-gray-400 text-sm font-medium mb-2'
+              >
+                {t('password')}
+              </label>
+              <input
+                type='password'
+                id='password'
+                value={password}
+                onChange={(e) => setPassword(e.target.value)}
+                className='w-full px-3 py-2 bg-gray-800 border border-gray-700 rounded-md text-white focus:outline-none focus:ring-2 focus:ring-blue-500'
+                placeholder='••••••••'
+                required
+              />
+            </div>
+
+            {/* Mensaje de Error */}
+            {error && (
+              <p className='text-red-500 text-xs italic mb-4 text-center'>
+                {error}
+              </p>
+            )}
+
+            {/* Botón de Login */}
+            <button
+              type='submit'
+              className='w-full bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-md transition duration-300'
+            >
+              {t('login-btn')}
+            </button>
+          </form>
+        </div>
+      </section>
+    </>
   );
 };
 

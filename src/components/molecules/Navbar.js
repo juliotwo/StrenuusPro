@@ -37,11 +37,12 @@ const Navbar = ({ textBlack = true }) => {
                 : '/images/united-states.png'
             }
           />
-
           <Link href='/'>
-            <h3 className='text-xl sm:text-2xl lg:text-3xl font-medium'>
-              STRENUUS PRO
-            </h3>
+            <img
+              src='/images/StrenuusPro.png'
+              alt='StreNuus Pro Logo'
+              className='h-10'
+            />
           </Link>
         </div>
 
