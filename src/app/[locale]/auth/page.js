@@ -54,7 +54,7 @@ const LoginPage = () => {
       }
       if (foundUser.products) {
         // Si el usuario tiene productos específicos, redirige a la página de carrito con esos productos
-        router.push(`my-cart?ids=${foundUser.products}&additionals=false`);
+        router.push(`my-cart?ids=${foundUser.products}`);
       }
       // Si no hay productos ni adicionales, redirige a la página de carrito vacía
       if (!foundUser.products && !foundUser.withAdditionals) {
