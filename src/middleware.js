@@ -1,38 +1,33 @@
-// src/middleware.js
-
 import { NextResponse } from 'next/server';
-import createIntlMiddleware from 'next-intl/middleware';
+import createMiddleware from 'next-intl/middleware';
+import { locales, localePrefix } from './navigation';
 
-// Asume que tu configuración de i18n está en 'src/i18n.js'
-// ¡Asegúrate de que la ruta de importación sea correcta!
-import { locales, defaultLocale } from './i18n';
+export function middleware(request) {
+  const hostname = request.headers.get('host');
 
-export default function middleware(req) {
-  const hostname = req.headers.get('host');
-
-  // --- 1. Lógica del Subdominio (TIENE PRIORIDAD) ---
-  // Si el subdominio es "access", reescribe la ruta a la carpeta /access y termina.
-  // Esto evita que el middleware de i18n se ejecute para este subdominio.
+  // --- 1. Lógica del Subdominio (se ejecuta primero) ---
+  // Revisa si el host es "access.dominio.com"
   if (hostname && hostname.startsWith('access.')) {
-    const url = req.nextUrl.clone();
-    // Prepend /access a la ruta original. Ej: /profile -> /access/profile
+    // Reescribe la URL para que apunte a la carpeta /access internamente
+    const url = request.nextUrl.clone();
     url.pathname = `/access${url.pathname}`;
     return NextResponse.rewrite(url);
   }
 
-  // --- 2. Lógica de Internacionalización (i18n) ---
-  // Si no es el subdominio "access", ejecuta el middleware de idiomas con normalidad.
-  const handleI18nRouting = createIntlMiddleware({
-    locales: locales,
-    defaultLocale: defaultLocale,
+  // --- 2. Lógica de i18n (se ejecuta si NO es el subdominio) ---
+  // Creamos y ejecutamos tu middleware original de next-intl
+  const handleI18nRouting = createMiddleware({
+    locales,
+    localePrefix,
+    defaultLocale: 'en',
   });
 
-  return handleI18nRouting(req);
+  return handleI18nRouting(request);
 }
 
 export const config = {
-  // El matcher debe ejecutarse en todas las rutas para poder revisar
-  // tanto el subdominio como el idioma.
-  // Excluimos rutas que no necesitan procesamiento.
-  matcher: ['/((?!api|_next/static|_next/image|fonts|favicon.ico).*)'],
+  // El nuevo matcher es clave. Se ejecuta en todas las rutas EXCEPTO
+  // las que son para archivos de sistema, imágenes, o APIs.
+  // Esto permite que la lógica de subdominio e i18n siempre se puedan activar.
+  matcher: ['/((?!api|_next/static|_next/image|favicon.ico).*)'],
 };
