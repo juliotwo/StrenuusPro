@@ -5,7 +5,8 @@
     "know": "Conocer",
     "events": "Eventos",
     "more": "Más",
-    "cart": "Carrito"
+    "cart": "Carrito",
+    "login": "Iniciar sesión"
   },
   "Hero": {
     "title": "Eventos exclusivos",
@@ -80,7 +81,9 @@
     "telephone": "Teléfono *",
     "email": "Correo electrónico *",
     "error-not-found": "Ocurrió un error al procesar la compra. Inténtalo de nuevo más tarde.",
-    "require-fields": "Campos son obligatorios"
+    "require-fields": "Campos son obligatorios",
+    "terms-conditions-required": "Por favor, acepta los términos y condiciones para continuar.",
+    "terms-conditions": "Acepto los términos y condiciones"
   },
   "Contacts": {
     "name-required": "Se requiere el nombre completo",
@@ -95,7 +98,7 @@
     "rights-reserved": "Todos los derechos reservados",
     "link-privacy": "Privacidad",
     "link-terms": "Términos",
-    "link-returns":"Política de devoluciones"
+    "link-returns": "Política de devoluciones"
   },
   "Policy": {
     "title": "Política de Privacidad",
@@ -142,5 +145,30 @@
   },
   "NotFoundPage": {
     "text": "404 - Página no encontrada"
+  },
+  "Login": {
+    "title": "Iniciar sesión",
+    "subtitle": "Inicia sesión para acceder a tu cuenta",
+    "email": "Correo electrónico",
+    "password": "Contraseña",
+    "btn-login": "Iniciar sesión",
+    "btn-forgot-password": "¿Olvidaste tu contraseña?",
+    "btn-signup": "Crear cuenta",
+    "usernameLabel": "Nombre de usuario",
+    "usernamePlaceholder": " Escribe tu nombre de usuario"
+  },
+  "Additionals": {
+    "title": "ADICIONALES",
+    "description": "Descubre nuestros servicios exclusivos diseñados para mejorar tu experiencia en eventos. Desde fotografía profesional hasta producción de video cautivadora, ofrecemos una variedad de servicios adicionales que elevarán tu evento a nuevas alturas. Permítenos ayudarte a crear recuerdos inolvidables que dejarán una impresión duradera en tus invitados.",
+    "btn-see-more": "Ver más",
+    "card-1-title": "Elige la fecha",
+    "card-1-btn": "Paso 1",
+    "card-2-title": "Personaliza tu evento",
+    "card-2-btn": "Paso 2",
+    "card-3-title": "Disfruta tu evento",
+    "card-3-btn": "Paso 3",
+    "title-cart": "¿Qué tipo de evento estás buscando?",
+    "remove": "Eliminar",
+    "buy": "Comprar"
   }
 }

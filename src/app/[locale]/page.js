@@ -5,6 +5,7 @@ import Services from '@/components/organisms/Services';
 import Missions from '@/components/molecules/Missions';
 import References from '@/components/molecules/References';
 import Video from '@/components/organisms/Video';
+import Additionals from '@/components/organisms/Aditionals';
 
 export default function Home() {
   return (
@@ -12,6 +13,7 @@ export default function Home() {
       <Hero />
       <About />
       <Services />
+      <Additionals />
       <Video />
       <Missions />
       <References />

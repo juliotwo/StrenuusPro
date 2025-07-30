@@ -7,3 +7,51 @@
   @tailwind components;
   @tailwind utilities;
 }
+
+.swiper-button-prev-custom,
+.swiper-button-next-custom {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 44px;
+  height: 44px;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  z-index: 10; /* Asegura que estén por encima de otros elementos */
+}
+
+/* Posiciona la flecha 'Anterior' fuera, a la izquierda */
+.swiper-button-prev-custom {
+  left: 0; /* Ajusta este valor según necesites */
+}
+
+/* Posiciona la flecha 'Siguiente' fuera, a la derecha */
+.swiper-button-next-custom {
+  right: 0; /* Ajusta este valor según necesites */
+}
+
+/* Contenido de la flecha (el ícono) */
+.swiper-button-prev-custom::after,
+.swiper-button-next-custom::after {
+  content: 'prev'; /* Swiper reemplazará esto con el SVG correcto */
+  font-family: swiper-icons;
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+.swiper-button-next-custom::after {
+  content: 'next';
+}
+
+/* Ocultar las flechas en pantallas muy pequeñas */
+@media (max-width: 767px) {
+  .swiper-button-prev-custom,
+  .swiper-button-next-custom {
+    display: none;
+  }
+}

@@ -5,7 +5,8 @@
     "know": "Know",
     "events": "Events",
     "more": "More",
-    "cart": "Cart"
+    "cart": "Cart",
+    "login": "Login"
   },
   "Hero": {
     "title": "Exclusive events",
@@ -18,6 +19,20 @@
     "description": "At StrenuusPro, we are passionate about transforming your corporate events into extraordinary experiences. With our unwavering commitment to excellence, attention to detail, and creative vision, we take pride in delivering seamless and impactful event preparation services. From product launches to corporate retreats, our dedicated team works closely with you to understand your objectives and bring your vision to life. With a focus on innovation, professionalism, and customer satisfaction, we strive to exceed expectations at every step. Trust StrenuusPro to elevate your events, leaving a lasting impression on your attendees and unlocking the full potential of your business."
   },
   "Services": {
+    "card-1-title": "Choose the date",
+    "card-1-btn": "Step 1",
+    "card-2-title": "Personalize your event",
+    "card-2-btn": "Step 2",
+    "card-3-title": "Enjoy your event",
+    "card-3-btn": "Step 3",
+    "title-cart": "What kind of event are you looking for?",
+    "remove": "Remove",
+    "buy": "Buy"
+  },
+  "Additionals": {
+    "title": "ADITIONALS",
+    "description": "Discover our exclusive services designed to enhance your event experience. From professional photography to captivating video production, we offer a range of additional services that will elevate your event to new heights. Let us help you create unforgettable memories that will leave a lasting impression on your guests.",
+    "btn-see-more": "See more",
     "card-1-title": "Choose the date",
     "card-1-btn": "Step 1",
     "card-2-title": "Personalize your event",
@@ -80,7 +95,9 @@
     "telephone": "Telephone *",
     "email": "Email *",
     "error-not-found": "Unexpected error. Try again later.",
-    "require-fields": "Fields required"
+    "require-fields": "Fields required",
+    "terms-conditions-required": "Please accept the terms and conditions to proceed.",
+    "terms-conditions": "I accept the terms and conditions"
   },
   "Contacts": {
     "name-required": "The full name is required",
@@ -95,7 +112,7 @@
     "rights-reserved": "All Rights Reserved",
     "link-privacy": "Privacy",
     "link-terms": "Terms",
-    "link-returns":"Cancellations Policy"
+    "link-returns": "Cancellations Policy"
   },
   "Policy": {
     "title": "Privacy Policy",
@@ -142,5 +159,17 @@
   },
   "NotFoundPage": {
     "text": "404 - Page not found"
+  },
+  "Login": {
+    "title": "Login",
+    "email": "Email",
+    "password": "Password",
+    "remember-me": "Remember me",
+    "forgot-password": "Forgot password?",
+    "login-btn": "Login",
+    "no-account": "Don't have an account?",
+    "register-here": "Register here",
+    "usernameLabel": "Username",
+    "usernamePlaceholder": "Enter your username"
   }
 }

@@ -76,6 +76,15 @@ const Navbar = ({ textBlack = true }) => {
                 icon={<FaPhone />}
               />
             </Link>
+            {/* ingresar */}
+            <Link href='/auth'>
+              <Button
+                className='py-3'
+                label={t('login')}
+                variant='primary'
+                withShadow={false}
+              />
+            </Link>
           </div>
         </div>
       </div>

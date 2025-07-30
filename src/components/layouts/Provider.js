@@ -1,5 +1,10 @@
 'use client';
-import { productsDataEN, productsDataES } from '@/data';
+import {
+  lowCostAddonsDataEN,
+  lowCostAddonsDataES,
+  productsDataEN,
+  productsDataES,
+} from '@/data';
 import { useLocale } from 'next-intl';
 import { MainProvider } from 'ui-pages-ecommerce';
 
@@ -8,7 +13,11 @@ const Provider = ({ children }) => {
 
   return (
     <MainProvider
-      products={locale === 'es' ? productsDataES : productsDataEN}
+      products={
+        locale === 'es'
+          ? productsDataES.concat(lowCostAddonsDataES)
+          : productsDataEN.concat(lowCostAddonsDataEN)
+      }
       locale={locale}
       colorPrimary='#252525'
     >

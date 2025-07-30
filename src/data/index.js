@@ -372,6 +372,253 @@ export const productsDataES = [
   },
 ];
 
+export const lowCostAddonsDataEN = [
+  {
+    stock: 100,
+    id: 205,
+    name: 'Playlist de Música Ambiental Curada',
+    description:
+      'Crea el ambiente perfecto sin el costo de un DJ. Proporcionamos una playlist curada de 4 horas, sin anuncios y con música licenciada, adaptada al ambiente de tu evento (ej. corporativo, relajado, animado).',
+    image: '/images/playlist.jpg',
+    price: '199.99',
+    features: [
+      'Playlist personalizada de 4 horas',
+      'Música con licencia, libre de regalías',
+      'Entregada como un enlace simple para cualquier dispositivo',
+      'Sin anuncios ni interrupciones',
+    ],
+  },
+  {
+    stock: 100,
+    id: 200,
+    name: 'Deluxe Coffee Break',
+    description:
+      'An upgrade from the standard break. Includes premium roast coffee, a selection of herbal teas, fresh juice, and a platter of freshly baked pastries to keep your attendees energized.',
+    image: '/images/coffee.jpg',
+    price: '999.99',
+    features: [
+      'Premium coffee and selection of teas',
+      'Freshly squeezed orange juice',
+      'Assortment of fresh pastries and bread',
+      'Service for the number of attendees in the base package',
+    ],
+  },
+  {
+    stock: 100,
+    id: 201,
+    name: 'Professional Name Badges',
+    description:
+      'Add a highly professional touch with custom-printed name badges in a plastic holder with a clip. Helps attendees connect and network more easily.',
+    image: '/images/gafetes.jpg',
+    price: '849.99',
+    features: [
+      'Full-color printed name badges',
+      'Includes name, title, and company logo',
+      'Durable plastic holder with clip',
+      'Prepared for all registered attendees',
+    ],
+  },
+  {
+    stock: 100,
+    id: 202,
+    name: 'Custom Welcome Signage',
+    description:
+      'Greet your attendees with a personalized welcome sign. We provide a professionally printed easel-back sign (A2 size) with the event name, date, and your company logo for placement at the entrance.',
+    image: '/images/welcome.jpg',
+    price: '1399.99',
+    features: [
+      'One A2 size (42x60 cm) printed sign',
+      'Full-color custom design',
+      'Mounted on rigid foam board',
+      'Includes a cardboard easel for display',
+    ],
+  },
+  {
+    stock: 100,
+    id: 203,
+    name: 'Personalized Water Bottles',
+    description:
+      'A simple but elegant detail. We provide one 500ml water bottle for each attendee, featuring a custom label with your event name and logo. A great way to reinforce your brand.',
+    image: '/images/bottles.jpg',
+    price: '799.99',
+    features: [
+      'One 500ml water bottle per attendee',
+      'Custom-designed and printed labels',
+      'Choice of still or sparkling water',
+      'Chilled and distributed upon arrival',
+    ],
+  },
+  {
+    stock: 100,
+    id: 204,
+    name: 'Dedicated Charging Station',
+    description:
+      'A simple but highly appreciated service. We set up a designated table with power strips and multi-port USB hubs so your guests can charge their phones and laptops.',
+    image: '/images/charge.jpg',
+    price: '599.99',
+    features: [
+      'Designated table with clear signage',
+      'Includes 2 power strips (12 outlets total)',
+      'Includes 2 multi-port USB hubs',
+      'Assortment of common charging cables (Lightning, USB-C)',
+    ],
+  },
+  {
+    stock: 100,
+    id: 206,
+    name: 'Digital Agenda & Resources Page',
+    description:
+      'Go paperless with a simple, mobile-friendly webpage for your event. It will include the agenda, speaker info, and links to any digital resources. We send you a QR code to share with attendees.',
+    image: '/images/digital.jpg',
+    price: '1199.99',
+    features: [
+      'Single-page mobile-friendly website',
+      'Custom header with your event logo',
+      'Includes agenda and speaker profiles',
+      'QR code for easy access',
+    ],
+  },
+  {
+    stock: 100,
+    id: 207,
+    name: 'Artisanal Cookie Platter',
+    description:
+      'A delicious upgrade to the standard cookies. A platter of assorted artisanal cookies from a local bakery, offering a gourmet touch to your coffee break.',
+    image: '/images/galletas.jpg',
+    price: '649.99',
+    features: [
+      'Assortment of 3-4 types of artisanal cookies',
+      'Beautifully arranged on a platter',
+      'Sourced from a high-quality local bakery',
+      'Sufficient for the number of attendees in the base package',
+    ],
+  },
+];
+
+export const lowCostAddonsDataES = [
+  {
+    stock: 100,
+    id: 205,
+    name: 'Playlist de Música Ambiental Curada',
+    description:
+      'Crea el ambiente perfecto sin el costo de un DJ. Proporcionamos una playlist curada de 4 horas, sin anuncios y con música licenciada, adaptada al ambiente de tu evento (ej. corporativo, relajado, animado).',
+    image: '/images/playlist.jpg',
+    price: '199.99',
+    features: [
+      'Playlist personalizada de 4 horas',
+      'Música con licencia, libre de regalías',
+      'Entregada como un enlace simple para cualquier dispositivo',
+      'Sin anuncios ni interrupciones',
+    ],
+  },
+  {
+    stock: 100,
+    id: 200,
+    name: 'Coffee Break de Lujo',
+    description:
+      'Una mejora sobre el coffee break estándar. Incluye café de tueste premium, una selección de tés herbales, jugo fresco y una charola de pastelería recién horneada para mantener a tus asistentes con energía.',
+    image: '/images/coffee.jpg',
+    price: '999.99',
+    features: [
+      'Café premium y selección de tés',
+      'Jugo de naranja recién exprimido',
+      'Surtido de pastelería y pan fresco',
+      'Servicio para el número de asistentes del paquete base',
+    ],
+  },
+  {
+    stock: 100,
+    id: 201,
+    name: 'Gafetes de Identificación Profesionales',
+    description:
+      'Añade un toque altamente profesional con gafetes impresos a medida en un portagafetes de plástico con clip. Ayuda a los asistentes a conectar y hacer networking más fácilmente.',
+    image: '/images/gafetes.jpg',
+    price: '849.99',
+    features: [
+      'Gafetes impresos a todo color',
+      'Incluye nombre, puesto y logo de la empresa',
+      'Portagafetes de plástico duradero con clip',
+      'Preparados para todos los asistentes registrados',
+    ],
+  },
+  {
+    stock: 100,
+    id: 202,
+    name: 'Señalización de Bienvenida Personalizada',
+    description:
+      'Recibe a tus asistentes con una señal de bienvenida personalizada. Proporcionamos un letrero impreso profesionalmente (tamaño A2) con el nombre del evento, fecha y logo de tu empresa para colocar en la entrada.',
+    image: '/images/welcome.jpg',
+    price: '1399.99',
+    features: [
+      'Un letrero impreso tamaño A2 (42x60 cm)',
+      'Diseño personalizado a todo color',
+      'Montado sobre un material rígido (foam board)',
+      'Incluye un caballete de cartón para su exhibición',
+    ],
+  },
+  {
+    stock: 100,
+    id: 203,
+    name: 'Botellas de Agua Personalizadas',
+    description:
+      'Un detalle simple pero elegante. Proporcionamos una botella de agua de 500ml para cada asistente, con una etiqueta personalizada con el nombre de tu evento y logo. Una gran forma de reforzar tu marca.',
+    image: '/images/bottles.jpg',
+    price: '799.99',
+    features: [
+      'Una botella de agua de 500ml por asistente',
+      'Etiquetas diseñadas e impresas a medida',
+      'Elección de agua natural o mineral',
+      'Frías y distribuidas a la llegada',
+    ],
+  },
+  {
+    stock: 100,
+    id: 204,
+    name: 'Estación de Carga Dedicada',
+    description:
+      'Un servicio simple pero muy apreciado. Instalamos una mesa designada con multicontactos y hubs USB para que tus invitados puedan cargar sus teléfonos y laptops.',
+    image: '/images/charge.jpg',
+    price: '599.99',
+    features: [
+      'Mesa designada con señalización clara',
+      'Incluye 2 multicontactos (12 enchufes en total)',
+      'Incluye 2 hubs USB multipuerto',
+      'Surtido de cables de carga comunes (Lightning, USB-C)',
+    ],
+  },
+
+  {
+    stock: 100,
+    id: 206,
+    name: 'Agenda Digital y Página de Recursos',
+    description:
+      'Elimina el papel con una página web simple y amigable para móviles. Incluirá la agenda, información de ponentes y enlaces a recursos digitales. Te enviamos un código QR para compartir con los asistentes.',
+    image: '/images/digital.jpg',
+    price: '1199.99',
+    features: [
+      'Página web única optimizada para móviles',
+      'Encabezado personalizado con el logo de tu evento',
+      'Incluye agenda y perfiles de ponentes',
+      'Código QR para fácil acceso',
+    ],
+  },
+  {
+    stock: 100,
+    id: 207,
+    name: 'Charola de Galletas Artesanales',
+    description:
+      'Una deliciosa mejora a las galletas estándar. Una charola con un surtido de galletas artesanales de una pastelería local, ofreciendo un toque gourmet a tu coffee break.',
+    image: '/images/galletas.jpg',
+    price: '649.99',
+    features: [
+      'Surtido de 3 a 4 tipos de galletas artesanales',
+      'Presentadas elegantemente en una charola',
+      'Provenientes de una pastelería local de alta calidad',
+      'Suficiente para el número de asistentes del paquete base',
+    ],
+  },
+];
+
 export const footerOptions = [
   {
     href: '/pdf/AP-STRENNUS-MANUS-MAYO-2024.pdf',
