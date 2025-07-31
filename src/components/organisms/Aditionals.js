@@ -5,7 +5,7 @@ import { useContext } from 'react';
 import { lowCostAddonsDataEN, lowCostAddonsDataES } from '@/data';
 import Image from 'next/image';
 import { useLocale, useTranslations } from 'next-intl';
-import { useRouter } from 'next/navigation';
+import { useRouter } from '@/navigation';
 import { CartContext } from 'ui-old-version';
 
 import { Swiper, SwiperSlide } from 'swiper/react';
@@ -15,7 +15,7 @@ import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 
-const Additionals = () => {
+const Additionals = ({ withContact }) => {
   const navigation = useRouter();
   const locale = useLocale();
   const t = useTranslations('Additionals');
@@ -25,7 +25,7 @@ const Additionals = () => {
   return (
     <section
       id='shop'
-      className='flex flex-col container mx-auto px-4 justify-center py-28'
+      className='flex flex-col container mx-auto px-4 justify-center py-12'
     >
       <h1 className='text-xl sm:text-2xl lg:text-3xl xl:text-4xl font-medium uppercase mb-10'>
         {t('title')}
@@ -52,6 +52,13 @@ const Additionals = () => {
           {(locale === 'es' ? lowCostAddonsDataES : lowCostAddonsDataEN).map(
             (item, i) => {
               const isAdded = validateProductInCart(item.id);
+              const handleClick = () => {
+                if (withContact) {
+                  navigation.push(`/contact`);
+                  return;
+                }
+                handleAddOrRemoveProduct(item.id);
+              };
               return (
                 <SwiperSlide key={i} className='h-auto'>
                   <div className='bg-white flex flex-col rounded-none shadow-lg h-full'>
@@ -76,8 +83,14 @@ const Additionals = () => {
                       </h2>
                       <Button
                         className={`mt-2 ${isAdded ? 'bg-red-500' : ''}`}
-                        label={isAdded ? t('remove') : t('buy')}
-                        onClick={() => handleAddOrRemoveProduct(item.id)}
+                        label={
+                          withContact
+                            ? t('contact')
+                            : isAdded
+                            ? t('remove')
+                            : t('buy')
+                        }
+                        onClick={handleClick}
                       />
                     </div>
                   </div>

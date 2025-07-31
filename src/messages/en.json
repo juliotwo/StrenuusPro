@@ -1,6 +1,6 @@
 {
   "Navbar": {
-    "contact": "Contact",
+    "contact": "Quote here",
     "home": "Home",
     "know": "Know",
     "events": "Events",
@@ -27,8 +27,10 @@
     "card-3-btn": "Step 3",
     "title-cart": "What kind of event are you looking for?",
     "remove": "Remove",
-    "buy": "Buy"
+    "buy": "Buy",
+    "contact": "Quote here"
   },
+
   "Additionals": {
     "title": "ADITIONALS",
     "description": "Discover our exclusive services designed to enhance your event experience. From professional photography to captivating video production, we offer a range of additional services that will elevate your event to new heights. Let us help you create unforgettable memories that will leave a lasting impression on your guests.",
@@ -41,7 +43,8 @@
     "card-3-btn": "Step 3",
     "title-cart": "What kind of event are you looking for?",
     "remove": "Remove",
-    "buy": "Buy"
+    "buy": "Buy",
+    "contact": "Quote here"
   },
   "Video": {
     "description": "Unleash the power of unforgettable events and elevate your business with StrenuusPro. Let us be your partner in crafting extraordinary moments that define your brand's story. Together, let's create events that leave a lasting impression!",

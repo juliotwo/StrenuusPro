@@ -6,7 +6,7 @@ import { productsDataEN, productsDataES } from '@/data';
 import { Link } from '@/navigation';
 import Image from 'next/image';
 import { useLocale, useTranslations } from 'next-intl';
-import { useRouter } from 'next/navigation';
+import { useRouter } from '@/navigation';
 import { CartContext } from 'ui-old-version';
 
 const servicesData = [
@@ -27,7 +27,7 @@ const servicesData = [
   },
 ];
 
-const Services = () => {
+const Services = ({ withContact = false }) => {
   const navigation = useRouter();
 
   const locale = useLocale();
@@ -38,45 +38,54 @@ const Services = () => {
 
   return (
     <>
-      <section className='bg-black min-h-screen py-28 flex items-center justify-center'>
-        <div className='container mx-auto px-4 w-full h-full flex flex-col justify-center'>
-          <div className='grid grid-cols-3 gap-5 h-full'>
-            {servicesData.map((item, i) => (
-              <div
-                className='bg-center bg-cover h-80'
-                style={{ backgroundImage: `url(${item.image})` }}
-                key={i}
-              >
-                <div className='flex flex-col bg-black text-white bg-opacity-40 h-full w-full p-10'>
-                  <h1 className='text-xl sm:text-2xl lg:text-3xl font-medium'>
-                    {t(item.title)}
-                  </h1>
-                  {/* 
+      {withContact && (
+        <section className='bg-black py-28 flex items-center justify-center'>
+          <div className='container mx-auto px-4 w-full h-full flex flex-col justify-center'>
+            <div className='grid grid-cols-3 gap-5 h-full'>
+              {servicesData.map((item, i) => (
+                <div
+                  className='bg-center bg-cover h-80'
+                  style={{ backgroundImage: `url(${item.image})` }}
+                  key={i}
+                >
+                  <div className='flex flex-col bg-black text-white bg-opacity-40 h-full w-full p-10'>
+                    <h1 className='text-xl sm:text-2xl lg:text-3xl font-medium'>
+                      {t(item.title)}
+                    </h1>
+                    {/* 
                   <div className='flex-1 mt-10 flex items-end'>
                     <Link href='/#shop'>
                       <Button label={t(item.button)} />
                     </Link>
                   </div> */}
+                  </div>
                 </div>
-              </div>
-            ))}
+              ))}
+            </div>
           </div>
-        </div>
-      </section>
+        </section>
+      )}
 
       {/* Shop */}
       <section
         id='shop'
-        className='flex flex-col container mx-auto px-4 min-h-screen justify-center py-28'
+        className='flex flex-col container mx-auto px-4 justify-center py-28'
       >
         <h1 className='text-xl sm:text-2xl lg:text-3xl xl:text-4xl font-medium uppercase'>
           {t('title-cart')}
         </h1>
 
-        <div className='w-full grid grid-cols-4 gap-5 mt-20'>
+        <div className='w-full grid grid-cols-4 gap-5 mt-0'>
           {(locale === 'es' ? productsDataES : productsDataEN).map(
             (item, i) => {
               const isAdded = validateProductInCart(item.id);
+              const handleClick = () => {
+                if (withContact) {
+                  navigation.push(`/contact`);
+                  return;
+                }
+                handleAddOrRemoveProduct(item.id);
+              };
 
               return (
                 <div
@@ -107,8 +116,14 @@ const Services = () => {
 
                     <Button
                       className={`mt-2 ${isAdded ? 'bg-red-500' : ''}`}
-                      label={isAdded ? t('remove') : t('buy')}
-                      onClick={() => handleAddOrRemoveProduct(item.id)}
+                      label={
+                        withContact
+                          ? t('contact')
+                          : isAdded
+                          ? t('remove')
+                          : t('buy')
+                      }
+                      onClick={handleClick}
                     />
                   </div>
                 </div>

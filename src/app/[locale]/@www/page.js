@@ -13,8 +13,8 @@ export default function Home() {
     <main>
       <Hero />
       <About />
-      <Services />
-      <Additionals />
+      <Services withContact={true} />
+      <Additionals withContact={true} />
       {/* <Video /> */}
       <Missions />
       <References />

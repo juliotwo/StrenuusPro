@@ -1,6 +1,6 @@
 {
   "Navbar": {
-    "contact": "Contacto",
+    "contact": "Cotiza aqui",
     "home": "Inicio",
     "know": "Conocer",
     "events": "Eventos",
@@ -27,7 +27,8 @@
     "card-3-btn": "Paso 3",
     "title-cart": "¿Qué tipo de evento estás buscando?",
     "remove": "Eliminar",
-    "buy": "Comprar"
+    "buy": "Comprar",
+    "contact": "Cotiza aqui"
   },
   "Video": {
     "description": "Libera el poder de eventos inolvidables y eleva tu negocio con StrenuusPro. Permítenos ser tu socio en la creación de momentos extraordinarios que definan la historia de tu marca. ¡Juntos creemos eventos que dejen una impresión duradera!",
@@ -169,6 +170,7 @@
     "card-3-btn": "Paso 3",
     "title-cart": "¿Qué tipo de evento estás buscando?",
     "remove": "Eliminar",
-    "buy": "Comprar"
+    "buy": "Comprar",
+    "contact": "Cotiza aqui"
   }
 }

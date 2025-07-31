@@ -375,6 +375,36 @@ export const productsDataES = [
 export const lowCostAddonsDataEN = [
   {
     stock: 100,
+    id: 203,
+    name: 'Personalized Water Bottles',
+    description:
+      'A simple but elegant detail. We provide one 500ml water bottle for each attendee, featuring a custom label with your event name and logo. A great way to reinforce your brand.',
+    image: '/images/bottles.jpg',
+    price: '31.5',
+    features: [
+      'One 500ml water bottle per attendee',
+      'Custom-designed and printed labels',
+      'Choice of still or sparkling water',
+      'Chilled and distributed upon arrival',
+    ],
+  },
+  {
+    stock: 100,
+    id: 204,
+    name: 'Dedicated Charging Station',
+    description:
+      'A simple but highly appreciated service. We set up a designated table with power strips and multi-port USB hubs so your guests can charge their phones and laptops.',
+    image: '/images/charge.jpg',
+    price: '32.52', // Original: 599.99 MXN
+    features: [
+      'Designated table with clear signage',
+      'Includes 2 power strips (12 outlets total)',
+      'Includes 2 multi-port USB hubs',
+      'Assortment of common charging cables (Lightning, USB-C)',
+    ],
+  },
+  {
+    stock: 100,
     id: 205,
     name: 'Curated Ambient Music Playlist',
     description:
@@ -410,7 +440,7 @@ export const lowCostAddonsDataEN = [
     description:
       'Add a highly professional touch with custom-printed name badges in a plastic holder with a clip. Helps attendees connect and network more easily.',
     image: '/images/gafetes.jpg',
-    price: '46.07', // Original: 849.99 MXN
+    price: '30.99', // Original: 689.99 MXN
     features: [
       'Full-color printed name badges',
       'Includes name, title, and company logo',
@@ -433,36 +463,7 @@ export const lowCostAddonsDataEN = [
       'Includes a cardboard easel for display',
     ],
   },
-  {
-    stock: 100,
-    id: 203,
-    name: 'Personalized Water Bottles',
-    description:
-      'A simple but elegant detail. We provide one 500ml water bottle for each attendee, featuring a custom label with your event name and logo. A great way to reinforce your brand.',
-    image: '/images/bottles.jpg',
-    price: '43.36', // Original: 799.99 MXN
-    features: [
-      'One 500ml water bottle per attendee',
-      'Custom-designed and printed labels',
-      'Choice of still or sparkling water',
-      'Chilled and distributed upon arrival',
-    ],
-  },
-  {
-    stock: 100,
-    id: 204,
-    name: 'Dedicated Charging Station',
-    description:
-      'A simple but highly appreciated service. We set up a designated table with power strips and multi-port USB hubs so your guests can charge their phones and laptops.',
-    image: '/images/charge.jpg',
-    price: '32.52', // Original: 599.99 MXN
-    features: [
-      'Designated table with clear signage',
-      'Includes 2 power strips (12 outlets total)',
-      'Includes 2 multi-port USB hubs',
-      'Assortment of common charging cables (Lightning, USB-C)',
-    ],
-  },
+
   {
     stock: 100,
     id: 206,
@@ -485,7 +486,7 @@ export const lowCostAddonsDataEN = [
     description:
       'A delicious upgrade to the standard cookies. A platter of assorted artisanal cookies from a local bakery, offering a gourmet touch to your coffee break.',
     image: '/images/galletas.jpg',
-    price: '35.23', // Original: 649.99 MXN
+    price: '36.99', // Original: 649.99 MXN
     features: [
       'Assortment of 3-4 types of artisanal cookies',
       'Beautifully arranged on a platter',
@@ -496,6 +497,36 @@ export const lowCostAddonsDataEN = [
 ];
 
 export const lowCostAddonsDataES = [
+  {
+    stock: 100,
+    id: 203,
+    name: 'Botellas de Agua Personalizadas',
+    description:
+      'Un detalle simple pero elegante. Proporcionamos una botella de agua de 500ml para cada asistente, con una etiqueta personalizada con el nombre de tu evento y logo. Una gran forma de reforzar tu marca.',
+    image: '/images/bottles.jpg',
+    price: '599.99',
+    features: [
+      'Una botella de agua de 500ml por asistente',
+      'Etiquetas diseñadas e impresas a medida',
+      'Elección de agua natural o mineral',
+      'Frías y distribuidas a la llegada',
+    ],
+  },
+  {
+    stock: 100,
+    id: 204,
+    name: 'Estación de Carga Dedicada',
+    description:
+      'Un servicio simple pero muy apreciado. Instalamos una mesa designada con multicontactos y hubs USB para que tus invitados puedan cargar sus teléfonos y laptops.',
+    image: '/images/charge.jpg',
+    price: '599.99',
+    features: [
+      'Mesa designada con señalización clara',
+      'Incluye 2 multicontactos (12 enchufes en total)',
+      'Incluye 2 hubs USB multipuerto',
+      'Surtido de cables de carga comunes (Lightning, USB-C)',
+    ],
+  },
   {
     stock: 100,
     id: 205,
@@ -533,7 +564,7 @@ export const lowCostAddonsDataES = [
     description:
       'Añade un toque altamente profesional con gafetes impresos a medida en un portagafetes de plástico con clip. Ayuda a los asistentes a conectar y hacer networking más fácilmente.',
     image: '/images/gafetes.jpg',
-    price: '849.99',
+    price: '589.99',
     features: [
       'Gafetes impresos a todo color',
       'Incluye nombre, puesto y logo de la empresa',
@@ -554,36 +585,6 @@ export const lowCostAddonsDataES = [
       'Diseño personalizado a todo color',
       'Montado sobre un material rígido (foam board)',
       'Incluye un caballete de cartón para su exhibición',
-    ],
-  },
-  {
-    stock: 100,
-    id: 203,
-    name: 'Botellas de Agua Personalizadas',
-    description:
-      'Un detalle simple pero elegante. Proporcionamos una botella de agua de 500ml para cada asistente, con una etiqueta personalizada con el nombre de tu evento y logo. Una gran forma de reforzar tu marca.',
-    image: '/images/bottles.jpg',
-    price: '799.99',
-    features: [
-      'Una botella de agua de 500ml por asistente',
-      'Etiquetas diseñadas e impresas a medida',
-      'Elección de agua natural o mineral',
-      'Frías y distribuidas a la llegada',
-    ],
-  },
-  {
-    stock: 100,
-    id: 204,
-    name: 'Estación de Carga Dedicada',
-    description:
-      'Un servicio simple pero muy apreciado. Instalamos una mesa designada con multicontactos y hubs USB para que tus invitados puedan cargar sus teléfonos y laptops.',
-    image: '/images/charge.jpg',
-    price: '599.99',
-    features: [
-      'Mesa designada con señalización clara',
-      'Incluye 2 multicontactos (12 enchufes en total)',
-      'Incluye 2 hubs USB multipuerto',
-      'Surtido de cables de carga comunes (Lightning, USB-C)',
     ],
   },
 
@@ -609,7 +610,7 @@ export const lowCostAddonsDataES = [
     description:
       'Una deliciosa mejora a las galletas estándar. Una charola con un surtido de galletas artesanales de una pastelería local, ofreciendo un toque gourmet a tu coffee break.',
     image: '/images/galletas.jpg',
-    price: '649.99',
+    price: '699.99',
     features: [
       'Surtido de 3 a 4 tipos de galletas artesanales',
       'Presentadas elegantemente en una charola',

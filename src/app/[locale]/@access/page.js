@@ -45,6 +45,10 @@ const LoginPage = () => {
   const handleLogin = (e) => {
     e.preventDefault(); // Evita que la página se recargue
 
+    // for the moment sent to catalog page
+    router.push('/catalog');
+    return;
+
     // Busca si el usuario existe en el array
     const foundUser = allowedUsers.find((u) => u.user === username);
 

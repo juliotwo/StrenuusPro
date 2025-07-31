@@ -5,11 +5,14 @@ import { FaCartArrowDown, FaPhone } from 'react-icons/fa';
 import { Link, usePathname, useRouter } from '@/navigation';
 import Button from '../atoms/Button';
 import { navbarOptions, pageName } from '@/data';
+import { useContext } from 'react';
+import { CartContext } from 'ui-old-version';
 
-const Navbar = ({ textBlack = true }) => {
+const Navbar = ({ textBlack = true, withCart = false }) => {
   const t = useTranslations('Navbar');
   const router = useRouter();
   const pathname = usePathname();
+  const { products } = useContext(CartContext);
   const locale = useLocale();
 
   return (
@@ -59,24 +62,34 @@ const Navbar = ({ textBlack = true }) => {
             ))}
           </div>
           <div className='flex gap-3 items-center'>
-            <Link href='https://access.strenuus.pro/en'>
-              <Button
-                className='py-3'
-                label={t('cart')}
-                variant='primary'
-                withShadow={false}
-                icon={<FaCartArrowDown />}
-              />
-            </Link>
-            <Link href='/contact'>
-              <Button
-                className='py-3'
-                label={t('contact')}
-                variant='primary'
-                withShadow={false}
-                icon={<FaPhone />}
-              />
-            </Link>
+            {withCart && (
+              <Link
+                className='relative flex items-center gap-2'
+                href='/my-cart'
+              >
+                <Button
+                  className='py-3'
+                  label={t('cart')}
+                  variant='primary'
+                  withShadow={false}
+                  icon={<FaCartArrowDown />}
+                />
+                <div className='text-s absolute -top-2 -right-2 bg-red-500 text-white rounded-full  w-7 h-7 flex items-center justify-center'>
+                  <span>{products.length}</span>
+                </div>
+              </Link>
+            )}
+            {!withCart && (
+              <Link href='/contact'>
+                <Button
+                  className='py-3'
+                  label={t('contact')}
+                  variant='primary'
+                  withShadow={false}
+                  icon={<FaPhone />}
+                />
+              </Link>
+            )}
             {/* ingresar */}
             {/* <Link href='/auth'>
               <Button
