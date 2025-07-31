@@ -60,6 +60,66 @@ export const navbarOptions = [
 ];
 export const productsDataEN = [
   {
+    stock: 50,
+    id: 10,
+    name: 'Introduction to Event Planning',
+    description:
+      'Learn the essential fundamentals to organize successful events, from concept and budgeting to execution and post-event evaluation. Ideal for beginners.',
+    image: '/images/intro-planning.jpg',
+    price: '16',
+    features: [
+      'The life cycle of an event',
+      'Creating budgets and timelines',
+      'Selecting vendors and venues',
+      'Risk management strategies',
+    ],
+  },
+  {
+    stock: 35,
+    id: 11,
+    name: 'Corporate Event Management and Logistics',
+    description:
+      'Specialize in organizing congresses, seminars, and product launches. Master complex logistics, protocol, and sponsor management.',
+    image: '/images/corporate-events.jpg',
+    price: '37',
+    features: [
+      'Strategic planning for companies',
+      'Speaker and agenda management',
+      'Transportation and accommodation logistics',
+      'Corporate protocol and etiquette',
+    ],
+  },
+  {
+    stock: 60,
+    id: 12,
+    name: 'Digital Marketing and Event Promotion',
+    description:
+      'Discover how to use social media, email marketing, and online advertising to maximize attendance, generate buzz, and measure the impact of your events.',
+    image: '/images/event-marketing.jpg',
+    price: '32',
+    features: [
+      'Social media content strategy',
+      'Effective email marketing campaigns',
+      'Paid advertising on Facebook and Instagram Ads',
+      'Metrics analysis and return on investment (ROI)',
+    ],
+  },
+  {
+    stock: 25,
+    id: 13,
+    name: 'Event Space Design and Decoration',
+    description:
+      "Develop your creativity and learn practical techniques to transform any venue into a memorable space that captivates attendees and reflects the event's identity.",
+    image: '/images/event-decoration.jpg',
+    price: '26',
+    features: [
+      'Design principles and color theory',
+      'Trends in decoration and ambiance',
+      'Furniture and floral arrangement selection',
+      'Professional lighting techniques',
+    ],
+  },
+  {
     stock: 100,
     id: 0,
     name: 'Corporate Event Planning',
@@ -433,66 +493,6 @@ export const productsDataES = [
 ];
 
 export const lowCostAddonsDataEN = [
-  {
-    stock: 50,
-    id: 10,
-    name: 'Introduction to Event Planning',
-    description:
-      'Learn the essential fundamentals to organize successful events, from concept and budgeting to execution and post-event evaluation. Ideal for beginners.',
-    image: '/images/intro-planning.jpg',
-    price: '16',
-    features: [
-      'The life cycle of an event',
-      'Creating budgets and timelines',
-      'Selecting vendors and venues',
-      'Risk management strategies',
-    ],
-  },
-  {
-    stock: 35,
-    id: 11,
-    name: 'Corporate Event Management and Logistics',
-    description:
-      'Specialize in organizing congresses, seminars, and product launches. Master complex logistics, protocol, and sponsor management.',
-    image: '/images/corporate-events.jpg',
-    price: '37',
-    features: [
-      'Strategic planning for companies',
-      'Speaker and agenda management',
-      'Transportation and accommodation logistics',
-      'Corporate protocol and etiquette',
-    ],
-  },
-  {
-    stock: 60,
-    id: 12,
-    name: 'Digital Marketing and Event Promotion',
-    description:
-      'Discover how to use social media, email marketing, and online advertising to maximize attendance, generate buzz, and measure the impact of your events.',
-    image: '/images/event-marketing.jpg',
-    price: '32',
-    features: [
-      'Social media content strategy',
-      'Effective email marketing campaigns',
-      'Paid advertising on Facebook and Instagram Ads',
-      'Metrics analysis and return on investment (ROI)',
-    ],
-  },
-  {
-    stock: 25,
-    id: 13,
-    name: 'Event Space Design and Decoration',
-    description:
-      "Develop your creativity and learn practical techniques to transform any venue into a memorable space that captivates attendees and reflects the event's identity.",
-    image: '/images/event-decoration.jpg',
-    price: '26',
-    features: [
-      'Design principles and color theory',
-      'Trends in decoration and ambiance',
-      'Furniture and floral arrangement selection',
-      'Professional lighting techniques',
-    ],
-  },
   {
     stock: 100,
     id: 203,
