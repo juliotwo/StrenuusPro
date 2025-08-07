@@ -31,6 +31,7 @@ const CartSectionComponent = ({ withBack }) => {
   const createRandomNumberTransaction = () => {
     return Math.floor(Math.random() * 1000000000);
   };
+
   const extractMessage = (str) => {
     console.log(str);
     if (!str || str === '' || str === 'null' || str === undefined) {
@@ -68,7 +69,7 @@ const CartSectionComponent = ({ withBack }) => {
         email: email,
       },
     };
-    //await ApiTransaction.sendEmail(data);
+    await ApiTransaction.sendEmail(data);
   };
 
   const total = isValidDiscount ? 10 : getTotalCart();
@@ -126,10 +127,13 @@ const CartSectionComponent = ({ withBack }) => {
       description: 'Pago de evento',
     };
     await sleep(2000);
-    //const dataRes = await ApiTransaction.makeTransaction(body);
+    const dataRes = await ApiTransaction.makeTransaction(body);
+    console.log('dataRes', dataRes);
+    console.log('dataRes', dataRes);
+    if (dataRes?.content?.status === 'success') {
+      let idTransaction = dataRes?.content?.merchant_transaction_id;
 
-    if (true) {
-      let idTransaction = '1929292';
+      console.log('idTransaction', idTransaction);
 
       await sendEmail(
         data.email,

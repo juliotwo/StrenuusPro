@@ -2,9 +2,8 @@ import axios from 'axios';
 import { TRANSACTION, SEND_EMAIL, SEND_EMAIL_TEST } from './urls';
 
 const API_KEY =
-  '6N3EO55S1n7IYCZuAoNRphyTm6Pzn0OoKrcMn4FneRYaYBO0WeaV3Co2bzYXKSwx';
-//const API_KEY_DEV =
-// 'bbvCp0Uo04cux3MONopMsX2LQdn03fC9aAWpuB9StKUqAdbjXj7Hqa4uaApwNc5b';
+  'j7lGoXeNnALr8jAZsMOA35UMAqWStZR5orRIM4ilkSFIp4MRHpnKkOakv3ID9MJQ';
+
 export const ApiTransaction = {
   makeTransaction: async (data) => {
     try {
