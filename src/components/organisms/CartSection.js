@@ -63,7 +63,7 @@ const CartSectionComponent = ({ withBack }) => {
         phone_number: '+52' + phone,
         service: services,
         order_number: idTransaction,
-        sender: 'info@capapay.mx',
+        sender: 'info@strenuus.pro',
       },
       email_for_client_data: {
         email: email,
