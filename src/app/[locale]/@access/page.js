@@ -31,6 +31,12 @@ const allowedUsers = [
     user: 'JamesKelley',
     password: 'passwordJames',
   },
+  {
+    user: 'RichardLewis',
+    password: 'passwordRichard',
+    products: null,
+    withAdditionals: true,
+  },
 ];
 
 const LoginPage = () => {

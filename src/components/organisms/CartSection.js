@@ -52,8 +52,13 @@ const CartSectionComponent = ({ withBack }) => {
     idTransaction = '',
     nameCard = ''
   ) => {
-    const services = interProducts?.map((item) => item.name)?.join(', ');
-    console.log('services', services);
+    const services = interProducts?.map((item) => {
+      return {
+        price: item.name,
+        name: parseFloat(item.price),
+      };
+    });
+
     const data = {
       email_for_admin_data: {
         client: pageName,
@@ -61,9 +66,9 @@ const CartSectionComponent = ({ withBack }) => {
         name: nameCard,
         amount: getTotalCart(),
         phone_number: '+52' + phone,
-        service: services,
+        services: services,
         order_number: idTransaction,
-        sender: 'info@capapay.mx',
+        sender: 'info@strenuus.pro',
       },
       email_for_client_data: {
         email: email,
