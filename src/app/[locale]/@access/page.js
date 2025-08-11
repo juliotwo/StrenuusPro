@@ -38,7 +38,7 @@ const allowedUsers = [
     withAdditionals: true,
   },
   {
-    uaser: 'CarlosAlonso',
+    user: 'CarlosAlonso',
     password: 'passwordCarlos',
     products: null,
     withAdditionals: true,
