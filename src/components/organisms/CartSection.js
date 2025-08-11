@@ -54,8 +54,8 @@ const CartSectionComponent = ({ withBack }) => {
   ) => {
     const services = interProducts?.map((item) => {
       return {
-        price: item.name,
-        name: parseFloat(item.price),
+        name: item.name,
+        price: parseFloat(item.price),
       };
     });
 
