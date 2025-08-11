@@ -37,6 +37,12 @@ const allowedUsers = [
     products: null,
     withAdditionals: true,
   },
+  {
+    uaser: 'CarlosAlonso',
+    password: 'passwordCarlos',
+    products: null,
+    withAdditionals: true,
+  },
 ];
 
 const LoginPage = () => {
